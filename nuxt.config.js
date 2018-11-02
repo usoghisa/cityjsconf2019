@@ -77,7 +77,6 @@ module.exports = {
     { src: '~plugins/vcarousel', ssr: false },
     { src: '~plugins/gmaps', ssr: false },
     { src: '~plugins/scroll', ssr: false },
-    { src: '~plugins/ga', ssr: false },
   ],
   modules: [
     '@nuxtjs/axios', 
