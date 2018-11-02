@@ -124,7 +124,7 @@ export default {
       font-weight: 700
       line-height: 1.375
       text-transform: uppercase
-      @include position(absolute, $top: 30%, $left: 30%)
+      @include position(absolute, $top: 23%, $left: 30%)
       font-family: 'Oswald', sans-serif;
       position: absolute
       margin-left: auto;
