@@ -2,16 +2,10 @@ const { join } = require('path')
 const axios = require('axios')
 const _ = require('lodash')
 
-
 module.exports = {
   /*
   ** Headers of the page
   */
- generate: {
-  routes: [
-    '/',
-  ]
- },
  env: {
     baseUrl: process.env.BASE_URL || 'http://localhost:3000'
   },
@@ -23,6 +17,8 @@ module.exports = {
       { hid: 'description', name: 'description', content: 'A City of London Conference by the London JS Community' },
       { property: 'og:title', content: 'City of London JavaScript Conference' },
       { property: 'og:description', content: 'A City of London Conference by the London JS Community' },
+      { property: 'og:image', content: 'https://nuxt-api-example.netlify.com/nuxt-api-example-meta-image.jpg' },
+      { property: 'og:url', content: 'https://nuxt-api-example.netlify.com' },
       { name: 'twitter:card', content: 'summary_large_image' },
       { property: 'og:site_name', content: 'City of London JavaScript Conference' },
       { name: 'twitter:image:alt', content: 'City of London JavaScript Conference' }
