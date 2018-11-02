@@ -1,0 +1,62 @@
+// Responsiveness
+// 960, 1152, and 1344 have been chosen because they are divisible by both 12 and 16
+$tablet: 769px !default
+// 960px container + 40px
+$desktop: 100% !default
+// 1152px container + 40
+$widescreen: 1192px !default
+// 1344px container + 40
+$fullhd: 1384px !default
+$microtablet: 768px !default;
+
+$red: rgba(255, 48, 48, 0.9);
+$white: #fff;
+$black: #000;
+$gray: #333;
+$midgray: #ccc;
+$lightgray: #f8f9fa;
+$grayins: #DDDEE2;
+
+h2 
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 52px;
+  text-transform: uppercase;
+
+h3
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 52px;
+  text-transform: uppercase;
+
+
+=mobile
+  @media screen and (max-width: $tablet - 1px)
+    @content
+
+=microtablet
+  @media screen and (min-width: $microtablet), print
+    @content
+
+=tablet
+  @media screen and (min-width: $tablet), print
+    @content
+
+=tablet-only
+  @media screen and (min-width: $tablet) and (max-width: $desktop - 1px)
+    @content
+
+=desktop
+  @media screen and (min-width: $desktop)
+    @content
+
+=desktop-only
+  @media screen and (min-width: $desktop) and (max-width: $widescreen - 1px)
+    @content
+
+@mixin position($position, $top: null, $right: null, $bottom: null, $left: null)
+  position: $position
+  top: $top
+  right: $right
+  bottom: $bottom
+  left: $left
