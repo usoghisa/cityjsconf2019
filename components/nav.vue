@@ -24,7 +24,8 @@
               {{item.title}}
             </nuxt-link>
             <a
-              class="navbar-item r-item button is-info" 
+              class="navbar-item r-item is-info " 
+              :class="{ button: item.color==='button' }"
               v-for="item in items"
               v-if="item.hide === 'No' && item.isRedirect === 'Yes'" 
               :href="item.url"
