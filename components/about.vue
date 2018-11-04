@@ -5,6 +5,10 @@
          <div class="column is-two">
             <h2 class="title" v-html="title"></h2>
             <p class="subtitle" v-html="description"></p>
+            <app-payments 
+                v-if="title === 'Buy Tickets'"
+            >
+            </app-payments>
           </div>
           <div class="column img" :style="style">
           </div>
@@ -14,11 +18,15 @@
 </template>
 
 <script>
+    import payments from '@/components/payments';
     export default {
         data: function() {
             return {
                 isActive: false
             }
+        },
+        components: {
+            'app-payments': payments
         },
         computed: {
             style () {

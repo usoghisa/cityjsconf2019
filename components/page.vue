@@ -32,7 +32,7 @@
         components: {
             'app-about-home': aboutHome,
             'app-about': about,
-            'app-venue': venue,
+            'app-venue': venue
         },
         props: {
             title: String,

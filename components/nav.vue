@@ -105,7 +105,7 @@ export default {
       background: none;
       color: $white;
     +mobile
-      color: $gray
+      color: $black
       &:hover
        text-decoration: underline;
 

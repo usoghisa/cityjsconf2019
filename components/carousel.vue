@@ -23,6 +23,12 @@
               <br/>
               03 May 2019
             </b>
+            <br />
+            <a 
+              href="https://www.papercall.io/cityjsconf2019" 
+              class="is-info  button info is-rounded">
+                 Call For Papers 
+             </a>
           </h1>
         </div>
       </div>
@@ -134,6 +140,13 @@ export default {
       +mobile
         font-size: 2rem;
 
+      .info
+        display: none
+        +mobile
+          display: block
+          margin-left: 20px;
+          margin-right: 20px;
+          margin-top: 10px;
   
 </style>
 
