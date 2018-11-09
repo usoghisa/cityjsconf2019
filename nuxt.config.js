@@ -19,11 +19,11 @@ module.exports = {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'A City of London Conference by the London JS Community' },
+      { hid: 'description', name: 'description', content: 'City of London Conference by the London JS Community' },
       { property: 'og:title', content: 'City of London JavaScript Conference' },
-      { property: 'og:description', content: 'A City of London Conference by the London JS Community' },
-      { property: 'og:image', content: 'https://nuxt-api-example.netlify.com/nuxt-api-example-meta-image.jpg' },
-      { property: 'og:url', content: 'https://nuxt-api-example.netlify.com' },
+      { property: 'og:description', content: 'City of London JavaScript Conference by the London JS Community' },
+      { property: 'og:image', content: 'http://api.spiralthread.com/images/audience.png' },
+      { property: 'og:url', content: 'http://www.cityjsconf.org' },
       { name: 'twitter:card', content: 'summary_large_image' },
       { property: 'og:site_name', content: 'City of London JavaScript Conference' },
       { name: 'twitter:image:alt', content: 'City of London JavaScript Conference' }
