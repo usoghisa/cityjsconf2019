@@ -5,7 +5,7 @@
             :subtitle="subtitle"
         >
         </app-h2> -->
-        <section class="section backimg is-mobile" :style="style">
+        <section class="section backimgVenue is-mobile" :style="style">
         <div class="container">
             <div class="columns level-right">
                 <div class="column is-4 is-offset-4">
@@ -66,14 +66,19 @@
 <style lang="sass" scoped>
     @import '~/assets/css/mq.sass';
 
-    .backimg
-        background-position: left center;
+    .backimgVenue
+        background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
         padding: 150px 0;
         height: 650px;
         background-position-y: -155px;
-
+        +mobile
+            background-position: 1px -264px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 150px 0;
+            height: 194vw;
     .media-content
         .subtitle
             padding-top: 5px;
@@ -104,6 +109,8 @@
         padding: 10.3rem
 
     .card-content
+        +mobile
+            margin-top: 60%;
         .copy
             position: relative;
             display: block;
