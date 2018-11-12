@@ -67,11 +67,15 @@
         padding: 150px 0;
         height: 650px;
         +mobile
-            background-position: 30%;
+            background-position: 30% -200px;
             background-repeat: no-repeat;
             background-size: cover;
             padding: 150px 0;
             height: 300vw;
+        .card
+            top: -23px;
+            +mobile
+                top: 35vw;
     h2
         font-size: 1.8rem;
         font-weight: 700;

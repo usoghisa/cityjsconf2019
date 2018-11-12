@@ -61,8 +61,8 @@
         background-repeat: no-repeat
         width: 100%;
         height: 523px;
-        background-position-x: right;
-        background-position-y: left;
+        background-position-x: center;
+        background-position-y: center;
     
     .about
         width: 100%
