@@ -56,9 +56,10 @@ export default {
     top: 0%;
     left: -50%;
     width: 200%;
-    height: 225%;
+    height: 100vw;
     +mobile
-      top: -50%;
+      top: 0px;
+      height: 113vw;
     +tablet
     +desktop
 
@@ -79,7 +80,7 @@ export default {
     height: 900px
     overflow: hidden;
     +mobile
-      height: 300px;
+      height: 113vw;
       min-height: 300px;
     +microtablet 
       height: 500px;
@@ -111,6 +112,7 @@ export default {
   .overlay-container
     position:absolute
     background: rgba($red, 0.7)
+    height: 230vw;
   
   .slide
     width: 100%
@@ -147,6 +149,9 @@ export default {
           margin-left: 20px;
           margin-right: 20px;
           margin-top: 10px;
+          width: 50%;
+          margin: 0 auto;
+          margin-top: 34px;
   
 </style>
 

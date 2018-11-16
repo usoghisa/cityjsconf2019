@@ -30,7 +30,9 @@ const store = () => {
         state.menuIsActive = !state.menuIsActive
       },
       setPages: (state, pages) => {
-        state.pages = pages
+        state.pages = pages.sort(function(a, b) {
+          return a.orderOnTopMenu-b.orderOnTopMenu
+        });
       },
       setSpeakers: (state, speakers) => {
         state.speakers = speakers

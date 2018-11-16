@@ -8,6 +8,8 @@ $widescreen: 1192px !default
 // 1344px container + 40
 $fullhd: 1384px !default
 $microtablet: 768px !default;
+$ipadpro: 1024px !default;
+
 
 $red: rgba(255, 48, 48, 0.9);
 $white: #fff;
@@ -36,6 +38,10 @@ h3
 
 =microtablet
   @media screen and (min-width: $microtablet), print
+    @content
+
+=ipadpro
+   @media screen and (min-width: $ipadpro) and (max-width: $ipadpro - 1px)
     @content
 
 =tablet

@@ -13,8 +13,8 @@
                         <div class="card-content ">
                             <div class="media">
                                 <div class="media-content copy">
-                                    <p class="title is-4 no-padding">About CityJSConf</p>
-                                    <p class="subtitle"> A community event run by three JS London Meetups </p>
+                                    <div class="title is-4 no-padding"  v-html="title"></div>
+                                    <p class="subtitle"> {{subtitle}} </p>
                                     <div class="banner-heading">
                                         <span > </span>
                                     </div>

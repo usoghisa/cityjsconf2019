@@ -105,7 +105,7 @@
     },
     computed: {
       Pages () {
-        return this.$store.state.pages;
+        return this.$store.state.pages
       },
       Faqs () {
         return this.$store.state.faqs;
