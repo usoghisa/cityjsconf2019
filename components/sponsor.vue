@@ -9,7 +9,7 @@
                             v-bind:key="item._id"
                         >
                             <a :href="`${item.url}`">
-                                <img class="sponsor" v-if="typeof item.image!== 'undefined'"  :src="`http://api.spiralthread.com/${item.image.path}`">
+                                <img class="sponsor" v-if="typeof item.image!== 'undefined'"  :src="`//api.spiralthread.com/${item.image.path}`">
                             </a>
                         </div>                
                 </div>

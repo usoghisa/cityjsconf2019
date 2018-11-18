@@ -93,6 +93,9 @@ export default {
     +ipadpro
       background: $white;
       color: $black;
+    +ipadpro
+      background: transparent;
+
 
   .logo 
     +mobile
@@ -116,12 +119,8 @@ export default {
       color: $white;
     +mobile
       color: $black
-      &:hover
-       text-decoration: underline;
     +ipadpro
-      color: $black
-      &:hover
-      text-decoration: underline;
+      color: $black;
 
   .navbar-burger
     &:hover

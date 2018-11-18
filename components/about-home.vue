@@ -45,7 +45,7 @@
         },
          computed: {
             style () {
-                return `background-image: url(http://api.spiralthread.com/${this.image.path});`;
+                return `background-image: url(//api.spiralthread.com/${this.image.path});`;
             }
         },
         props: {

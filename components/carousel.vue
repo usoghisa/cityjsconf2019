@@ -4,12 +4,15 @@
       <section id="home">
           <div class="video_shader"></div>
           <div class="video_contain">
-            <video class="video-player" src="~/assets/videos/cityjs.mp4" 
-              data-mobile-notlive="~/assets/videos/cityjs.mp4" type="video/mp4" preload="auto" width="100%"
-              muted playsinline="" height="auto" aria-labelledby="banner381127-text" autoplay loop>
+           <video class="video-player" id="background" preload="auto" width="100%"
+              poster="~/assets/videos/cityjsconf.jpg"
+              muted playsinline="" height="100%" aria-labelledby="banner381127-text" autoplay loop>
+                <source src="~/assets/videos/cityjsconf.mp4" type="video/mp4">
+                <source src="~/assets/videos/cityjsconf.webm" type="video/webm">
+                <!-- <source src="~/assets/videos/cityjsconf.ogv" type="video/ogg"> -->
                 <p>Sorry, your browser doesn't support embedded videos, 
                    but you can 
-                   <a href="~/assets/videos/cityjs.mp4">download it</a>
+                   <a href="~/assets/videos/cityjsconf.mp4">download it</a>
                     and watch it with your favorite video player
                 </p>
             </video>
@@ -51,8 +54,15 @@ export default {
 <style lang="sass">
   @import '~/assets/css/mq.sass';
 
+
+
   .video_contain
     position: absolute;
+    background: url('~/assets/videos/cityjsconf.jpg') no-repeat top 
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
     top: 0%;
     left: -50%;
     width: 200%;

@@ -22,17 +22,17 @@ module.exports = {
       { hid: 'description', name: 'description', content: 'City of London Conference by the London JS Community' },
       { property: 'og:title', content: 'City of London JavaScript Conference' },
       { property: 'og:description', content: 'City of London JavaScript Conference by the London JS Community' },
-      { property: 'og:image', content: 'http://api.spiralthread.com/images/audience.png' },
-      { property: 'og:url', content: 'http://www.cityjsconf.org' },
+      { property: 'og:image', content: '//api.spiralthread.com/images/audience.png' },
+      { property: 'og:url', content: '//www.cityjsconf.org' },
       { name: 'twitter:card', content: 'summary_large_image' },
       { property: 'og:site_name', content: 'City of London JavaScript Conference' },
       { name: 'twitter:image:alt', content: 'City of London JavaScript Conference' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/images/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400' },
-      { rel: 'stylesheet', href: 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' },
+      { rel: 'stylesheet', href: '//fonts.googleapis.com/css?family=Roboto:300,400,500,700' },
+      { rel: 'stylesheet', href: '//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400' },
+      { rel: 'stylesheet', href: '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' },
     ]
   },
   /*

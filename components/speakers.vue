@@ -17,7 +17,7 @@
                         >
                             <a class="speaker" :href="`${item.videoUrl}`">
                                 <figure class="image">
-                                    <img v-if="typeof item.image!== 'undefined'"  :src="`http://api.spiralthread.com/${item.image.path}`">
+                                    <img v-if="typeof item.image!== 'undefined'"  :src="`//api.spiralthread.com/${item.image.path}`">
                                 </figure>
                                 <div class="media-content">
                                     <p class="is-4 no-padding">{{item.name}}</p>

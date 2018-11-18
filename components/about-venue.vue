@@ -52,7 +52,7 @@
         },
          computed: {
             style () {
-                return `background-image: url('http://api.spiralthread.com/images/curozn.png')`;
+                return `background-image: url('//api.spiralthread.com/images/curozn.png')`;
             }
         },
         props: {
