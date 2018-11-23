@@ -2,15 +2,15 @@ importScripts('/_nuxt/workbox.3ffff7b2.js')
 
 workbox.precaching.precacheAndRoute([
   {
-    "url": "/_nuxt/app.5508317e50162ce03899.js",
-    "revision": "cd3d58fae07a9320fb3fc7570d2eb993"
+    "url": "/_nuxt/app.3197e2a38b054d1afca4.js",
+    "revision": "31416cc2c627c982a2122e8997d01440"
   },
   {
     "url": "/_nuxt/layouts/default.e1044d5f80f7a147099e.js",
     "revision": "172e94b4f195046dd74a365d3dd6aa1e"
   },
   {
-    "url": "/_nuxt/manifest.1c7c6eb6801aafeeb0c9.js",
+    "url": "/_nuxt/manifest.3cf9d27c5f61c31c9a46.js",
     "revision": "b92bfb5177a8c9d6ba4eacaf59008d03"
   },
   {
@@ -18,8 +18,8 @@ workbox.precaching.precacheAndRoute([
     "revision": "81c6c51afe6ae1075a9da013f3364ffd"
   },
   {
-    "url": "/_nuxt/vendor.49623708371005583403.js",
-    "revision": "94ef4b744dd4ece5cace4c67b8cab002"
+    "url": "/_nuxt/vendor.b9ddd434c5bc58fac4ce.js",
+    "revision": "19268c6985750afea1799bc8582a5bd6"
   }
 ], {
   "cacheId": "cityjsconf",
