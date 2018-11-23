@@ -16,15 +16,18 @@
     "generate:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt generate"
   },
   "dependencies": {
-    "@nuxtjs/axios": "^5.3.1",
+    "@babel/polyfill": "^7.0.0",
     "@nuxtjs/bulma": "^1.2.0",
     "@nuxtjs/dotenv": "^1.1.1",
     "@nuxtjs/markdownit": "^0.0.2",
     "@nuxtjs/pwa": "^2.5.0",
-    "axios": "^0.18.0",
     "bulma-extensions": "^3.0.0",
+    "es6-promise": "^4.2.5",
+    "es7-object-polyfill": "0.0.7",
     "font-awesome": "^4.7.0",
+    "isomorphic-fetch": "^2.2.1",
     "js-cookie": "^2.2.0",
+    "node-fetch": "^2.3.0",
     "normalize.css": "^8.0.0",
     "npm": "^6.4.1",
     "nuxt": "^1.0.0",
@@ -33,13 +36,13 @@
     "nuxt-google-maps-module": "^1.6.0",
     "run": "^1.4.0",
     "vue-agile": "^0.3.7",
-    "vue-axios": "^2.1.3",
     "vue-carousel": "^0.14.0",
     "vue-scroll": "^2.1.7",
     "vue-style-loader": "^4.1.2",
     "vue2-google-maps": "^0.10.2",
     "vuex": "^3.0.1",
-    "vuex-persistedstate": "^2.5.4"
+    "vuex-persistedstate": "^2.5.4",
+    "whatwg-fetch": "^3.0.0"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",

@@ -1,8 +1,8 @@
 import Vuex from 'vuex';
-import axios from '~/plugins/axios';
 
 import createPersistedState from 'vuex-persistedstate';
 import * as Cookie from 'js-cookie';
+import FetchIt from './fetchit';
 
 const store = () => {
   return new Vuex.Store({
@@ -30,9 +30,11 @@ const store = () => {
         state.menuIsActive = !state.menuIsActive
       },
       setPages: (state, pages) => {
-        state.pages = pages.sort(function(a, b) {
-          return a.orderOnTopMenu-b.orderOnTopMenu
-        });
+        if (typeof pages !== 'undefined') {
+          state.pages = pages.sort(function(a, b) {
+            return a.orderOnTopMenu-b.orderOnTopMenu
+          });
+        }
       },
       setSpeakers: (state, speakers) => {
         state.speakers = speakers
@@ -49,63 +51,30 @@ const store = () => {
     },
     actions: {
       async getPages ({commit}) {
-        let {data} = await axios.get(`pages?token=${
-          process.env.API_KEY
-        }`, { 
-          params: {
-            populate: 1
-          }
-        });
-
-        commit('setPages', data.entries);
+        await FetchIt.getAllEntries('pages').then(data => {
+          commit('setPages', data.entries);
+        })
       },
       async getFaqs ({commit}) {
-        let {data} = await axios.get(`faqs?token=${
-          process.env.API_KEY
-        }`, { 
-          params: {
-            populate: 1
-          }
-        });
-
-        commit('setFaqs', data.entries);
+        await FetchIt.getAllEntries('faqs').then(data => {
+          commit('setFaqs', data.entries);
+        })
       },
       async getSpeakers ({commit}) {
-        let {data} = await axios.get(`speakers?token=${
-          process.env.API_KEY
-        }`, { 
-          params: {
-            populate: 1
-          }
+        await FetchIt.getAllEntries('speakers').then(data => {
+          commit('setSpeakers', data.entries);
         });
-
-        commit('setSpeakers', data.entries);
       },
       async getSponsors ({commit}) {
-        let {data} = await axios.get(`partners?token=${
-          process.env.API_KEY
-        }`, { 
-          params: {
-            populate: 1
-          }
+        await FetchIt.getAllEntries('partners').then(data => {
+          commit('setSponsors', data.entries);
         });
-
-        commit('setSponsors', data.entries);
-      },
-      async getPage ({commit, store}, id) {
-        let {data} = await axios.get(`pages/${id}`)
-        commit('setCurrentPage', data)
       },
       async nuxtServerInit ({commit}, {store, isClient, isServer, route, params}) {
         if (isServer && route.name === 'index') {
-          let {data} = await axios.get(`pages?token=${
-            process.env.API_KEY
-          }`)
-          commit('setPages', data.entries)
-        }
-        if (isServer && params.id) {
-          let {data} = await axios.get(`pages/${params.id}`)
-          commit('setCurrentPage', data)
+          await FetchIt.getAllEntries('pages').then(data => {
+            commit('setPages', data.entries);
+          })
         }
       }
     }

@@ -84,7 +84,7 @@ export default {
     min-width: 50%;
 
   .overlay
-    position: relative
+    position: relative;
     display: block;
     min-height: 900px;
     height: 900px
@@ -93,8 +93,8 @@ export default {
       height: 113vw;
       min-height: 300px;
     +microtablet 
-      height: 500px;
-      min-height: 700px;
+      height: 300px;
+      min-height: 60vw;
     +desktop-only
       height: 390px;
       min-height: 700px;
@@ -103,21 +103,21 @@ export default {
       min-height: 900px;
 
   .video-banner 
-    list-style-type: none
-    margin-left: 0
-    margin-top: 0
+    list-style-type: none;
+    margin-left: 0;
+    margin-top: 0;
 
   .banner:before
-    content: ""
-    @include position(absolute, $top: 0, $left: 0)
-    z-index: 1
-    width: 100%
-    height: auto
+    content: "";
+    @include position(absolute, $top: 0, $left: 0);
+    z-index: 1;
+    width: 100%;
+    height: auto;
   
   .video-player
-    position: absolute
-    width: 100%
-    height: auto
+    position: absolute;
+    width: 100%;
+    height: auto;
 
   .overlay-container
     position:absolute
@@ -164,4 +164,3 @@ export default {
           margin-top: 34px;
   
 </style>
-
