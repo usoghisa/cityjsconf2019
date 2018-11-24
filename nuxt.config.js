@@ -53,6 +53,11 @@ module.exports = {
           exclude: /(node_modules)/
         })
       }
+      
+      if (isClient) {
+        config.entry.vendor.push('babel-polyfill')
+      }
+               
    
       if (!isClient) {
         config.externals.splice(0, 0, function (context, request, callback) {
