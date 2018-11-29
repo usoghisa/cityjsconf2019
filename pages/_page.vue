@@ -31,9 +31,14 @@
               :image='Page.image'
             >
             </page>
-            <speakers 
+             <speakers2019 
               :items="Speakers"
                v-if="Page.url === 'speakers' || Page.url === 'home'"
+            >
+            </speakers2019>
+             <speakers 
+              :items="Speakers"
+               v-if="Page.url === 'speakers'"
             >
             </speakers>
             <about-venue
@@ -68,6 +73,7 @@
   import carousel from '@/components/carousel';
   import faq from '@/components/faq';
   import speakers from '@/components/speakers';
+  import speakers2019 from '@/components/speakers2019';
   import sponsors from '@/components/sponsors';
   import venuestatic from '@/components/about-venue';
 
@@ -79,6 +85,7 @@
       'carousel': carousel,
       'faq': faq, 
       'speakers': speakers,
+      'speakers2019': speakers2019,
       'sponsors': sponsors,
       'about-venue': venuestatic
     },
