@@ -39,6 +39,7 @@
                                             </div>
                                         </div> 
                                         <div class="media-content">
+                                            trst
                                             <div class="name has-text-weight-bold has-text-grey-dark">
                                                 {{item.name}}
                                             </div> 

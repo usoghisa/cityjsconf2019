@@ -30,10 +30,15 @@
             "app-h2" : h2
         },
         computed: {
-            TypedItems() {
-              return this.items.filter(item => {
-                return item.level === this.level;
-              })   
+            TypedItems() {1
+              if (typeof this.items!== 'undefined') {
+                    return this.items.filter(item => {
+                    return item.level === this.level;
+                })   
+              } else {
+                  return [];
+              }
+            
             }
         }
     };

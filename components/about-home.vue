@@ -51,7 +51,7 @@
         props: {
             title: String,
             description: String,
-            image: String,
+            image: Object,
             subtitle: String
         }
     };

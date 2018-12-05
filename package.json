@@ -30,7 +30,7 @@
     "node-fetch": "^2.3.0",
     "normalize.css": "^8.0.0",
     "npm": "^6.4.1",
-    "nuxt": "^1.0.0",
+    "nuxt": "^2.3.4",
     "nuxt-buefy": "^0.2.3",
     "nuxt-fontawesome": "^0.3.0",
     "nuxt-google-maps-module": "^1.6.0",
