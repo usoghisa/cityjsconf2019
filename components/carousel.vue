@@ -8,7 +8,7 @@
               poster="~/assets/videos/cityjsconf.jpg"
               muted playsinline="" height="100%" aria-labelledby="banner381127-text" autoplay loop>
                 <source src="~/assets/videos/cityjs.mp4" type="video/mp4">
-                <source src="~/assets/videos/cityjsconf.webm" type="video/webm">
+                <source src="~/assets/videos/cityjs.webm" type="video/webm">
                 <!-- <source src="~/assets/videos/cityjsconf.ogv" type="video/ogg"> -->
                 <p>Sorry, your browser doesn't support embedded videos, 
                    but you can 

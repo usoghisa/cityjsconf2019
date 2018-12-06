@@ -53,23 +53,11 @@ module.exports = {
           exclude: /(node_modules)/
         })
       }
-
-      console.log(config);
       
       // if (isClient) {
       //   config.entry.vendor.push('babel-polyfill')
       // }
                
-   
-      // if (!isClient) {
-      //   config.externals.splice(0, 0, function (context, request, callback) {
-      //     if (/^vue2-google-maps($|\/)/.test(request)) {
-      //       callback(null, false)
-      //     } else {
-      //       callback()
-      //     }
-      //   })
-      // }
     },
     postcss: {
       plugins: {

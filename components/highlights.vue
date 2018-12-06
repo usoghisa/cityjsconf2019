@@ -12,7 +12,7 @@
                 <div class='carousel carousel-animated carousel-animate-slide' :data-size="isMobile ? '1' : '3'" data-autoplay="true">
                     <div class='carousel-container'>
                         <div class='carousel-item has-background is-active'
-                            v-for="item in items"
+                            v-for="item in speakers"
                             v-bind:key="item._id"
                         >
                             <a class="speaker" :href="`${item.videoUrl}`">
@@ -61,6 +61,15 @@ export default {
   computed: {
     isMobile () {
         return (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) ? true : false;
+    },
+   speakers () {
+        if (typeof this.items!== 'undefined') {
+         return this.items.filter(item => {
+             return item.year === 2018
+         }); 
+        } else {
+            return [];
+        }
     }
   }
   

@@ -30,7 +30,7 @@
             "app-h2" : h2
         },
         computed: {
-            TypedItems() {1
+            TypedItems() {
               if (typeof this.items!== 'undefined') {
                     return this.items.filter(item => {
                     return item.level === this.level;
