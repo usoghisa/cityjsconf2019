@@ -8,7 +8,6 @@
         >
         </app-h2>
        <div class="row columns"> 
-
             <div 
                 class="column is-one-fourth"  
                 v-for="item in speakers"
@@ -27,7 +26,7 @@
                                             class="speaker"
                                     />
                                 </figure>
-                                <figcaption class="label label-small bg-blue bottom-0 m-3 position-absolute right-0 text-uppercase text-white">
+                                <figcaption class="label label-small bg-blue top-100 m-3 position-absolute right-0 text-uppercase text-white">
                                     {{item.name}}
                                 </figcaption>
                             </div>
@@ -81,9 +80,15 @@ export default {
     }, 
     speakers () {
         if (typeof this.items!== 'undefined') {
-         return this.items.filter(item => {
-             return item.year === 2019
-         }); 
+            let speakers = [];
+            speakers = this.items.filter(item => {
+                return item.year === 2019
+            }); 
+
+           return speakers.sort(function(a, b) {
+                return a.order-b.order
+            });
+
         } else {
             return [];
         }
@@ -107,11 +112,11 @@ export default {
         display: block;
         z-index: 1000;
     
-    .bottom-0
-        bottom: 10px;
+    .top-100
+        top: 20px;
     
     .right-0
-        right: 0px;
+        right: 10px;
 
     .bg-blue
         background: $red;
@@ -140,7 +145,9 @@ export default {
 
     .flip-container, .front, .back
         width: 100%;
-        height: 500px;
+        height: 21vw;
+        +mobile
+            height: 80vw;
 
     /* front pane, placed above back */
     .front
@@ -154,11 +161,18 @@ export default {
     
     .back-logo
         position: absolute;
-        top: 40px;
-        left: 37%;
-        width: 150px;
+        top: 35px;
+        width: 20%;
+        text-align: center;
         height: 150px;
+        left: 35%;
         border-radius: 50%;
+        +mobile
+           margin: 0 auto;
+           top: 0px;
+        +tablet
+            left: 50%;
+            
 
     .back-content
         padding-top: 40px;
@@ -171,5 +185,7 @@ export default {
         text-align: center;
         font-family: Courier;
         font-size: 22px;
+        +mobile
+           top: 100px;
 
 </style>
