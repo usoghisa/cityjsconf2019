@@ -3,7 +3,7 @@
     <div class="testimonials has-text-centered">
         <app-h2
             title="2019 Speakers"
-            subtitle="Take some time to read about our marvelous 2019 speakers"
+            subtitle="Our initial selected speakers, keep sending us your <a href='//www.papercall.io/cityjsconf2019'>talk proposals</a>"
             :is-h2="true"
         >
         </app-h2>
@@ -21,7 +21,7 @@
                                     <img 
                                         v-if="typeof 
                                             item.image!== 'undefined'"  
-                                            width="200" :alt="item.name" 
+                                            width="150" :alt="item.name" 
                                             :src="`//api.spiralthread.com/${item.thumbnail.path}`"
                                             class="speaker"
                                     />
@@ -35,15 +35,15 @@
                                     <img 
                                         v-if="typeof 
                                             item.image!== 'undefined'"  
-                                            width="200" :alt="item.name" 
+                                            :alt="item.name" 
                                             :src="`//api.spiralthread.com/${item.thumbnail.path}`"
                                             class="speaker"
                                     />
                                 </figure>
                                 <div class="back-card content">
                                     <div class="media-content back-content">
-                                        <h2 class="title is-4">{{item.name}}</h2>
-                                        <p><span class="title is-6"><a href="http://twitter.com/${item.twitter}">@{{item.twitter}}</a></span></p>
+                                        <p class="title is-4">{{item.name}}</p>
+                                        <p><span class="title is-6"><a :href="`//twitter.com/${item.twitter}`">@{{item.twitter}}</a></span></p>
                                         <p class="subtitle is-6">{{item.company}}</p>
                                     </div>
                                 </div>
@@ -160,32 +160,33 @@ export default {
         transform: rotateY(180deg);
     
     .back-logo
-        position: absolute;
-        top: 35px;
-        width: 20%;
-        text-align: center;
-        height: 150px;
-        left: 35%;
-        border-radius: 50%;
-        +mobile
-           margin: 0 auto;
-           top: 0px;
-        +tablet
-            left: 50%;
-            
+        width: 30%;
+        height: 30%;
+        img
+            position: absolute;
+            top: 15px;
+            text-align: center;
+            left: 30%;
+            border-radius: 50%;
+            width: 30%;
+            +mobile
+                margin: 0 auto;
+                top: 0px;
 
     .back-content
         padding-top: 40px;
         font-weight: bold;
         color: #00304a;
         position: absolute;
-        top: 180px;
+        top: 5vw;
         left: 0;
         right: 0;
         text-align: center;
         font-family: Courier;
-        font-size: 22px;
+        font-size: 1.1rem;
         +mobile
-           top: 100px;
+           top: 30vw;
+        
+
 
 </style>
