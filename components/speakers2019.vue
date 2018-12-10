@@ -3,7 +3,7 @@
     <div class="testimonials has-text-centered">
         <app-h2
             title="2019 Speakers"
-            subtitle="Our initial selected speakers, keep sending us your <a href='//www.papercall.io/cityjsconf2019'>talk proposals</a>"
+            subtitle="We are excited  to announce our first four selected Speakers, <br/> keep sending us your <a href='//www.papercall.io/cityjsconf2019'>talk proposals</a>"
             :is-h2="true"
         >
         </app-h2>
@@ -178,7 +178,7 @@ export default {
         font-weight: bold;
         color: #00304a;
         position: absolute;
-        top: 5vw;
+        top: 6vw;
         left: 0;
         right: 0;
         text-align: center;
