@@ -12,7 +12,8 @@ const store = () => {
       pages: [],
       faqs: [],
       speakers: [],
-      sponsors: []
+      sponsors: [],
+      schedule: []
     },
     plugins: [
       createPersistedState({
@@ -47,6 +48,9 @@ const store = () => {
       },
       setCurrentPage: (state, page) => {
         state.page = page
+      },
+      setSchedule: (state, schedule) => {
+        state.schedule = schedule
       }
     },
     actions: {
@@ -68,6 +72,11 @@ const store = () => {
       async getSponsors ({commit}) {
         await FetchIt.getAllEntries('partners').then(data => {
           commit('setSponsors', data.entries);
+        });
+      },
+      async getSchedule ({commit}) {
+        await FetchIt.getAllEntries('schedule').then(data => {
+          commit('setSchedule', data.entries);
         });
       },
       async nuxtServerInit ({commit}, {store, isClient, isServer, route, params}) {

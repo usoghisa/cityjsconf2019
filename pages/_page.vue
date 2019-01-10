@@ -47,6 +47,10 @@
               subtitle="At the iconic Curzon Soho Cinema"
             >
             </about-venue>
+            <schedule
+               :items="Schedule"
+            >
+            </schedule>
             <sponsors 
               :items="Sponsors"
               title="Our Sponsors"
@@ -76,6 +80,7 @@
   import speakers2019 from '@/components/speakers2019';
   import sponsors from '@/components/sponsors';
   import venuestatic from '@/components/about-venue';
+  import schedule from '@/components/schedule';
 
   export default {
     components: {
@@ -87,7 +92,8 @@
       'highlights': highlights,
       'speakers2019': speakers2019,
       'sponsors': sponsors,
-      'about-venue': venuestatic
+      'about-venue': venuestatic,
+      'schedule': schedule
     },
     data: () => ({
       pagename: 'Home',
@@ -109,6 +115,7 @@
       this.$store.dispatch('getFaqs');
       this.$store.dispatch('getSpeakers');
       this.$store.dispatch('getSponsors');
+      this.$store.dispatch('getSchedule');
     },
     computed: {
       Pages () {
@@ -122,6 +129,9 @@
       },
       Sponsors () {
         return this.$store.state.sponsors;
+      },
+      Schedule () {
+        return this.$store.state.schedule;
       },
       Page  () {
         let page = this.Pages.filter((page) => {
