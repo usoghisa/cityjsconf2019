@@ -1,18 +1,24 @@
 <template>
     <section class="hero columns">
-      <div class="container"> 
-          {{dates}}
-        <div class="tabs">
-             <ul>
-                <li 
+      <div class="column is-3"> 
+        <aside class="menu">
+            <p class="menu-label">
+                Administration
+            </p>
+            <ul class="menu-list">
+               <li 
                     v-for="(date) in dates"
                     v-bind:key="date"
                     class="is-active">
                     <a v-on:click="select(date.title)">{{date.title}}</a>
                 </li>
             </ul>
-        </div>
+        </aside>
       </div>
+      <div class="column is-3"> 
+          content
+      </div>
+
     </section>
 </template>
 
