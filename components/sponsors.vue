@@ -1,6 +1,6 @@
 <template>
   <div class="sponsors">
-    <section class="hero columns"  :style="style">
+    <section class="hero columns">
       <div class="hero-body">
         <div>
             <app-h2

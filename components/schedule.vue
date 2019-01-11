@@ -1,5 +1,5 @@
 <template>
-    <section class="hero columns"  :style="style">
+    <section class="hero columns">
       <div class="hero-body">
         <div>
             <app-h2
@@ -10,6 +10,7 @@
             </app-h2>
         </div>
       </div>
+          {{Days}}
     </section>
 </template>
 
@@ -24,11 +25,9 @@
             "app-h2" : h2
         },
         computed: {
-            TypedItems() {
+            Days() {
               if (typeof this.items!== 'undefined') {
-                    return this.items.filter(item => {
-                    return item.level === this.level;
-                })   
+                  return [...new Set(this.items.map(date => date.date))];
               } else {
                   return [];
               }
