@@ -1,5 +1,5 @@
 <template>
-    <section class="hero columns">
+    <section class="hero section">
       <div class="hero-body">
         <div>
             <app-h2
@@ -10,17 +10,23 @@
             </app-h2>
         </div>
       </div>
-      <div class="container"> 
-        <div class="tabs">
-            <ul>
-                <li 
-                    v-for="(date, index) in Days"
-                    v-bind:key="date"
-                    class="is-active">
-                    <a v-on:click="select(date)">Day {{index+1}} </a>
-                </li>
-            </ul>
-        </div>
+      <div class="container">
+        <div class="columns">
+            <div class="column is-3">
+            </div>
+            <div class="column is-9">
+                <div class="tabs">
+                    <ul>
+                        <li 
+                            v-for="(date, index) in Days"
+                            v-bind:key="date"
+                            class="is-active">
+                            <a v-on:click="select(date)">Day {{index+1}} </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>      
         <app-day
             :items= 'items'
             :day= 'selectedDate'

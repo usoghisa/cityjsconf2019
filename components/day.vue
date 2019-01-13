@@ -1,24 +1,24 @@
 <template>
-    <section class="hero columns">
+    <section class="section">
+      <div class="container">
+      <div class="columns">
       <div class="column is-3"> 
         <aside class="menu">
-            <p class="menu-label">
-                Administration
-            </p>
             <ul class="menu-list">
                <li 
                     v-for="(date) in dates"
                     v-bind:key="date"
                     class="is-active">
-                    <a v-on:click="select(date.title)">{{date.title}}</a>
+                    <a v-on:click="select(date)">{{date.title}}</a>
                 </li>
             </ul>
         </aside>
       </div>
-      <div class="column is-3"> 
-          content
+      <div class="column is-9"> 
+          {{selectedTalk}}
       </div>
-
+      </div>
+      </div>
     </section>
 </template>
 
@@ -26,6 +26,9 @@
     import h2 from '@/components/h2';
 
     export default {
+        data: {
+            selectedTalk: {}
+        },
         props: {
             items: Array,
             day: String,
@@ -35,7 +38,8 @@
         },
         methods: {
             select: function (date) {
-                alert(date)
+                console.log(date);
+               this.selectedTalk = date;
             }
         },
         computed: {
