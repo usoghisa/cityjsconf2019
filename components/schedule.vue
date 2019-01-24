@@ -43,7 +43,7 @@
     export default {
         data: function() {
             return {
-              selectedDate: {},
+              chosen: ""
             }
         },
         props: {
@@ -55,7 +55,7 @@
         },
         methods: {
             select: function (date) {
-                this.selectedDate = date;
+                this.chosen = date;
             }
         },
         computed: {
@@ -66,6 +66,11 @@
                   return [];
               }
             },
+            selectedDate() {
+                if (typeof this.items!== 'undefined') {
+                    return (this.chosen === '') ? this.items[0].date : this.chosen
+                }
+            }
         }
     };
 </script>

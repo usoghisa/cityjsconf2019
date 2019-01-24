@@ -32,7 +32,7 @@
     export default {
         data: function() {
             return {
-              talk: {}
+              chosen: null
             } 
         },
         props: {
@@ -44,13 +44,23 @@
             "app-talk" : talk
         },
         methods: {
-            select: function (date) {
-               this.talk = date;
+            select: function (talk) {
+               this.chosen = talk;
             }
+        },
+        watch: { 
+                day: function(newVal, oldVal) { // watch it
+                console.log("gel");
+                console.log(newVal);
+                console.log(oldVal);
+                    if (newVal!==oldVal) {
+                        this.chosen = null;
+                    }
+                }
         },
         computed: {
             dates() {
-              if (typeof this.items!== 'undefined') {
+              if (typeof this.items !== 'undefined') {
                     return this.items.filter((date) => {
                         return date.date === this.day;
                     });
@@ -59,12 +69,22 @@
               }
             
             },
+            talk() {
+                if (typeof this.items !== 'undefined') {
+                    const firstDate = this.items.filter((date) => {
+                        return date.date === this.day;
+                    })[0];
+
+                    console.log(firstDate);
+                    console.log(this.chosen);
+
+                    return (this.chosen === null) ? firstDate : this.chosen;
+                }
+            }
         }
     };
 </script>
 
 <style lang="sass" scoped>
   @import '~/assets/css/mq.sass';
-
-
 </style>
