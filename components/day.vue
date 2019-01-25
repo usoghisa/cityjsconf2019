@@ -3,13 +3,20 @@
       <div class="container">
       <div class="columns">
       <div class="column is-3"> 
-        <aside class="menu">
+        <aside class="menu "
+            v-if='group.talks.length > 0'
+            v-for="(group, index) in groups"
+            v-bind:key="index"
+        >
+            <p class="menu-label">
+                {{group.location}}
+            </p>
             <ul class="menulist">
                <li 
-                    v-for="(date, index) in dates"
+                    v-for="(talk, index) in group.talks"
                     v-bind:key="index"
                     class="is-active">
-                    <a v-on:click="select(date)">{{date.time}} <br /> {{date.speaker.display}}</a>
+                    <a v-on:click="select(talk)">{{talk.time}} <br /> {{talk.speaker.display}}</a>
                 </li>
             </ul>
         </aside>
@@ -38,6 +45,7 @@
         props: {
             items: Array,
             day: String,
+            location: String,
         },
         components: {
             "app-h2" : h2,
@@ -59,11 +67,29 @@
                 }
         },
         computed: {
-            dates() {
+            groups() {
               if (typeof this.items !== 'undefined') {
-                    return this.items.filter((date) => {
-                        return date.date === this.day;
-                    });
+                const locations =  [...new Set(this.items.map(talk => talk.location))];
+                
+
+                const talks =  this.items.filter((date) => {
+                    return date.date === this.day;
+                });
+
+                const groups =  locations.map(location => {
+                    return  {
+                            'location': location, 
+                            'talks': talks.filter((talk) => {
+                                if(location === talk.location) {
+                                    return talk;
+                                }
+                             })
+                    }
+                })
+
+                return groups;
+            
+
               } else {
                   return [];
               }
@@ -87,6 +113,14 @@
 
 <style lang="sass" scoped>
   @import '~/assets/css/mq.sass';
+   
+  .menu-label
+    border-bottom: $white;
+    background: $black;
+    color: $white;
+    height: 2.3em;
+    padding: 20px;
+    border-left: 3px solid $white;
 
   .menulist
     li 
@@ -99,5 +133,8 @@
 
     .subtitle
         color: $white
+
+  .footer
+    border-bottom: 20px solid $black;
 
 </style>
