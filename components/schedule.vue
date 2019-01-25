@@ -1,11 +1,12 @@
 <template>
-    <section class="hero section">
+    <section class="hero section schedule">
       <div class="hero-body">
         <div>
             <app-h2
                 title="Schedule"
                 subtitle="3 days of JS Festivities around the center of London"
                 :is-h2="true"
+                :white="true"
             >
             </app-h2>
         </div>
@@ -15,7 +16,7 @@
             <div class="column is-3">
             </div>
             <div class="column is-9">
-                <div class="tabs">
+                <div class="tabs  is-toggle">
                     <ul>
                         <li 
                             v-for="(date, index) in Days"
@@ -77,6 +78,10 @@
 
 <style lang="sass" scoped>
   @import '~/assets/css/mq.sass';
+
+  .schedule
+    background: $red
+    color: $white
 
 
 </style>

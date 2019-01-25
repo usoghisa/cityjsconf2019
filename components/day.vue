@@ -4,12 +4,12 @@
       <div class="columns">
       <div class="column is-3"> 
         <aside class="menu">
-            <ul class="menu-list">
+            <ul class="menulist">
                <li 
                     v-for="(date, index) in dates"
                     v-bind:key="index"
                     class="is-active">
-                    <a v-on:click="select(date)">{{date.title}}</a>
+                    <a v-on:click="select(date)">{{date.time}} <br /> {{date.speaker.display}}</a>
                 </li>
             </ul>
         </aside>
@@ -87,4 +87,17 @@
 
 <style lang="sass" scoped>
   @import '~/assets/css/mq.sass';
+
+  .menulist
+    li 
+        border-left: 3px solid $white;
+        padding-left: 20px;
+        margin-bottom: 10px;
+        min-height: 40px;
+    a
+        color: $white
+
+    .subtitle
+        color: $white
+
 </style>
