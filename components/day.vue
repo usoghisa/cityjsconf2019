@@ -2,9 +2,8 @@
     <section class="section">
       <div class="container">
       <div class="columns">
-      <div class="column is-3"> 
+      <div class="column"> 
         <aside class="menu "
-            v-if='group.talks.length > 0'
             v-for="(group, index) in groups"
             v-bind:key="index"
         >
@@ -16,7 +15,7 @@
                     v-for="(talk, index) in group.talks"
                     v-bind:key="index"
                     class="is-active">
-                    <a v-on:click="select(talk)">{{talk.time}} <br /> {{talk.speaker.display}}</a>
+                    <a v-on:click="select(talk)">{{talk.speaker.display}} <br /> {{talk.time}}  </a>
                 </li>
             </ul>
         </aside>
@@ -58,9 +57,6 @@
         },
         watch: { 
                 day: function(newVal, oldVal) { // watch it
-                console.log("gel");
-                console.log(newVal);
-                console.log(oldVal);
                     if (newVal!==oldVal) {
                         this.chosen = null;
                     }
@@ -69,9 +65,8 @@
         computed: {
             groups() {
               if (typeof this.items !== 'undefined') {
-                const locations =  [...new Set(this.items.map(talk => talk.location))];
+                const locations =  [...new Set(this.items.filter(date => date.date === this.day).map(talk => talk.location))];
                 
-
                 const talks =  this.items.filter((date) => {
                     return date.date === this.day;
                 });
@@ -101,9 +96,6 @@
                         return date.date === this.day;
                     })[0];
 
-                    console.log(firstDate);
-                    console.log(this.chosen);
-
                     return (this.chosen === null) ? firstDate : this.chosen;
                 }
             }
@@ -116,15 +108,16 @@
    
   .menu-label
     border-bottom: $white;
-    background: $black;
+    background: $darkred;
     color: $white;
     height: 2.3em;
-    padding: 20px;
+    padding: 10px 10px 30px 20px;
     border-left: 3px solid $white;
+    font-weight: bold;
 
   .menulist
     li 
-        border-left: 3px solid $white;
+        border-left: 3px solid $gray;
         padding-left: 20px;
         margin-bottom: 10px;
         min-height: 40px;

@@ -13,9 +13,7 @@
       </div>
       <div class="container">
         <div class="columns">
-            <div class="column is-3">
-            </div>
-            <div class="column is-9">
+            <div class="column is-3 is-offset-3">
                 <div class="tabs  is-toggle">
                     <ul>
                         <li 
@@ -28,12 +26,12 @@
                 </div>
             </div>
         </div>      
-        <app-day
+      </div>
+       <app-day
             :items= 'items'
             :day= 'selectedDate'
         >
         </app-day>
-      </div>
     </section>
 </template>
 
