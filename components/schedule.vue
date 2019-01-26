@@ -1,5 +1,5 @@
 <template>
-    <section class="hero section schedule">
+    <section class="hero section schedule ">
       <div class="hero-body">
         <div>
             <app-h2
@@ -11,16 +11,16 @@
             </app-h2>
         </div>
       </div>
-      <div class="container">
+      <div class="container ">
         <div class="columns">
             <div class="column is-3 is-offset-3">
-                <div class="tabs  is-toggle">
-                    <ul>
+                <div class="tabs is-toggle">
+                    <ul class="">
                         <li 
                             v-for="(date, index) in Days"
                             v-bind:key="date"
-                            class="is-active">
-                            <a v-on:click="select(date)">Day {{index+1}} </a>
+                            :class="{'is-active':date === chosen}">
+                            <a v-on:click="select(date)">Day {{index+1}}</a>
                         </li>
                     </ul>
                 </div>
@@ -67,7 +67,11 @@
             },
             selectedDate() {
                 if (typeof this.items!== 'undefined') {
-                    return (this.chosen === '') ? this.items[0].date : this.chosen
+                   if (this.chosen === '') {
+                       this.chosen = this.items[0].date;
+                   }
+
+                   return this.chosen
                 }
             }
         }
@@ -80,6 +84,17 @@
   .schedule
     background: $red
     color: $white
+
+    .tabs
+        li
+          a
+            background-color: transparent;
+            border: none;
+            color: $white;
+          &.is-active 
+            a
+              background-color: #c90000;
+              border: none;
 
 
 </style>

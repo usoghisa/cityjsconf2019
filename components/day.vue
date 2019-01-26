@@ -2,8 +2,8 @@
     <section class="section">
       <div class="container">
       <div class="columns">
-      <div class="column"> 
-        <aside class="menu "
+      <div class="column is-3"> 
+        <aside class="menu"
             v-for="(group, index) in groups"
             v-bind:key="index"
         >
@@ -14,8 +14,16 @@
                <li 
                     v-for="(talk, index) in group.talks"
                     v-bind:key="index"
-                    class="is-active">
-                    <a v-on:click="select(talk)">{{talk.speaker.display}} <br /> {{talk.time}}  </a>
+                   
+                >
+                    <a 
+                        :class="{'is-active':talk === chosen}"
+                        v-on:click="select(talk)"
+                    >
+                        {{talk.speaker.display}} 
+                        <br />
+                        {{talk.time}}  
+                    </a>
                 </li>
             </ul>
         </aside>
@@ -96,7 +104,11 @@
                         return date.date === this.day;
                     })[0];
 
-                    return (this.chosen === null) ? firstDate : this.chosen;
+                    if (this.chosen === null) {
+                        this.chosen = firstDate;
+                    }
+
+                    return this.chosen;
                 }
             }
         }
@@ -105,6 +117,8 @@
 
 <style lang="sass" scoped>
   @import '~/assets/css/mq.sass';
+
+
    
   .menu-label
     border-bottom: $white;
@@ -121,8 +135,11 @@
         padding-left: 20px;
         margin-bottom: 10px;
         min-height: 40px;
-    a
-        color: $white
+        a
+            color: $white;
+            opacity: .6;
+            &.is-active
+                opacity: 1;
 
     .subtitle
         color: $white
