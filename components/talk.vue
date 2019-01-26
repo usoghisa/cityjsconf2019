@@ -58,6 +58,6 @@
     color: $white;
   
   figure
-    padding-right: 10px;
+    padding-right: 20px;
   
 </style>

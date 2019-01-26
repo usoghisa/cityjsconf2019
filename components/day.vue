@@ -2,8 +2,9 @@
     <section class="section">
       <div class="container">
       <div class="columns">
-      <div class="column is-3"> 
-        <aside class="menu"
+      <div class="column is-3 "> 
+        <aside 
+            class="menu"
             v-for="(group, index) in groups"
             v-bind:key="index"
         >
@@ -117,9 +118,10 @@
 
 <style lang="sass" scoped>
   @import '~/assets/css/mq.sass';
+  .menu
+    &:last-child
+        border-bottom: 20px solid $black;
 
-
-   
   .menu-label
     border-bottom: $white;
     background: $darkred;
@@ -143,8 +145,5 @@
 
     .subtitle
         color: $white
-
-  .footer
-    border-bottom: 20px solid $black;
 
 </style>
