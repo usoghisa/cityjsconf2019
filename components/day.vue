@@ -21,8 +21,6 @@
                         :class="{'is-active':talk === chosen}"
                         v-on:click="select(talk)"
                     >
-                        {{talk.speaker.display}} 
-                        <br />
                         {{talk.time}}  
                     </a>
                 </li>

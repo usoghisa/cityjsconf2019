@@ -49,6 +49,7 @@
             </about-venue>
             <schedule
                :items="Schedule"
+               :speakers="Speakers"
             >
             </schedule>
             <sponsors 
@@ -119,6 +120,7 @@
     },
     computed: {
       Pages () {
+         this.$store.state.pages
         return this.$store.state.pages
       },
       Faqs () {

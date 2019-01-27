@@ -1,4 +1,5 @@
 <template>
+
     <div class="columns" v-if="talk">
       <div class="column is-three-quarters">
         <div class="card">
@@ -15,7 +16,11 @@
                         </figure>
                     </div>
                     <div class="column is-4">
-                        <p  class="title is-4">{{talk.speaker.display}}</p>
+                        <p   
+                          v-if="talk.speaker" 
+                          class="title is-4">
+                            {{talk.speaker[0].name}}
+                        </p>
                         <p class="subtitle is-6">@johnsmith</p>
                     </div>
                 </div>

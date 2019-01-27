@@ -29,6 +29,7 @@
       </div>
        <app-day
             :items= 'items'
+            :speakers= 'speakers'
             :day= 'selectedDate'
         >
         </app-day>
@@ -47,6 +48,7 @@
         },
         props: {
             items: Array,
+            speakers: Array,
         },
         components: {
             "app-h2" : h2,
