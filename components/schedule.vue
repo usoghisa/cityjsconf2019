@@ -69,7 +69,7 @@
             },
             selectedDate() {
                 if (typeof this.items!== 'undefined') {
-                   if (this.chosen === '') {
+                   if (this.chosen === '' && this.items.length > 0) {
                        this.chosen = this.items[0].date;
                    }
 

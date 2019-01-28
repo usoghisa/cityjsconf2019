@@ -20,7 +20,19 @@
                     <a 
                         :class="{'is-active':talk === chosen}"
                         v-on:click="select(talk)"
-                    >
+                    >   
+                        <div v-if="talk.type !== 'standard'">
+                            <span
+                                v-for="(speaker, index) in talk.speakers"
+                                v-bind:key="index"
+                                :class="{'is-active':date === chosen}">
+                                {{speaker.display}} <br/>
+                            </span>
+                        </div>
+                        <div v-if="talk.type === 'standard'">
+                          {{talk.title}}
+                        </div>
+                        <br/>
                         {{talk.time}}  
                     </a>
                 </li>

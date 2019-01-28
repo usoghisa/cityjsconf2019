@@ -76,6 +76,7 @@ const store = () => {
       },
       async getSchedule ({commit}) {
         await FetchIt.getAllEntries('schedule').then(data => {
+
           commit('setSchedule', data.entries);
         });
       },

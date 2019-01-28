@@ -5,24 +5,29 @@
         <div class="card">
             <div class="card-content">
                 <div class="columns">
-                    <div class="column is-full">
+                    <div class="column is-3 " v-if="talk.type !== 'standard'">
+                        <figure class="image is-128x128">
+                            <img v-if="talk.image" :src="`//api.spiralthread.com/${talk.image.path}`" alt="Placeholder image">
+                        </figure>
+                  
+                    </div>
+                    <div class="column is-9">
                         <h2>{{talk.title}}</h2>
+                        <h3 
+                          v-if="talk.speaker">
+                             <ul>
+                             <li 
+                                v-for="(speaker, index) in talk.speakers"
+                                v-bind:key="index"
+                                :class="{'is-active':date === chosen}">
+                                {{speaker.display}}
+                             </li>
+                             </ul>
+                        </h3>
                     </div>
                 </div>
                 <div class="columns">
-                    <div class="column is-1">
-                        <figure class="image is-64x64">
-                            <img v-if="talk.image" :src="`//api.spiralthread.com/${talk.image.path}`" alt="Placeholder image">
-                        </figure>
-                    </div>
-                    <div class="column is-4">
-                        <p   
-                          v-if="talk.speaker" 
-                          class="title is-4">
-                            {{talk.speaker[0].name}}
-                        </p>
-                        <p class="subtitle is-6">@johnsmith</p>
-                    </div>
+                   
                 </div>
                 <div class="content" v-html="talk.description" />
             </div>
@@ -65,4 +70,15 @@
   figure
     padding-right: 20px;
   
+  h2
+    font-size: 32px;
+    line-height: 34px;
+    text-transform: unset;
+
+  h3 
+    font-size: 16px;
+    line-height: 16px;
+    padding: 0px;
+    margin: 10px 0px;
+    text-transform: unset;
 </style>

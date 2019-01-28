@@ -7,7 +7,7 @@ class FetchIt {
 
   static getAllEntries(collection) {
 
-    const request = new Request(`//api.spiralthread.com/api/collections/get/${collection}?token=${
+    const request = new Request(`https://api.spiralthread.com/api/collections/get/${collection}?token=${
       process.env.API_KEY
     }`, {
       method: 'POST',
