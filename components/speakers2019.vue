@@ -82,7 +82,7 @@ export default {
         if (typeof this.items!== 'undefined') {
             let speakers = [];
             speakers = this.items.filter(item => {
-                return item.year === 2019
+                return item.year === 2019 && (item.event === 'both' || item.event === 'talk')
             }); 
 
            return speakers.sort(function(a, b) {
