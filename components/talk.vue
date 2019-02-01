@@ -19,7 +19,7 @@
                              <li 
                                 v-for="(speaker, index) in talk.speakers"
                                 v-bind:key="index"
-                                :class="{'is-active':date === chosen}">
+                            >
                                 {{speaker.display}}
                              </li>
                              </ul>

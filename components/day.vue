@@ -23,8 +23,7 @@
                         <div v-if="talk.type !== 'standard'">
                             <span
                                 v-for="(speaker, index) in talk.speakers"
-                                v-bind:key="index"
-                                :class="{'is-active':date === chosen}">
+                                v-bind:key="index">
                                 {{speaker.display}} <br/>
                             </span>
                         </div>
@@ -66,7 +65,8 @@
         data: function() {
             return {
               chosen: null,
-              open: false
+              open: false,
+              date: {}
             } 
         },
         props: {
