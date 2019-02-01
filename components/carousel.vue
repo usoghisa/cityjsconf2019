@@ -27,11 +27,11 @@
               03 May 2019
             </b>
             <br />
-            <a 
+            <!-- <a 
               href="https://www.papercall.io/cityjsconf2019" 
               class="is-info  button info is-rounded">
                  Call For Papers 
-             </a>
+             </a> -->
           </h1>
         </div>
       </div>
