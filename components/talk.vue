@@ -1,7 +1,8 @@
 <template>
-
-    <div class="columns" v-if="talk">
-      <div class="column is-three-quarters">
+    <div :class="['columns talk',  !open?'is-hidden-mobile': '']" 
+        v-if="talk"
+    >
+      <div class="column is-three-quarters is-mobile">
         <div class="card">
             <div class="card-content">
                 <div class="columns">
@@ -9,7 +10,6 @@
                         <figure class="image is-128x128">
                             <img v-if="talk.image" :src="`//api.spiralthread.com/${talk.image.path}`" alt="Placeholder image">
                         </figure>
-                  
                     </div>
                     <div class="column is-9">
                         <h2>{{talk.title}}</h2>
@@ -26,9 +26,6 @@
                         </h3>
                     </div>
                 </div>
-                <div class="columns">
-                   
-                </div>
                 <div class="content" v-html="talk.description" />
             </div>
         </div>
@@ -42,6 +39,7 @@
     export default {
         props: {
             talk: Object,
+            open: Boolean
         },
         components: {
             "app-h2" : h2
@@ -59,7 +57,11 @@
     box-shadow: none;
   
   .card-content
-    padding: 0px;
+    padding: 5px;
+    +mobile
+        overflow-y: scroll;
+        height: 170vw;
+
 
   .title
     color: $white;
@@ -81,4 +83,17 @@
     padding: 0px;
     margin: 10px 0px;
     text-transform: unset;
+
+  .talk
+    +mobile
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        background: $darkred;
+        z-index: 1000;
+        width: 100%;
+        min-height: 200vw;
+        overflow-y: scroll;
+
+  
 </style>

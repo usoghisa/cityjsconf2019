@@ -48,6 +48,7 @@
             >
             </about-venue>
             <schedule
+                v-if="Page.url === 'home' || Page.url === 'workshops' || Page.url === 'speakers'"
                :items="Schedule"
                :speakers="Speakers"
             >

@@ -1,38 +1,40 @@
 <template>
     <section class="hero section schedule ">
-      <div class="hero-body">
-        <div>
-            <app-h2
-                title="Schedule"
-                subtitle="3 days of JS Festivities around the center of London"
-                :is-h2="true"
-                :white="true"
-            >
-            </app-h2>
-        </div>
-      </div>
-      <div class="container ">
-        <div class="columns">
-            <div class="column is-3 is-offset-3">
-                <div class="tabs is-toggle">
-                    <ul class="">
-                        <li 
-                            v-for="(date, index) in Days"
-                            v-bind:key="date"
-                            :class="{'is-active':date === chosen}">
-                            <a v-on:click="select(date)">Day {{index+1}}</a>
-                        </li>
-                    </ul>
+        <div class="container">
+            <div class="hero-body">
+                <div>
+                    <app-h2
+                        title="Schedule"
+                        subtitle="3 days of JS Festivities around the center of London"
+                        :is-h2="true"
+                        :white="true"
+                    >
+                    </app-h2>
                 </div>
             </div>
-        </div>      
-      </div>
-       <app-day
-            :items= 'items'
-            :speakers= 'speakers'
-            :day= 'selectedDate'
-        >
-        </app-day>
+            <div class="daybyday">
+                <div class="columns">
+                    <div class="column is-3 is-offset-3">
+                        <div class="tabs is-toggle">
+                            <ul class="">
+                                <li 
+                                    v-for="(date, index) in Days"
+                                    v-bind:key="date"
+                                    :class="{'is-active':date === chosen}">
+                                    <a v-on:click="select(date)">Day {{index+1}}</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>      
+            </div>
+            <app-day
+                    :items= 'items'
+                    :speakers= 'speakers'
+                    :day= 'selectedDate'
+                >
+            </app-day>
+        </div>
     </section>
 </template>
 
@@ -84,8 +86,8 @@
   @import '~/assets/css/mq.sass';
 
   .schedule
-    background: $red
-    color: $white
+    background: $red;
+    color: $white;
 
     .tabs
         li

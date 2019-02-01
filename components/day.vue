@@ -1,6 +1,6 @@
 <template>
     <section class="section">
-      <div class="container">
+      <div class="">
       <div class="columns">
       <div class="column is-3 "> 
         <aside 
@@ -15,7 +15,6 @@
                <li 
                     v-for="(talk, index) in group.talks"
                     v-bind:key="index"
-                   
                 >
                     <a 
                         :class="{'is-active':talk === chosen}"
@@ -39,9 +38,18 @@
             </ul>
         </aside>
       </div>
-      <div class="column is-9"> 
+      <div class="column is-9 scheduletlk"> 
+        <a 
+            :class="['button  close closebtn', {'closed':open === false}]"
+            v-on:click="close()"
+        >
+            <span class="icon is-small">
+                X
+            </span>
+        </a>
         <app-talk
             :talk= 'talk'
+            :open='open'
         >
         </app-talk>
       </div>
@@ -57,7 +65,8 @@
     export default {
         data: function() {
             return {
-              chosen: null
+              chosen: null,
+              open: false
             } 
         },
         props: {
@@ -72,6 +81,10 @@
         methods: {
             select: function (talk) {
                this.chosen = talk;
+               this.open = !this.open;
+            }, 
+            close: function () {
+                this.open = !this.open;
             }
         },
         watch: { 
@@ -88,6 +101,8 @@
                 
                 const talks =  this.items.filter((date) => {
                     return date.date === this.day;
+                }).sort(function(a, b) {
+                    return a.order-b.order
                 });
 
                 const groups =  locations.map(location => {
@@ -140,6 +155,26 @@
     padding: 10px 10px 30px 20px;
     border-left: 3px solid $white;
     font-weight: bold;
+  
+  .scheduletlk
+    +mobile
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        z-index: 10000;
+    .close
+        position: absolute;
+        top: 0px;
+        right: 20px;
+        display: none;
+        z-index: 1000000;
+        +mobile
+            background-color: transparent;
+            color: $white;
+            display: block
+    .closed
+        display: none;
 
   .menulist
     li 
