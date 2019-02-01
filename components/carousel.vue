@@ -5,14 +5,14 @@
           <div class="video_shader"></div>
           <div class="video_contain">
            <video class="video-player" id="background" preload="auto" width="100%"
-              poster="~/assets/videos/cityjsconf.jpg"
+              poster="/videos/cityjsconf.jpg"
               muted playsinline="" height="100%" aria-labelledby="banner381127-text" autoplay loop>
-                <source src="~/assets/videos/cityjsconf.mp4" type="video/mp4">
-                <source src="~/assets/videos/cityjsconf.webm" type="video/webm">
+                <source src="/videos/cityjs.mp4" type="video/mp4">
+                <source src="/videos/cityjs.webm" type="video/webm">
                 <!-- <source src="~/assets/videos/cityjsconf.ogv" type="video/ogg"> -->
                 <p>Sorry, your browser doesn't support embedded videos, 
                    but you can 
-                   <a href="~/assets/videos/cityjsconf.mp4">download it</a>
+                   <a href="/videos/cityjs.mp4">download it</a>
                     and watch it with your favorite video player
                 </p>
             </video>
@@ -27,11 +27,11 @@
               03 May 2019
             </b>
             <br />
-            <a 
+            <!-- <a 
               href="https://www.papercall.io/cityjsconf2019" 
               class="is-info  button info is-rounded">
                  Call For Papers 
-             </a>
+             </a> -->
           </h1>
         </div>
       </div>
@@ -44,7 +44,7 @@
 export default {
   props: {
     slides: {
-      type: Array
+      type: String
     }
   },
   components: {}

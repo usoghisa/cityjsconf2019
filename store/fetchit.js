@@ -7,11 +7,15 @@ class FetchIt {
 
   static getAllEntries(collection) {
 
-    const request = new Request(`//api.spiralthread.com/api/collections/get/${collection}?token=${
+    const request = new Request(`https://api.spiralthread.com/api/collections/get/${collection}?token=${
       process.env.API_KEY
     }`, {
-    method: 'GET',
-    mode: 'cors',
+      method: 'POST',
+      mode: 'cors',
+      headers: { 'Content-Type': 'application/json' },
+    //   body:JSON.stringify({
+    //     populate: 1, // resolve linked collection items
+    //  })
     });
 
 

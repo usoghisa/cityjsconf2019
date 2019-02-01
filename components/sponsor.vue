@@ -31,9 +31,14 @@
         },
         computed: {
             TypedItems() {
-              return this.items.filter(item => {
-                return item.level === this.level;
-              })   
+              if (typeof this.items!== 'undefined') {
+                    return this.items.filter(item => {
+                    return item.level === this.level;
+                })   
+              } else {
+                  return [];
+              }
+            
             }
         }
     };

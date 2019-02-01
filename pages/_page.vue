@@ -31,17 +31,28 @@
               :image='Page.image'
             >
             </page>
-            <speakers 
+             <speakers2019 
               :items="Speakers"
                v-if="Page.url === 'speakers' || Page.url === 'home'"
             >
-            </speakers>
+            </speakers2019>
+             <highlights 
+              :items="Speakers"
+               v-if="Page.url === 'speakers'"
+            >
+            </highlights>
             <about-venue
               v-if="Page.url === 'home'"
               title="At the heart of London"
               subtitle="At the iconic Curzon Soho Cinema"
             >
             </about-venue>
+            <schedule
+                v-if="Page.url === 'home' || Page.url === 'workshops' || Page.url === 'speakers'"
+               :items="Schedule"
+               :speakers="Speakers"
+            >
+            </schedule>
             <sponsors 
               :items="Sponsors"
               title="Our Sponsors"
@@ -67,9 +78,11 @@
   import page from '@/components/page';
   import carousel from '@/components/carousel';
   import faq from '@/components/faq';
-  import speakers from '@/components/speakers';
+  import highlights from '@/components/highlights';
+  import speakers2019 from '@/components/speakers2019';
   import sponsors from '@/components/sponsors';
   import venuestatic from '@/components/about-venue';
+  import schedule from '@/components/schedule';
 
   export default {
     components: {
@@ -78,9 +91,11 @@
       'page': page,
       'carousel': carousel,
       'faq': faq, 
-      'speakers': speakers,
+      'highlights': highlights,
+      'speakers2019': speakers2019,
       'sponsors': sponsors,
-      'about-venue': venuestatic
+      'about-venue': venuestatic,
+      'schedule': schedule
     },
     data: () => ({
       pagename: 'Home',
@@ -102,9 +117,11 @@
       this.$store.dispatch('getFaqs');
       this.$store.dispatch('getSpeakers');
       this.$store.dispatch('getSponsors');
+      this.$store.dispatch('getSchedule');
     },
     computed: {
       Pages () {
+         this.$store.state.pages
         return this.$store.state.pages
       },
       Faqs () {
@@ -115,6 +132,9 @@
       },
       Sponsors () {
         return this.$store.state.sponsors;
+      },
+      Schedule () {
+        return this.$store.state.schedule;
       },
       Page  () {
         let page = this.Pages.filter((page) => {

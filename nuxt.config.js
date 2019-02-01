@@ -44,8 +44,8 @@ module.exports = {
     /*
     ** Run ESLint on save
     */
-    extend (config, { isDev, isClient }) {
-      if (isDev && isClient) {
+    extend (config, { isClient, loaders: { vue } }) {
+      if (config.dev && isClient) {
         config.module.rules.push({
           enforce: 'pre',
           test: /\.(js|vue)$/,
@@ -54,20 +54,10 @@ module.exports = {
         })
       }
       
-      if (isClient) {
-        config.entry.vendor.push('babel-polyfill')
-      }
+      // if (isClient) {
+      //   config.entry.vendor.push('babel-polyfill')
+      // }
                
-   
-      if (!isClient) {
-        config.externals.splice(0, 0, function (context, request, callback) {
-          if (/^vue2-google-maps($|\/)/.test(request)) {
-            callback(null, false)
-          } else {
-            callback()
-          }
-        })
-      }
     },
     postcss: {
       plugins: {
@@ -79,7 +69,7 @@ module.exports = {
     { src: '~plugins/vcarousel', ssr: false },
     { src: '~plugins/gmaps', ssr: false },
     { src: '~plugins/scroll', ssr: false },
-    { src: '~plugins/ga', ssr: false },
+  // { src: '~plugins/ga', ssr: false },
   ],
   modules: [
     '@nuxtjs/dotenv', 

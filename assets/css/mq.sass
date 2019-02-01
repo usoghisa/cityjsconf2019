@@ -18,6 +18,7 @@ $gray: #333;
 $midgray: #ccc;
 $lightgray: #f8f9fa;
 $grayins: #DDDEE2;
+$darkred: #c90000
 
 h2 
   font-size: 35px;
@@ -66,3 +67,9 @@ h3
   right: $right
   bottom: $bottom
   left: $left
+
+@mixin per($val)
+  -webkit-perspective: $val; 
+  -moz-perspective: $val; 
+  -ms-perspective: $val; 
+  perspective: $val;
