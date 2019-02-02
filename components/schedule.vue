@@ -15,7 +15,7 @@
             <div class="daybyday">
                 <div class="columns">
                     <div class="column is-3 is-offset-3">
-                        <div class="tabs is-toggle">
+                        <div class="tabs is-toggle is-centered">
                             <ul class="">
                                 <li 
                                     v-for="(date, index) in Days"
