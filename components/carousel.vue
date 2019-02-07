@@ -22,7 +22,7 @@
         <div class="column is-two-thirds  is-4 is-offset-4">
           <h1><b>City of London JavaScript Conference
               <br/>
-              CityJSConf
+              CityJS Conference
               <br/>
               03 May 2019
             </b>

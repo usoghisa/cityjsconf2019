@@ -14,7 +14,7 @@ module.exports = {
     baseUrl: process.env.BASE_URL || 'http://localhost:3000'
   },
   head: {
-    title: 'CityJSConf 2019',
+    title: 'CityJS Conference 2019 - London, UK',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },

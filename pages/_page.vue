@@ -109,7 +109,7 @@
     },
     head () {
       return {
-        title: 'CityJSConf 2019'
+        title: 'CityJS Conference 2019, London UK'
       }
     },
     created () {

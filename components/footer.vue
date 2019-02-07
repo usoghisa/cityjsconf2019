@@ -3,7 +3,7 @@
       <div class="container">
         <div class="columns">
           <div class="column">
-            <p>CityJSConf, a community conference run by the Community</p>
+            <p>CityJS Conference, a community conference run by the Community</p>
           </div>
           <div class="column has-text-right">
             <a class="icon" href="https://twitter.com/cityjsconf"><i class="fa fa-twitter"></i></a>
