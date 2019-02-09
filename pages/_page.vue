@@ -69,6 +69,7 @@
       </div>
     </section> 
     </div>
+    <app-footer v-if="Page" />
   </div>
 </template>
 
@@ -83,6 +84,7 @@
   import sponsors from '@/components/sponsors';
   import venuestatic from '@/components/about-venue';
   import schedule from '@/components/schedule';
+  import appFooter from '@/components/footer';
 
   export default {
     components: {
@@ -95,7 +97,8 @@
       'speakers2019': speakers2019,
       'sponsors': sponsors,
       'about-venue': venuestatic,
-      'schedule': schedule
+      'schedule': schedule,
+      'app-footer': appFooter
     },
     data: () => ({
       pagename: 'Home',
