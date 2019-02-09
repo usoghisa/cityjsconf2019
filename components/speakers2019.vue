@@ -3,7 +3,7 @@
     <div class="testimonials has-text-centered">
         <app-h2
             title="2019 Speakers"
-            subtitle="We are excited  to announce our first four selected Speakers, <br/> keep sending us your <a href='//www.papercall.io/cityjsconf2019'>talk proposals</a>"
+            subtitle="We are excited  to announce our first four selected Speakers"
             :is-h2="true"
         >
         </app-h2>

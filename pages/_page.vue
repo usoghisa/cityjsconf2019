@@ -36,6 +36,11 @@
                v-if="Page.url === 'speakers' || Page.url === 'home'"
             >
             </speakers2019>
+             <app-talks 
+              :items="Speakers"
+               v-if="Page.url === 'speakers' || Page.url === 'home'"
+            >
+            </app-talks>
              <highlights 
               :items="Speakers"
                v-if="Page.url === 'speakers'"
@@ -85,6 +90,8 @@
   import venuestatic from '@/components/about-venue';
   import schedule from '@/components/schedule';
   import appFooter from '@/components/footer';
+  import appTalks from '@/components/talks';
+
 
   export default {
     components: {
@@ -98,7 +105,8 @@
       'sponsors': sponsors,
       'about-venue': venuestatic,
       'schedule': schedule,
-      'app-footer': appFooter
+      'app-footer': appFooter,
+      'app-talks': appTalks
     },
     data: () => ({
       pagename: 'Home',
