@@ -4,22 +4,23 @@
     <div class="testimonials is-text ">
         <app-h2
             title="2019 Talks"
-            subtitle="We are excited  to announce our first four selected Speakers, <br/> keep sending us your <a href='//www.papercall.io/cityjsconf2019'>talk proposals</a>"
+            subtitle="We are excited  to announce our talks for this year"
             :is-h2="true"
         >
         </app-h2>
        <div class="columns "> 
            <div class="column is-4">
-            <div 
-                class=""  
-                v-for="item in speakers"
-                v-bind:key="item._id"
+            <ul class="menulist"
             >
+                <li 
+                     v-for="item in speakers"
+                    v-bind:key="item._id"
+                >
                 <a 
                     v-on:click="select(item)"
                     :class="{'is-active':talk === chosen}"
                 >
-                    <div class="card">
+                    <div class="">
                         <div class="card-content">
                             <div class="media">
                                 <div class="media-left">
@@ -47,7 +48,8 @@
                         </div>
                     </div>
                 </a>
-            </div>
+                </li>
+            </ul>
            </div>
            <div class="column" v-if="this.chosen">
                 <div class="card">
@@ -150,5 +152,11 @@ export default {
 <style lang="sass" scoped>
     @import '~/assets/css/mq.sass';
 
-   
+    img
+        text-align: center;
+        left: 30%;
+        border-radius: 50%;
+        +mobile
+            margin: 0 auto;
+            top: 0px;
 </style>
