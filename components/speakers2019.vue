@@ -31,22 +31,34 @@
                                 </figcaption>
                             </div>
                             <div class="back">
-                                 <figure class="back-logo">
-                                    <img 
-                                        v-if="typeof 
-                                            item.image!== 'undefined'"  
-                                            :alt="item.name" 
-                                            :src="`//api.spiralthread.com/${item.thumbnail.path}`"
-                                            class="speaker"
-                                    />
-                                </figure>
-                                <div class="back-card content">
-                                    <div class="media-content back-content">
-                                        <p class="title is-4">{{item.name}}</p>
-                                        <p><span class="title is-6"><a :href="`//twitter.com/${item.twitter}`">@{{item.twitter}}</a></span></p>
-                                        <p class="subtitle is-6">{{item.company}}</p>
-                                    </div>
+                                   <div class="card-content">
+                            <div class="media">
+                                <div class="media-left">
+                                    <figure class="image is-64x64">
+                                            <img 
+                                                v-if="typeof 
+                                                item.image!== 'undefined'"  
+                                                :alt="item.name" 
+                                                :src="`//api.spiralthread.com/${item.thumbnail.path}`"
+                                                class="speaker"
+                                            />
+                                    </figure>
                                 </div>
+                                <div class="media-right">
+                                      <p class="title is-4">{{item.name}} <br/>
+                                                <span class="title is-6">
+                                                    <a :href="`//twitter.com/${item.twitter}`">
+                                                        @{{item.twitter}} <br/>
+                                                    </a> {{item.company}}
+                                                </span>
+                                        
+                                            </p>
+                                </div>
+                            </div>
+                            <div class="back-content">
+                                <div v-html="item.bio" />
+                                </div>
+                            </div>
                             </div>
                         </div>
                     </div>
@@ -113,7 +125,7 @@ export default {
         z-index: 1000;
     
     .top-100
-        top: 20px;
+        top: 10px;
     
     .right-0
         right: 10px;
@@ -164,7 +176,7 @@ export default {
         height: 30%;
         img
             position: absolute;
-            top: 15px;
+            top: 0px;
             text-align: center;
             left: 30%;
             border-radius: 50%;
@@ -174,19 +186,9 @@ export default {
                 top: 0px;
 
     .back-content
-        padding-top: 40px;
-        font-weight: bold;
-        color: #00304a;
-        position: absolute;
-        top: 6vw;
-        left: 0;
-        right: 0;
-        text-align: center;
-        font-family: Courier;
-        font-size: 1.1rem;
+        font-size: 1rem;
+        text-align: left;
         +mobile
-           top: 30vw;
-        
-
+            font-size: 0.55rem;
 
 </style>
