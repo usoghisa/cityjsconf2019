@@ -18,12 +18,12 @@ workbox.precaching.precacheAndRoute([
     "revision": "654572edf4c1b8729629a8302787936d"
   },
   {
-    "url": "/_nuxt/b39f9ef856533888f2b3.js",
-    "revision": "b4c97ff36b6d361ca0b6d722dd925058"
+    "url": "/_nuxt/adbb527c9071de37bb2f.js",
+    "revision": "c7d6a8283b4f2f0554a58761c7648d8b"
   },
   {
-    "url": "/_nuxt/c8db76ad5f96ac958325.js",
-    "revision": "ed83d55e4a46ed719648cc57b57197a0"
+    "url": "/_nuxt/b39f9ef856533888f2b3.js",
+    "revision": "b4c97ff36b6d361ca0b6d722dd925058"
   }
 ], {
   "cacheId": "cityjsconf",
