@@ -3,13 +3,13 @@
     <div class="testimonials has-text-centered">
         <app-h2
             title="2019 Speakers"
-            subtitle="We are excited  to announce our first four selected Speakers"
+            subtitle="We are excited  to announce our selected Speakers <br/> for more information check our <a href='/speakers'>speakers</a> section"
             :is-h2="true"
         >
         </app-h2>
-       <div class="row columns"> 
+       <div class="row columns is-mobile is-multiline"> 
             <div 
-                class="column is-one-fourth"  
+                class="column is-one-third-widescreen is-one-quarter-fullhd is-full-mobile"  
                 v-for="item in speakers"
                 v-bind:key="item._id"
             >

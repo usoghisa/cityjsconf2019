@@ -22,6 +22,7 @@
               v-if="Page.url === 'home'"
             >
             </carousel>
+            
             <page
               :title='Page.title'
               :subtitle='Page.subtitle'
@@ -31,9 +32,14 @@
               :image='Page.image'
             >
             </page>
+            <speakers2019
+               :items="Speakers"
+                v-if="Page.url === 'home'"
+            >
+            </speakers2019>
              <app-talks 
               :items="Speakers"
-               v-if="Page.url === 'speakers' || Page.url === 'home'"
+               v-if="Page.url === 'speakers'"
             >
             </app-talks>
              <highlights 
@@ -63,8 +69,7 @@
               :items="Faqs"
                v-if="Page.url === 'about' || Page.url === 'home'"
             >
-            </faq>
-            
+            </faq>            
         </div>
       </div>
     </section> 
@@ -86,7 +91,7 @@
   import schedule from '@/components/schedule';
   import appFooter from '@/components/footer';
   import appTalks from '@/components/talks';
-
+  import payments from '@/components/payments';
 
   export default {
     components: {
@@ -101,7 +106,8 @@
       'about-venue': venuestatic,
       'schedule': schedule,
       'app-footer': appFooter,
-      'app-talks': appTalks
+      'app-talks': appTalks,
+      'payments': payments
     },
     data: () => ({
       pagename: 'Home',
