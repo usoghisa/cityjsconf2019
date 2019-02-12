@@ -94,7 +94,7 @@ export default {
         if (typeof this.items!== 'undefined') {
             let speakers = [];
             speakers = this.items.filter(item => {
-                return (item.year === 2019 || item.year === 2020) && (item.event === 'both' || item.event === 'talk')
+                return (item.year === 2019 || item.year === 2020)
             }); 
 
            return speakers.sort(function(a, b) {
