@@ -3,13 +3,13 @@
     <div class="testimonials has-text-centered">
         <app-h2
             title="2019 Speakers"
-            subtitle="We are excited  to announce our first four selected Speakers, <br/> keep sending us your <a href='//www.papercall.io/cityjsconf2019'>talk proposals</a>"
+            subtitle="We are excited  to announce our selected Speakers <br/> for more information check our <a href='/speakers'>speakers</a> section"
             :is-h2="true"
         >
         </app-h2>
-       <div class="row columns"> 
+       <div class="row columns is-mobile is-multiline"> 
             <div 
-                class="column is-one-fourth"  
+                class="column is-one-quarter-desktop is-full-mobile"  
                 v-for="item in speakers"
                 v-bind:key="item._id"
             >
@@ -45,7 +45,10 @@
                                         <p class="title is-4">{{item.name}}</p>
                                         <p><span class="title is-6"><a :href="`//twitter.com/${item.twitter}`">@{{item.twitter}}</a></span></p>
                                         <p class="subtitle is-6">{{item.company}}</p>
+                                        <p v-html="item.title" />
+                                        <a href="/speakers"> Read more </a>
                                     </div>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -82,7 +85,7 @@ export default {
         if (typeof this.items!== 'undefined') {
             let speakers = [];
             speakers = this.items.filter(item => {
-                return item.year === 2019 && (item.event === 'both' || item.event === 'talk')
+                return (item.year === 2019)
             }); 
 
            return speakers.sort(function(a, b) {
@@ -113,7 +116,7 @@ export default {
         z-index: 1000;
     
     .top-100
-        top: 20px;
+        top: 10px;
     
     .right-0
         right: 10px;
@@ -164,9 +167,24 @@ export default {
         height: 30%;
         img
             position: absolute;
+            top: 0px;
+            text-align: center;
+            eft: 35%;
+            border-radius: 50%;
+            width: 30%;
+            +mobile
+                margin: 0 auto;
+                top: 0px;
+
+    
+    .back-logo
+        width: 30%;
+        height: 30%;
+        img
+            position: absolute;
             top: 15px;
             text-align: center;
-            left: 30%;
+            left: 35%;
             border-radius: 50%;
             width: 30%;
             +mobile
@@ -183,10 +201,8 @@ export default {
         right: 0;
         text-align: center;
         font-family: Courier;
-        font-size: 1.1rem;
+        font-size: 0.75rem;
         +mobile
-           top: 30vw;
-        
-
-
+           font-size: 0.70rem;
+           top: 16vw;
 </style>

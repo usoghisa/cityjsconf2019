@@ -2,11 +2,10 @@
   <div class="main">
     <!-- Mount the page content here -->
     <nuxt/>
-    <app-footer />
   </div>
 </template>
 <script>
-import appFooter from '@/components/footer';
+
 
 export default {
   head: {
@@ -20,9 +19,6 @@ export default {
      { rel: 'stylesheet', href: '//fonts.googleapis.com/css?family=Open+Sans:400,300,700,800' }
     ]
   },
-  components: {
-    'app-footer': appFooter
-  }
 }
 </script>
 

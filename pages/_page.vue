@@ -31,11 +31,16 @@
               :image='Page.image'
             >
             </page>
-             <speakers2019 
-              :items="Speakers"
-               v-if="Page.url === 'speakers' || Page.url === 'home'"
+            <speakers2019
+               :items="Speakers"
+                v-if="Page.url === 'home'"
             >
             </speakers2019>
+             <app-talks 
+              :items="Speakers"
+               v-if="Page.url === 'speakers'"
+            >
+            </app-talks>
              <highlights 
               :items="Speakers"
                v-if="Page.url === 'speakers'"
@@ -63,12 +68,12 @@
               :items="Faqs"
                v-if="Page.url === 'about' || Page.url === 'home'"
             >
-            </faq>
-            
+            </faq>            
         </div>
       </div>
     </section> 
     </div>
+    <app-footer v-if="Page" />
   </div>
 </template>
 
@@ -83,6 +88,9 @@
   import sponsors from '@/components/sponsors';
   import venuestatic from '@/components/about-venue';
   import schedule from '@/components/schedule';
+  import appFooter from '@/components/footer';
+  import appTalks from '@/components/talks';
+  import payments from '@/components/payments';
 
   export default {
     components: {
@@ -95,7 +103,10 @@
       'speakers2019': speakers2019,
       'sponsors': sponsors,
       'about-venue': venuestatic,
-      'schedule': schedule
+      'schedule': schedule,
+      'app-footer': appFooter,
+      'app-talks': appTalks,
+      'payments': payments
     },
     data: () => ({
       pagename: 'Home',
@@ -109,7 +120,7 @@
     },
     head () {
       return {
-        title: 'CityJSConf 2019'
+        title: 'CityJS Conference 2019, London UK'
       }
     },
     created () {

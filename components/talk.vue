@@ -26,7 +26,7 @@
                         </h3>
                     </div>
                 </div>
-                <div class="content" v-html="talk.description" />
+                <div v-html="talk.description" />
             </div>
         </div>
     </div>
@@ -76,6 +76,7 @@
     font-size: 32px;
     line-height: 34px;
     text-transform: unset;
+    color: $white;
 
   h3 
     font-size: 16px;
@@ -83,6 +84,10 @@
     padding: 0px;
     margin: 10px 0px;
     text-transform: unset;
+    color: $white;
+
+  strong
+    color: $white;
 
   .talk
     +mobile

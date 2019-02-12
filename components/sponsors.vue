@@ -5,7 +5,7 @@
         <div>
             <app-h2
                 title="Our Sponsors"
-                subtitle="CITYJSCONF WOULDN'T BE POSSIBLE WITHOUT OUR AMAZING SPONSORS"
+                subtitle="CITYJS CONFERENCE WOULDN'T BE POSSIBLE WITHOUT OUR AMAZING SPONSORS"
                 :is-h2="true"
             >
             </app-h2>
