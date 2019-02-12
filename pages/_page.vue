@@ -31,11 +31,6 @@
               :image='Page.image'
             >
             </page>
-             <speakers2019 
-              :items="Speakers"
-               v-if="Page.url === 'speakers' || Page.url === 'home'"
-            >
-            </speakers2019>
              <app-talks 
               :items="Speakers"
                v-if="Page.url === 'speakers' || Page.url === 'home'"
