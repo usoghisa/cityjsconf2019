@@ -22,7 +22,6 @@
               v-if="Page.url === 'home'"
             >
             </carousel>
-            
             <page
               :title='Page.title'
               :subtitle='Page.subtitle'

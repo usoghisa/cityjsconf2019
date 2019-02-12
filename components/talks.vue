@@ -15,10 +15,6 @@
                 v-for="item in speakers"
                 v-bind:key="item._id"
            >
-                <a 
-                    v-on:click="select(item)"
-                    :class="{'is-active':talk === chosen}"
-                >
                     <div class="">
                         <div class="card-content">
                             <div class="media">
@@ -45,14 +41,16 @@
                                 
                                     </p>
                                     <p class="subtitle is-6">{{item.title}}</p>
+                                     <a 
+                                        v-on:click="select(item)"
+                                    >
+                                        Read more
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </a>
            </div>
-
-           
            <div 
                 :class="['column spekers-card-container modal-background', {'closed':open === false}]" 
                 v-if="this.chosen"
@@ -142,7 +140,7 @@ export default {
         if (typeof this.items!== 'undefined') {
             let speakers = [];
             speakers = this.items.filter(item => {
-                return (item.year === 2019 ||  item.year === 2020) && (item.event === 'both' || item.event === 'talk')
+                return (item.year === 2019) && (item.event === 'both' || item.event === 'talk')
             }); 
 
             this.chosen = speakers[0];
@@ -189,12 +187,13 @@ export default {
             top: 20%;
             left: 35%;
             width: 40%;
+            height: 470px;
             display: block;
             +mobile
              top: 0px;
              left: 0px;
              width: 100%;
-             min-height: 200vw;
+             min-height: 230vw;
             .closebtn
                 display: block;
                 position: absolute;

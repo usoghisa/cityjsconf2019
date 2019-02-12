@@ -9,7 +9,7 @@
         </app-h2>
        <div class="row columns is-mobile is-multiline"> 
             <div 
-                class="column is-one-third-widescreen is-one-quarter-fullhd is-full-mobile"  
+                class="column is-one-quarter-desktop is-full-mobile"  
                 v-for="item in speakers"
                 v-bind:key="item._id"
             >
@@ -31,34 +31,25 @@
                                 </figcaption>
                             </div>
                             <div class="back">
-                                   <div class="card-content">
-                            <div class="media">
-                                <div class="media-left">
-                                    <figure class="image is-64x64">
-                                            <img 
-                                                v-if="typeof 
-                                                item.image!== 'undefined'"  
-                                                :alt="item.name" 
-                                                :src="`//api.spiralthread.com/${item.thumbnail.path}`"
-                                                class="speaker"
-                                            />
-                                    </figure>
+                                 <figure class="back-logo">
+                                    <img 
+                                        v-if="typeof 
+                                            item.image!== 'undefined'"  
+                                            :alt="item.name" 
+                                            :src="`//api.spiralthread.com/${item.thumbnail.path}`"
+                                            class="speaker"
+                                    />
+                                </figure>
+                                <div class="back-card content">
+                                    <div class="media-content back-content">
+                                        <p class="title is-4">{{item.name}}</p>
+                                        <p><span class="title is-6"><a :href="`//twitter.com/${item.twitter}`">@{{item.twitter}}</a></span></p>
+                                        <p class="subtitle is-6">{{item.company}}</p>
+                                        <p v-html="item.title" />
+                                        <a href="/speakers"> Read more </a>
+                                    </div>
+                                    
                                 </div>
-                                <div class="media-right">
-                                      <p class="title is-4">{{item.name}} <br/>
-                                                <span class="title is-6">
-                                                    <a :href="`//twitter.com/${item.twitter}`">
-                                                        @{{item.twitter}} <br/>
-                                                    </a> {{item.company}}
-                                                </span>
-                                        
-                                            </p>
-                                </div>
-                            </div>
-                            <div class="back-content">
-                                <div v-html="item.bio" />
-                                </div>
-                            </div>
                             </div>
                         </div>
                     </div>
@@ -94,7 +85,7 @@ export default {
         if (typeof this.items!== 'undefined') {
             let speakers = [];
             speakers = this.items.filter(item => {
-                return (item.year === 2019 || item.year === 2020)
+                return (item.year === 2019)
             }); 
 
            return speakers.sort(function(a, b) {
@@ -178,7 +169,22 @@ export default {
             position: absolute;
             top: 0px;
             text-align: center;
-            left: 30%;
+            eft: 35%;
+            border-radius: 50%;
+            width: 30%;
+            +mobile
+                margin: 0 auto;
+                top: 0px;
+
+    
+    .back-logo
+        width: 30%;
+        height: 30%;
+        img
+            position: absolute;
+            top: 15px;
+            text-align: center;
+            left: 35%;
             border-radius: 50%;
             width: 30%;
             +mobile
@@ -186,9 +192,17 @@ export default {
                 top: 0px;
 
     .back-content
-        font-size: 1rem;
-        text-align: left;
+        padding-top: 40px;
+        font-weight: bold;
+        color: #00304a;
+        position: absolute;
+        top: 6vw;
+        left: 0;
+        right: 0;
+        text-align: center;
+        font-family: Courier;
+        font-size: 0.75rem;
         +mobile
-            font-size: 0.55rem;
-
+           font-size: 0.70rem;
+           top: 16vw;
 </style>
