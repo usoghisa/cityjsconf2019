@@ -3,7 +3,7 @@
     <section class="section shallow is-centered">
     <div class="testimonials is-text  ">
         <app-h2
-            title="2019 Conference Day Talks"
+            title="2019 Speakers"
             subtitle="We are excited  to announce our talks for this year"
             :is-h2="true"
         >
@@ -23,7 +23,7 @@
                         <div class="card-content">
                             <div class="media">
                                 <div class="media-left">
-                                    <figure class="image is-48x48">
+                                    <figure class="image is-64x64">
                                     <img 
                                         v-if="typeof 
                                         item.image!== 'undefined'"  
