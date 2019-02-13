@@ -30,8 +30,8 @@
                         <div v-if="talk.type === 'standard'">
                           {{talk.title}}
                         </div>
-                        <br/>
-                        {{talk.time}}  
+                        {{talk.time}}
+                       
                     </a>
                 </li>
             </ul>
@@ -182,6 +182,8 @@
         padding-left: 20px;
         margin-bottom: 10px;
         min-height: 40px;
+        padding-top: 5px;
+        padding-bottom: 5px;
         a
             color: $white;
             opacity: .6;

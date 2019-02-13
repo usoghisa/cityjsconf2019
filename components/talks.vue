@@ -15,11 +15,12 @@
                 v-for="item in speakers"
                 v-bind:key="item._id"
            >
-                    <div class="">
-                        <div class="card-content">
-                            <div class="media">
-                                <div class="media-left">
-                                    <figure class="image is-64x64">
+                    <div class="is-one  ">
+                         <div class="card-image">
+                            <a 
+                                v-on:click="select(item)"
+                            >
+                                <figure class="image is-92x92">
                                     <img 
                                         v-if="typeof 
                                         item.image!== 'undefined'"  
@@ -27,25 +28,23 @@
                                         :src="`//api.spiralthread.com/${item.thumbnail.path}`"
                                         class="speaker"
                                     />
-                                    </figure>
-                                </div>
-                                <div class="media-content">
-                                    <p class="title is-4">{{item.name}} <br/>
-                                        <span class="title is-6">
-                                            <a :href="`//twitter.com/${item.twitter}`">
-                                                @{{item.twitter}}
-                                            </a>
-                                            <br/>
-                                            {{item.company}}
-                                        </span>
-                                
-                                    </p>
-                                    <p class="subtitle is-6">{{item.title}}</p>
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content has-text-centered">
                                      <a 
+                                        class="titlebtn"
                                         v-on:click="select(item)"
                                     >
-                                        Read more
+                                        <h3 class="small-title">
+                                            {{item.title}}                                                                  
+                                        </h3>
                                     </a>
+                                    <p class="subtitle is-6">{{item.name}}  <a class="icon" :href="`//twitter.com/cityjsconf${item.twitter}`"><i class="fa fa-twitter"></i></a>   
+                                       <br/>  {{item.company}}
+                                     </p>  
                                 </div>
                             </div>
                         </div>
@@ -140,7 +139,7 @@ export default {
         if (typeof this.items!== 'undefined') {
             let speakers = [];
             speakers = this.items.filter(item => {
-                return (item.year === 2019) && (item.event === 'both' || item.event === 'talk')
+                return (item.year === 2019)
             }); 
 
             this.chosen = speakers[0];
@@ -162,6 +161,12 @@ export default {
 
 <style lang="sass" scoped>
     @import '~/assets/css/mq.sass';
+    
+    a.titlebtn
+        color: $black;
+        h3 
+            min-height: 80px;
+
     .closed
         display: none
     img
@@ -199,4 +204,7 @@ export default {
                 position: absolute;
                 top: 10px;
                 right: 10px;
+        
+        .small-title
+            font-size: 12px;
 </style>
