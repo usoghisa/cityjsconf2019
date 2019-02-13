@@ -31,14 +31,14 @@
               :image='Page.image'
             >
             </page>
-            <speakers2019
+            <!-- <speakers2019
                :items="Speakers"
                 v-if="Page.url === 'home'"
             >
-            </speakers2019>
+            </speakers2019> -->
              <app-talks 
               :items="Speakers"
-               v-if="Page.url === 'speakers'"
+               v-if="Page.url === 'home' || Page.url === 'speakers'"
             >
             </app-talks>
              <highlights 

@@ -71,7 +71,7 @@
             background-repeat: no-repeat;
             background-size: cover;
             padding: 150px 0;
-            height: 300vw;
+            height: 255vw;
         .card
             top: -23px;
             +mobile
