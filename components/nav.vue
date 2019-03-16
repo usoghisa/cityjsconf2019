@@ -113,6 +113,8 @@ export default {
 
   a.r-item
     color: $white;
+    font-weight: bold;
+    text-transform: uppercase;
     padding: 0.5rem 1.75rem
     &:hover
       background: none;

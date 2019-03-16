@@ -5,28 +5,28 @@
             :subtitle="subtitle"
         >
         </app-h2> -->
-        <section class="section backimg is-mobile" :style="style">
-        <div class="container">
-            <div class="columns level-right">
-                <div class="column is-4 is-offset-4">
-                    <div class="card ">
-                        <div class="card-content ">
-                            <div class="media">
-                                <div class="media-content copy">
-                                    <div class="title is-4 no-padding"  v-html="title"></div>
-                                    <p class="subtitle"> {{subtitle}} </p>
-                                    <div class="banner-heading">
-                                        <span > </span>
+        <section class="about-home section backimg is-mobile" :style="style">
+            <div class="container">
+                <div class="columns level-right">
+                    <div class="column is-4 is-offset-4">
+                        <div class="card ">
+                            <div class="card-content ">
+                                <div class="media">
+                                    <div class="media-content copy">
+                                        <div class="title is-4 no-padding"  v-html="subtitle"></div>
+                                        <p class="subtitle" v-html="title"></p>
+                                        <div class="banner-heading">
+                                            <span > </span>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="content" v-html="description">
+                                <div class="content" v-html="description">
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
         </section>
     </div>
 </template>
@@ -59,13 +59,16 @@
 
 <style lang="sass" scoped>
     @import '~/assets/css/mq.sass';
-
+    .about-home
+        margin-top: -180px;
+        +mobile
+          margin-top: 50vw;
     .backimg
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
         padding: 150px 0;
-        height: 650px;
+        height: 700px;
         +mobile
             background-position: 30% -200px;
             background-repeat: no-repeat;
@@ -113,6 +116,7 @@
         padding: 10.3rem
     
     .card-content
+        margin-top: 50px;
         +mobile
             margin-top: 70%;
             margin-bottom: 20%;

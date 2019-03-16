@@ -19,7 +19,7 @@ module.exports = {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: 'City of London Conference by the London JS Community' },
-      { property: 'og:title', content: 'City of London JavaScript Conference' },
+      { property: 'og:title', content: 'CityJS Conference 2019, London, 1 - 3 May 2019' },
       { property: 'og:description', content: 'City of London JavaScript Conference by the London JS Community' },
       { property: 'og:image', content: '//api.spiralthread.com/images/audience.png' },
       { property: 'og:url', content: '//www.cityjsconf.org' },
