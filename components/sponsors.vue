@@ -28,7 +28,7 @@
               </div>
             </div>
             <div class="columns is-centered is-half">
-               <div class="column is-half has-text-centered">
+               <div class="column is-10 has-text-centered">
                 <app-sponsor
                   :items="items"
                   level="Gold"
@@ -37,8 +37,8 @@
                 </app-sponsor>
               </div>
             </div>
-             <div class="columns is-centered is-half">
-               <div class="column is-half has-text-centered">
+             <div class="columns is-centered ">
+               <div class="column is-10 has-text-centered">
                 <app-sponsor
                   :items="items"
                   level="Silver"
@@ -48,7 +48,7 @@
               </div>
             </div>
              <div class="columns is-centered is-half">
-               <div class="column is-half has-text-centered">
+               <div class="column is-10 has-text-centered">
                 <app-sponsor
                   :items="items"
                   level="Bronze"

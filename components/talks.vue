@@ -42,7 +42,7 @@
                                             {{item.title}}                                                                  
                                         </h3>
                                     </a>
-                                    <p class="subtitle is-6">{{item.name}}  <a class="icon" :href="`//twitter.com/cityjsconf${item.twitter}`"><i class="fa fa-twitter"></i></a>   
+                                    <p class="subtitle is-6">{{item.name}}  <a class="icon" :href="`//twitter.com/${item.twitter}`"><i class="fa fa-twitter"></i></a>   
                                        <br/>  {{item.company}}
                                      </p>  
                                 </div>
