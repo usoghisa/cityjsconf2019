@@ -11,29 +11,29 @@
                     >
                     </app-h2>
                 </div>
-            </div>
-            <div class="daybyday">
-                <div class="columns">
-                    <div class="column is-3 is-offset-3">
-                        <div class="tabs is-toggle is-centered">
-                            <ul class="">
-                                <li 
-                                    v-for="(date, index) in Days"
-                                    v-bind:key="date"
-                                    :class="{'is-active':date === chosen}">
-                                    <a v-on:click="select(date)">Day {{index+1}}</a>
-                                </li>
-                            </ul>
+                <div class="columns is-centered">
+                    <div class="column is-half-desktop">
+                        <div class="column is-7 ">
+                            <div class="tabs is-toggle">
+                                <ul class="">
+                                    <li 
+                                        v-for="(date, index) in Days"
+                                        v-bind:key="date"
+                                        :class="{'is-active':date === chosen}">
+                                        <a v-on:click="select(date)">Day {{index+1}}</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                </div>      
+                        <app-day
+                            :items= 'items'
+                            :speakers= 'speakers'
+                            :day= 'selectedDate'
+                        >
+                        </app-day>  
+                    </div> 
+                </div>
             </div>
-            <app-day
-                    :items= 'items'
-                    :speakers= 'speakers'
-                    :day= 'selectedDate'
-                >
-            </app-day>
         </div>
     </section>
 </template>

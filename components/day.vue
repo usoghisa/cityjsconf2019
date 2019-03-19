@@ -1,8 +1,8 @@
 <template>
-    <section class="section">
-      <div class="">
+    <section class="section bordered">
+      <div class="container">
       <div class="columns">
-      <div class="column is-3 "> 
+      <div class="column is-8"> 
         <aside 
             class="menu"
             v-for="(group, index) in groups"
@@ -11,7 +11,10 @@
             <p class="menu-label">
                 {{group.location}}
             </p>
-            <ul class="menulist">
+
+            <ul 
+                class="menulist"
+            >
                <li 
                     v-for="(talk, index) in group.talks"
                     v-bind:key="index"
@@ -21,25 +24,40 @@
                         v-on:click="select(talk)"
                     >   
                         <div v-if="talk.type !== 'standard'">
-                            <span
-                                v-for="(speaker, index) in talk.speakers"
-                                v-bind:key="index">
-                                {{speaker.display}} <br/>
-                            </span>
+                                <div class="columns talk ">
+                                    <div class="column is-2">
+                                        {{talk.time}}      
+                                    </div>
+                                    <div class="column is-6">
+                                        {{talk.title}} <br/>
+                                        <strong>
+                                            <span
+                                                
+                                                v-for="(speaker, index) in talk.speakers"
+                                                v-bind:key="index">
+                                                {{speaker.display}} <br/>
+                                            </span>
+                                        </strong>
+                                    </div>
+                            </div>
                         </div>
                         <div v-if="talk.type === 'standard'">
-                          {{talk.title}}
-                        </div>
-                        {{talk.time}}
-                       
+                            <div class="columns talk ">
+                             <div class="column is-2">
+                                {{talk.time}}      
+                            </div>
+                             <div class="column is-2">
+                               {{talk.title}}
+                            </div>
+                            </div>
+                        </div>         
                     </a>
                 </li>
             </ul>
         </aside>
       </div>
       <div class="column is-9 scheduletlk"> 
-        <a 
-            :class="['button  close closebtn', {'closed':open === false}]"
+        <a  :class="['button  close closebtn', {'closed':open === false}]"
             v-on:click="close()"
         >
             <span class="icon is-small">
@@ -60,6 +78,8 @@
 <script>
     import h2 from '@/components/h2';
     import talk from '@/components/talk';
+    import { BulmaAccordion, BulmaAccordionItem } from "vue-bulma-accordion";
+
 
     export default {
         data: function() {
@@ -76,7 +96,9 @@
         },
         components: {
             "app-h2" : h2,
-            "app-talk" : talk
+            "app-talk" : talk,
+            "accordion":  BulmaAccordion,
+            "accordion-item": BulmaAccordionItem
         },
         methods: {
             select: function (talk) {
@@ -112,13 +134,27 @@
                                 if(location === talk.location) {
                                     return talk;
                                 }
+                             }),
+                            'morning': talks.filter((talk) => {
+                                if(location === talk.location && talk.group === 'morning') {
+                                    return talk;
+                                }
+                             }),
+                             'midday': talks.filter((talk) => {
+                                if(location === talk.location && talk.group === 'midday') {
+                                    return talk;
+                                }
+                             }),
+                             'afternoon': talks.filter((talk) => {
+                                if(location === talk.location && talk.group === 'afternoon') {
+                                    return talk;
+                                }
                              })
+
                     }
-                })
+                });
 
                 return groups;
-            
-
               } else {
                   return [];
               }
@@ -143,6 +179,7 @@
 
 <style lang="sass" scoped>
   @import '~/assets/css/mq.sass';
+
   .menu
     &:last-child
         border-bottom: 20px solid $black;
@@ -157,22 +194,21 @@
     font-weight: bold;
   
   .scheduletlk
-    +mobile
-        position: fixed;
-        top: 0px;
-        left: 0px;
-        width: 100%;
-        z-index: 10000;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 10000;
+    display: block;
     .close
         position: absolute;
         top: 0px;
         right: 20px;
         display: none;
         z-index: 1000000;
-        +mobile
-            background-color: transparent;
-            color: $white;
-            display: block
+        background-color: transparent;
+        color: $white;
+        display: block
     .closed
         display: none;
 

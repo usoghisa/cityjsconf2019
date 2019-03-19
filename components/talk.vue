@@ -1,8 +1,8 @@
 <template>
-    <div :class="['columns talk',  !open?'is-hidden-mobile': '']" 
+    <div :class="['columns talk',  !open?'is-hidden': '']" 
         v-if="talk"
     >
-      <div class="column is-three-quarters is-mobile">
+      <div class="column is-three-quarters-desktop is-mobile">
         <div class="card">
             <div class="card-content">
                 <div class="columns">
@@ -90,15 +90,22 @@
     color: $white;
 
   .talk
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    width: 40%;
+    height: 470px;
+    display: block;
+    background: $darkred;
     +mobile
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        background: $darkred;
-        z-index: 1000;
-        width: 100%;
-        min-height: 200vw;
-        overflow-y: scroll;
+      position: absolute;
+      top: 20%;
+      left: 0px;
+      background: $darkred;
+      z-index: 1000;
+      width: 100%;
+      min-height: 200vw;
+      overflow-y: scroll;
 
-  
+    
 </style>
