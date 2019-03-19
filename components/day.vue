@@ -1,8 +1,11 @@
 <template>
-    <section class="section bordered">
+    <section class="section bordered"
+    >
       <div class="container">
       <div class="columns">
-      <div class="column is-8"> 
+      <div
+        :class="['column is-8', {'is-hidden':open === true}]"
+      > 
         <aside 
             class="menu"
             v-for="(group, index) in groups"
@@ -56,7 +59,7 @@
             </ul>
         </aside>
       </div>
-      <div class="column is-9 scheduletlk"> 
+      <div class="column is-9 scheduletlk">
         <a  :class="['button  close closebtn', {'closed':open === false}]"
             v-on:click="close()"
         >
@@ -194,15 +197,11 @@
     font-weight: bold;
   
   .scheduletlk
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    z-index: 10000;
+    position: relative;
     display: block;
     .close
         position: absolute;
-        top: 0px;
+        top: 10px;
         right: 20px;
         display: none;
         z-index: 1000000;

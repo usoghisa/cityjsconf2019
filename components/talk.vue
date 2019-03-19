@@ -90,11 +90,6 @@
     color: $white;
 
   .talk
-    position: absolute;
-    top: 20%;
-    left: 35%;
-    width: 40%;
-    height: 470px;
     display: block;
     background: $darkred;
     +mobile
