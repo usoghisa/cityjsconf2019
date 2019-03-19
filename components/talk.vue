@@ -13,8 +13,7 @@
                     </div>
                     <div class="column is-9">
                         <h2>{{talk.title}}</h2>
-                        <h3 
-                          v-if="talk.speaker">
+                        <h3>
                              <ul>
                              <li 
                                 v-for="(speaker, index) in talk.speakers"
@@ -23,6 +22,8 @@
                                 {{speaker.display}}
                              </li>
                              </ul>
+
+                             
                         </h3>
                     </div>
                 </div>
@@ -93,7 +94,7 @@
     display: block;
     background: $darkred;
     +mobile
-      position: absolute;
+      position: initial;
       top: 20%;
       left: 0px;
       background: $darkred;

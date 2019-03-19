@@ -1,5 +1,5 @@
 <template>
-    <section class="hero section schedule ">
+    <section id="schedule" class="hero section schedule ">
         <div class="container">
             <div class="hero-body">
                 <div>

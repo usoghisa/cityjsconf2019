@@ -1,7 +1,7 @@
 <template>
     <section class="section bordered"
     >
-      <div class="container">
+      <div id="talk" class="container">
       <div class="columns">
       <div
         :class="['column is-8', {'is-hidden':open === true}]"
@@ -59,9 +59,10 @@
             </ul>
         </aside>
       </div>
-      <div class="column is-9 scheduletlk">
+      <div  class="column is-9 scheduletlk">
         <a  :class="['button  close closebtn', {'closed':open === false}]"
             v-on:click="close()"
+            v-scroll-to="'#talk'"
         >
             <span class="icon is-small">
                 X
@@ -82,7 +83,6 @@
     import h2 from '@/components/h2';
     import talk from '@/components/talk';
     import { BulmaAccordion, BulmaAccordionItem } from "vue-bulma-accordion";
-
 
     export default {
         data: function() {
@@ -107,6 +107,9 @@
             select: function (talk) {
                this.chosen = talk;
                this.open = !this.open;
+            
+                return document.getElementById("schedule").scrollIntoView();
+
             }, 
             close: function () {
                 this.open = !this.open;
@@ -116,6 +119,7 @@
                 day: function(newVal, oldVal) { // watch it
                     if (newVal!==oldVal) {
                         this.chosen = null;
+                        this.open = false;
                     }
                 }
         },
@@ -199,6 +203,8 @@
   .scheduletlk
     position: relative;
     display: block;
+    +mobile
+        position: initial;
     .close
         position: absolute;
         top: 10px;
