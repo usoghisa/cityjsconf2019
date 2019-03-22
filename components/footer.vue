@@ -2,16 +2,22 @@
     <footer class="footer">
       <div class="container">
         <div class="columns">
-          <div class="column is-9">
+          <div class="column is-6">
             <p>CityJS Conference, a community conference run by the Community</p>
+          </div>
+          <div class="column is-3">
+                <a class="button is-black" href="past">Past events</a> <br />
+                <a class="button is-black" href="coc">Code of conduct</a> <br />
+                <a class="button is-black" href="about">About</a>
           </div>
           <div class="column is-3">
             <!-- <app-newsletter />
            <br/> -->
             Follow us:
             <a class="icon" href="https://twitter.com/cityjsconf"><i class="fa fa-twitter"></i></a>
-             <a class="icon" href="https://instagram.com/cityjsconf_official/"><i class="fa fa-instagram"></i></a>
-          </div>
+             <a class="icon" href="https://instagram.com/cityjsconf_official/"><i class="fa fa-instagram"></i></a>    
+        </div>
+      
         </div>
       </div>
     </footer>
@@ -36,6 +42,10 @@
     footer
         background: #000;
         color: #fff
+
+        a
+          .whitelink
+            color: $white
 
         .icon
             color: #fff

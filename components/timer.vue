@@ -1,14 +1,15 @@
 <template>
   <section>
-  <div class="timer container is-two-thirds">
+  <div class="timer container">
     <div class="columns">
-        <div class="column is-12-mobile">
-          <h2> 10 <a href="/speakers">Speakers</a>, 
+        <div class="column is-8">
+          <h2> 
+              3 days of JavaScript Festivities including, <br/>
               6 Free <a href="/workshops">Workshops</a>,  <br/>
-              London's JS Community Conference<br/>
+              10 International <a href="/speakers">Speakers</a><br/>
           </h2>
         </div>
-        <div class="column is-12-mobile is-full-mobile">
+        <div class="column is-4">
             <div class="columns is-mobile is-8-desktop">
             <div class="block column is-2-desktop is-3-mobile">
               <span>{{ days }}</span><br/>

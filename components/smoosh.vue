@@ -5,28 +5,36 @@
             :subtitle="subtitle"
         >
         </app-h2> -->
-        <section class="about-home section backimg is-mobile" :style="style">
-            <div class="container">
-                <div class="columns level-right">
-                    <div class="column is-4 is-offset-4">
-                        <div class="card ">
-                            <div class="card-content ">
-                                <div class="media">
-                                    <div class="media-content copy">
-                                        <div class="title is-4 no-padding"  v-html="subtitle"></div>
-                                        <p class="subtitle" v-html="title"></p>
-                                        <div class="banner-heading">
-                                            <span > </span>
-                                        </div>
+        <section class="section backimgVenue is-mobile" :style="style">
+        <div class="container">
+            <div class="columns level-right">
+                <div class="column is-4 is-offset-4">
+                    <div class="card ">
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content copy">
+                                    <p class="title is-4 no-padding">Smoosh x CityJSConf After Party Show</p>
+                                    <div class="banner-heading">
+                                        <span > </span>
                                     </div>
                                 </div>
-                                <div class="content" v-html="description">
-                                </div>
+                            </div>
+                            <div class="content">
+                                <p>In collaboration with the infamous JavaScript comedy night #SMOOSH, 
+                                    CityJS Conf is proud to bring together 
+                                   some of London's funniest developers to make you 
+                                   laugh and cry (tears of joy, hopefully)
+                                </p>
+                                <h3>Comedians</h3>
+                                <strong> Jani Eväkallio </strong><br/>
+                                <strong>Joe Hart </strong><br/>
+                                <strong>TC Thirty-NaN </strong><br/>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
         </section>
     </div>
 </template>
@@ -45,52 +53,37 @@
         },
          computed: {
             style () {
-                return `background-image: url(//api.spiralthread.com/${this.image.path});`;
+                return `background-image: url('http://api.spiralthread.com/storage/thumbs/22adc844fe66b44ea29e5750ddd8ec08_800x534_85_1553084990_bestFit_adb115059e28d960fa8badfac5516667.jpg')`;
             }
         },
         props: {
             title: String,
-            description: String,
-            image: Object,
-            subtitle: String
+            subtitle: String,
+            image: String,
         }
     };
 </script>
 
 <style lang="sass" scoped>
     @import '~/assets/css/mq.sass';
-    .about-home
-        margin-top: -230px;
-        +mobile
-          margin-top: 50vw;
-    .backimg
+
+    .backimgVenue
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
         padding: 150px 0;
-        height: 700px;
+        height: 650px;
+        background-position-y: -155px;
         +mobile
-            background-position: 30% -200px;
             background-repeat: no-repeat;
             background-size: cover;
             padding: 150px 0;
-            height: 255vw;
-        .card
-            top: -23px;
-            +mobile
-                top: 35vw;
-    h2
-        font-size: 1.8rem;
-        font-weight: 700;
-        line-height: 1.375;
-        line-height: 2.875rem;
-        text-transform: uppercase;
-        padding: 30px 0;
-
+            height: 194vw;
     .media-content
         .subtitle
             padding-top: 5px;
             font-weight: bold;
+ 
 
     .fa-cog
         font-size: 40px
@@ -114,12 +107,10 @@
 
     .about-content
         padding: 10.3rem
-    
+
     .card-content
-        margin-top: 50px;
         +mobile
-            margin-top: 70%;
-            margin-bottom: 20%;
+            margin-top: 60%;
         .copy
             position: relative;
             display: block;
@@ -136,5 +127,4 @@
         margin-left: 0px !important;
         bottom: 0px;
         padding: 0px;
-
 </style>

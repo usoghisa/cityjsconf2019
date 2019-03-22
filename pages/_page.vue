@@ -31,27 +31,21 @@
               :image='Page.image'
             >
             </page>
-            <!-- <speakers2019
-               :items="Speakers"
-                v-if="Page.url === 'home'"
-            >
-            </speakers2019> -->
              <app-talks 
               :items="Speakers"
                v-if="Page.url === 'home' || Page.url === 'speakers'"
             >
             </app-talks>
+            <smoosh
+               :items="Speakers"
+                v-if="Page.url === 'home'"
+            >
+            </smoosh>
              <highlights 
               :items="Speakers"
                v-if="Page.url === 'speakers'"
             >
             </highlights>
-            <about-venue
-              v-if="Page.url === 'home'"
-              title="At the heart of London"
-              subtitle="At the iconic Curzon Soho Cinema"
-            >
-            </about-venue>
             <schedule
                 v-if="Page.url === 'home' || Page.url === 'workshops' || Page.url === 'speakers'"
                :items="Schedule"
@@ -64,6 +58,12 @@
               v-if="Page.url === 'sponsors' || Page.url === 'home'"
             >
             </sponsors>
+             <about-venue
+              v-if="Page.url === 'home'"
+              title="At the heart of London"
+              subtitle="At the iconic Curzon Soho Cinema"
+            >
+            </about-venue>
             <faq 
               :items="Faqs"
                v-if="Page.url === 'about' || Page.url === 'home'"
@@ -91,6 +91,7 @@
   import appFooter from '@/components/footer';
   import appTalks from '@/components/talks';
   import payments from '@/components/payments';
+  import smoosh from '@/components/smoosh';
 
   export default {
     components: {
@@ -106,7 +107,8 @@
       'schedule': schedule,
       'app-footer': appFooter,
       'app-talks': appTalks,
-      'payments': payments
+      'payments': payments,
+      'smoosh': smoosh
     },
     data: () => ({
       pagename: 'Home',

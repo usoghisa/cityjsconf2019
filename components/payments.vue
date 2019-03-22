@@ -6,7 +6,7 @@
         <h3>Conference Day</h3>
          <p><strong> 3 May 2019 - Curzon Soho </strong></p>
         <tito-widget event="cityjsconf-london/cityjsconf-2019/"
-            releases="dnimiwrrxsi,mjlbekm7jwu, l-bw7ynmany">
+            releases="dnimiwrrxsi,mjlbekm7jwu,c6fnqbq1qts">
             <img class="sponsor" alt="sponsor"  src="tenor.gif" />
         </tito-widget>
     
@@ -23,7 +23,7 @@
             we might ask you to choose one or two to drop to make sure everyone gets at least one ticket.
         </p>
         <tito-widget event="cityjsconf-london/cityjsconf-2019/" 
-           releases="et7uvwf9aau,ulblfyeihce,30uqmxtcn8s,jxwmrblcipc,9zkkueq2a4m"
+           releases="et7uvwf9aau,ulblfyeihce,30uqmxtcn8s,jxwmrblcipc,9zkkueq2a4m,vuto5vqdib8"
         >
          <img class="sponsor" alt="sponsor"  src="tenor.gif" />
         </tito-widget>

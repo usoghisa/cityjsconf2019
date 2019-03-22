@@ -2,7 +2,7 @@
  <nav class="navbar" :style="style">
     <div class="container ">
       <div class="navbar-brand">
-          <a class="navbar-item logo">
+          <a  href="/home" class="navbar-item logo">
             <img src="/images/logo.png" alt="City of London JavaScript Conference logo" />
           </a>
           <span class="navbar-burger" v-on:click="toggleNav" v-bind:class="{ 'is-active': isActive }">
