@@ -67,8 +67,8 @@
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
-        padding: 150px 0;
-        height: 700px;
+        padding: 220px 0;
+        height: 800px;
         +mobile
             background-position: 30% -200px;
             background-repeat: no-repeat;

@@ -28,11 +28,11 @@
         </div>
       </div>
     </div>
-      <Timer 
+      <!-- <Timer 
         starttime="May 1, 2019 09:00:00" 
         endtime="May 1, 2019 17:00:00"
       >
-      </Timer>
+      </Timer> -->
     </div>
 </template>
 

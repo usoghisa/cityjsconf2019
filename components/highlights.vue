@@ -2,13 +2,13 @@
     <section class="section bg-gray">
     <div class="">
         <app-h2
-            title="Our 2018 Highlights"
-            subtitle="Hear from our amazing 2018 speakers"
+            :title="`Our ${this.year} Highlights`"
+            :subtitle="`Hear from our amazing ${this.year} speakers`"
             :is-h2="true"
         >
         </app-h2>
         <div class="columns">
-            <div class="column">     
+            <div class="column">  
                 <div class='carousel carousel-animated carousel-animate-slide' :data-size="isMobile ? '1' : '3'" data-autoplay="true">
                     <div class='carousel-container'>
                         <div class='carousel-item has-background is-active'
@@ -49,8 +49,9 @@ import h2 from '@/components/h2';
 export default {
   props: {
     items: {
-      type: Array
-    }
+      type: Array,
+    },
+     year: String
   },
   components: {
     'app-h2': h2,
@@ -65,7 +66,7 @@ export default {
    speakers () {
         if (typeof this.items!== 'undefined') {
          return this.items.filter(item => {
-             return item.year === 2018
+             return item.year === parseInt(this.year)
          }); 
         } else {
             return [];

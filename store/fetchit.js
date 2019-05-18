@@ -1,8 +1,6 @@
 require('es6-promise').polyfill();
 import "isomorphic-fetch";
 
-//require('whatwg-fetch');
-
 class FetchIt {
 
   static getAllEntries(collection) {

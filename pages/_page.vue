@@ -31,39 +31,36 @@
               :image='Page.image'
             >
             </page>
-             <app-talks 
+             <!-- <app-talks 
               :items="Speakers"
                v-if="Page.url === 'home' || Page.url === 'speakers'"
             >
-            </app-talks>
-            <smoosh
-               :items="Speakers"
-                v-if="Page.url === 'home'"
-            >
-            </smoosh>
+            </app-talks> -->
+            {{Year}}
              <highlights 
               :items="Speakers"
-               v-if="Page.url === 'speakers'"
+              :year='this.Year'
+              v-if="Page.url === 'home' || Page.url === 'speakers'"
             >
             </highlights>
-            <schedule
+            <!-- <schedule
                 v-if="Page.url === 'home' || Page.url === 'workshops' || Page.url === 'speakers'"
                :items="Schedule"
                :speakers="Speakers"
             >
-            </schedule>
+            </schedule> -->
             <sponsors 
               :items="Sponsors"
               title="Our Sponsors"
               v-if="Page.url === 'sponsors' || Page.url === 'home'"
             >
             </sponsors>
-             <about-venue
+             <!-- <about-venue
               v-if="Page.url === 'home'"
               title="At the heart of London"
               subtitle="At the iconic Curzon Soho Cinema"
             >
-            </about-venue>
+            </about-venue> -->
             <faq 
               :items="Faqs"
                v-if="Page.url === 'about' || Page.url === 'home'"
@@ -133,6 +130,10 @@
       this.$store.dispatch('getSchedule');
     },
     computed: {
+      Year () {
+        console.log(process.env.YEAR_KEY);
+        return process.env.YEAR_KEY;
+      },
       Pages () {
          this.$store.state.pages
         return this.$store.state.pages
@@ -152,6 +153,8 @@
       Page  () {
         let page = this.Pages.filter((page) => {
           let route = this.$route.params.page;
+
+          console.log(process.env.YEAR);
 
           if (typeof route === 'undefined') {
             route = 'home'
