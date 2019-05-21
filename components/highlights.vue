@@ -66,7 +66,8 @@ export default {
    speakers () {
         if (typeof this.items!== 'undefined') {
          return this.items.filter(item => {
-             return item.year === parseInt(this.year)
+             return (item.year === parseInt(this.year)) 
+             && (item.event === "talk" || item.event === "both")
          }); 
         } else {
             return [];

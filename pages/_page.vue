@@ -36,7 +36,6 @@
                v-if="Page.url === 'home' || Page.url === 'speakers'"
             >
             </app-talks> -->
-            {{Year}}
              <highlights 
               :items="Speakers"
               :year='this.Year'
