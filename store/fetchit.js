@@ -1,33 +1,25 @@
-require('es6-promise').polyfill();
-import "isomorphic-fetch";
+const axios = require('axios');
 
 class FetchIt {
 
   static getAllEntries(collection) {
 
-    const request = new Request(`https://api.spiralthread.com/api/collections/get/${collection}?token=${
-      process.env.API_KEY
-    }`, {
-      method: 'POST',
-      mode: 'cors',
-      headers: { 'Content-Type': 'application/json' },
-    //   body:JSON.stringify({
-    //     populate: 1, // resolve linked collection items
-    //  })
-    });
+      return axios.post(`https://api.spiralthread.com/api/collections/get/${collection}?token=${
+        process.env.API_KEY
+      }`)
+      .then(function (response) {
+        // handle success
+       return response.data;
+      })
+      .catch(function (error) {
+        // handle error
+        console.log(error);
+      })
+      .finally(function () {
+        // always executed
+      });
 
 
-    const getResponse = (response) => {
-      return response.json();
-    };
-
-    const getError = (error) => {
-      return error;
-    };
-
-    return fetch(request)
-      .then(getResponse)
-      .catch(getError);
   }
 
 }
