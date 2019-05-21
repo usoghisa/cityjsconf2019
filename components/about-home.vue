@@ -62,7 +62,7 @@
     .about-home
         margin-top: -230px;
         +mobile
-          margin-top: 50vw;
+          margin-top: 0vw;
     .backimg
         background-position: center center;
         background-repeat: no-repeat;

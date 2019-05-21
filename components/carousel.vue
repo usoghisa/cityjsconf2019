@@ -14,15 +14,15 @@
                 <br/>
                 CityJS Conference
                 <br/>
-                1 - 3 May 2019
+                <!-- 1 - 3 May 2019 -->
                 <br/>
               </b>
             </h1>
-            <h2 class="location">Curzon Soho | Microsoft Reactor</h2>
+            <!-- <h2 class="location">Curzon Soho | Microsoft Reactor</h2> -->
             <a 
-                href="/buytickets" 
+                href="#videos" 
                 class="is-info  button info is-primary">
-                  Get your tickets
+                 View our 2019 videos
             </a>
           </div>
         </div>
@@ -72,7 +72,7 @@ export default {
     padding-bottom: 20px;
     left: 0;
     right: 0;
-    @include position(absolute, $top: 23%, $left: -10%)
+    @include position(absolute, $top: 43%, $left: -10%)
     +mobile
       font-size: 1.2rem;
       height: 200vw;

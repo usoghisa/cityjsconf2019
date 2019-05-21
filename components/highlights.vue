@@ -1,10 +1,11 @@
 <template>
-    <section class="section bg-gray">
-    <div class="">
+    <section class="section bg-red">
+    <div class="" id="videos">
         <app-h2
             :title="`Our ${this.year} Highlights`"
-            :subtitle="`Hear from our amazing ${this.year} speakers`"
+            :subtitle="`View from our amazing ${this.year} speakers (sponsored by Pusher)`"
             :is-h2="true"
+            :white="true"
         >
         </app-h2>
         <div class="columns">
@@ -16,13 +17,14 @@
                             v-bind:key="item._id"
                         >
                             <a class="speaker" :href="`${item.videoUrl}`">
-                                <figure class="image">
+                                <figure class="bimage">
                                     <img v-if="typeof item.image!== 'undefined'" :alt="item.name"  :src="`//api.spiralthread.com/${item.image.path}`">
                                 </figure>
                                 <div class="media-content">
-                                    <p class="is-4 no-padding">{{item.name}}</p>
-                                     <p class="subtitle is-6">{{item.company}}</p>
-                                    <p><span class=" is-6">{{item.title}}</span></p>
+                                    <img src="/images/play-btn.svg" class="play" alt="play" width="40" />
+                                    <p class="is-4-mobile no-padding">{{item.name}}</p>
+                                     <p class="subtitle is-6-mobile">{{item.company}}</p>
+                                    <p><span class=" is-6-mobile">{{item.title}}</span></p>
                                 </div>
                             </a>
                         </div>
@@ -80,8 +82,26 @@ export default {
 
 <style lang="sass" scoped>
     @import '~/assets/css/mq.sass';
+
+    .play
+        position: absolute;
+        top: -35px
+        left: 0px;
+        padding: 5px;
+        background: $white;
+
+    .bg-red
+        background: $red;
+        color: $white;
+
     .carousel
         height: 550px;
+        +mobile
+            height: 450px;
+
+    .carousel-navigation
+        position: absolute
+        bottom: 10px
 
     .carousel-item
         a
@@ -91,19 +111,22 @@ export default {
     .card-image
        overflow: hidden
 
-    .card
-       min-height: 450px
+    .bimage
+        img
+            width: 100%;
+            +mobile
+              width: inherit
 
     .bg-gray
         background-color: $lightgray
     
     .media-content
-        margin-top: -50px;
+        margin-top: -100px;
         position: absolute;
         background-color: $white;
-        width: 100%;
+        width: 95%;
         padding: 10px;
-        height: 500px;
+        height: 150px;
         .title 
             font-size: 24px;
             position: inherit
