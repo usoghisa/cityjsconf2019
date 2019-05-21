@@ -116,6 +116,8 @@ export default {
             width: 100%;
             +mobile
               width: inherit
+        +mobile
+            width: 100%;
 
     .bg-gray
         background-color: $lightgray
@@ -131,6 +133,9 @@ export default {
             font-size: 24px;
             position: inherit
             text-transform: uppercase;
+        +mobile
+            margin-top: -20px;
+            width: 92%;
 
     .heading
         .subtitle
