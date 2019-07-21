@@ -1,10 +1,11 @@
 <template>
-    <section class="section ">
-      <div class="container ">
+    <section class="blackbag">
+      <div class=" ">
          <div class="row"> 
             <app-h2
-                title="Our Photos"
-                subtitle="Last years was fun"
+                title="Community Events"
+                subtitle="join us this year"
+                white=true
             >
             </app-h2>
             <div class="column nopadding">
@@ -14,6 +15,7 @@
                 <img src="/images/previous_year/joe.jpg">
                 <img src="/images/previous_year/lucciano.jpg">
                 <img src="/images/previous_year/magic.jpg">
+                <img src="/images/previous_year/workshopsaud2.jpg">
             </div>
             <div class="column nopadding" >
                 <img src="/images/previous_year/smoosh.jpg">
@@ -22,7 +24,7 @@
                 <img src="/images/previous_year/mcspeaker.jpg">
                 <img src="/images/previous_year/workshopsaud.jpg">
                 <img src="/images/previous_year/workshopsaud2.jpg">
-                
+                <img src="/images/previous_year/workshopsaud2.jpg">
             </div> 
             <div class="column nopadding">
                  <img src="/images/previous_year/ingrid.jpg">
@@ -59,6 +61,11 @@
 <style lang="sass" scoped>
     @import '~/assets/css/mq.sass';
     
-    nopadding 
+    .nopadding 
         padding: 0
+
+    
+    .blackbag
+        background: $black;
+
 </style>
