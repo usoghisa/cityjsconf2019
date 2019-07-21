@@ -48,12 +48,16 @@
                :speakers="Speakers"
             >
             </schedule> -->
+            <gallery 
+              :gallery="Gallery"
+            />
             <sponsors 
               :items="Sponsors"
               title="Our Sponsors"
               v-if="Page.url === 'sponsors' || Page.url === 'home'"
             >
             </sponsors>
+            
              <!-- <about-venue
               v-if="Page.url === 'home'"
               title="At the heart of London"
@@ -88,6 +92,8 @@
   import appTalks from '@/components/talks';
   import payments from '@/components/payments';
   import smoosh from '@/components/smoosh';
+  import gallery from '@/components/gallery';
+
 
   export default {
     components: {
@@ -104,7 +110,8 @@
       'app-footer': appFooter,
       'app-talks': appTalks,
       'payments': payments,
-      'smoosh': smoosh
+      'smoosh': smoosh,
+      'gallery': gallery
     },
     data: () => ({
       pagename: 'Home',
@@ -148,6 +155,9 @@
       },
       Schedule () {
         return this.$store.state.schedule;
+      },
+      gallery () {
+        return this.$store.state.gallery;
       },
       Page  () {
         let page = this.Pages.filter((page) => {

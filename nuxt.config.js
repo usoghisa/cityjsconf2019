@@ -10,6 +10,15 @@ module.exports = {
     '/',
   ]
  },
+  metaInfo: {
+    htmlAttrs: {
+      lang: 'en',
+      amp: true
+    },
+    bodyAttrs: {
+      class: ['dark-mode', 'mobile']
+    }
+  },
  env: {
     baseUrl: process.env.BASE_URL || 'http://localhost:3000'
   },
