@@ -18,7 +18,11 @@
                         >
                             <a class="speaker" :href="`${item.videoUrl}`">
                                 <figure class="bimage">
-                                    <img v-if="typeof item.image!== 'undefined'" :alt="item.name"  :src="`//api.spiralthread.com/${item.image.path}`">
+                                    <img 
+                                        v-if="typeof item.image!== 'undefined'" 
+                                        :alt="item.name"  
+                                        :src="`//api.spiralthread.com/${item.image.path}`"
+                                    >
                                 </figure>
                                 <div class="media-content">
                                     <img src="/images/play-btn.svg" class="play" alt="play" width="40" />
@@ -95,7 +99,7 @@ export default {
         color: $white;
 
     .carousel
-        height: 550px;
+        height: 500px;
         +mobile
             height: 450px;
 
@@ -126,9 +130,9 @@ export default {
         margin-top: -100px;
         position: absolute;
         background-color: $white;
-        width: 95%;
+        width: 93%;
         padding: 10px;
-        height: 150px;
+        height: 200px;
         .title 
             font-size: 24px;
             position: inherit

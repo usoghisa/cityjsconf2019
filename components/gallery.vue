@@ -1,40 +1,32 @@
 <template>
     <section class="blackbag">
-      <div class=" ">
+      <div class="container">
          <div class="row"> 
             <app-h2
-                title="Community Events"
+                title="Our Gallery"
                 subtitle="join us this year"
-                white=true
+                :is-h2="true"
+                :white="true"
             >
             </app-h2>
-            <div class="column nopadding">
-                <img src="/images/previous_year/audience.jpg">
-                <img src="/images/previous_year/cinema.jpg">
-                <img src="/images/previous_year/workshops2.jpg">
-                <img src="/images/previous_year/joe.jpg">
-                <img src="/images/previous_year/lucciano.jpg">
-                <img src="/images/previous_year/magic.jpg">
-                <img src="/images/previous_year/workshopsaud2.jpg">
+            <div class="columns is-variable is-3-mobile is-0-tablet is-8-desktop is-8-widescreen is-8-fullhd">
+                <div class="column">
+                    <img src="/images/previous_year/audience.jpg">
+                    <img src="/images/previous_year/cinemas.jpg">
+                    <img src="/images/previous_year/elle.jpg">
+                </div>
+                <div class="column" >
+                    <img src="/images/previous_year/cinemas.jpg"> 
+                    <img src="/images/previous_year/audience.jpg">
+                    <img src="/images/previous_year/elle.jpg">
+                </div> 
+                <div class="column">
+                    <img src="/images/previous_year/dylan.jpg">
+                     <img src="/images/previous_year/cinemas.jpg"> 
+                    <img src="/images/previous_year/audience2.jpg">
+                </div>
             </div>
-            <div class="column nopadding" >
-                <img src="/images/previous_year/smoosh.jpg">
-                <img src="/images/previous_year/dylan.jpg">
-                <img src="/images/previous_year/mc.jpg">
-                <img src="/images/previous_year/mcspeaker.jpg">
-                <img src="/images/previous_year/workshopsaud.jpg">
-                <img src="/images/previous_year/workshopsaud2.jpg">
-                <img src="/images/previous_year/workshopsaud2.jpg">
-            </div> 
-            <div class="column nopadding">
-                 <img src="/images/previous_year/ingrid.jpg">
-                <img src="/images/previous_year/audience2.jpg">
-                <img src="/images/previous_year/trent.jpg">
-                <img src="/images/previous_year/sru.jpg">
-                <img src="/images/previous_year/elle.jpg">
-                <img src="/images/previous_year/workshopsaud2.jpg">
-            </div>
-            </div>
+        </div>
       </div>
     </section>
 </template>
@@ -67,5 +59,11 @@
     
     .blackbag
         background: $black;
+        padding: 20px;
+
+    .columns
+        display: flex;
+        flex-direction: row; // this is default
+        align-items: stretch; // this will stretch the children vertically
 
 </style>
