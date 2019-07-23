@@ -1,4 +1,4 @@
-# STATIC
+# CityJSConf Website
 
 To get the project running you will need to clone this project
 
