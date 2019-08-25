@@ -1,6 +1,6 @@
 // Responsiveness
 // 960, 1152, and 1344 have been chosen because they are divisible by both 12 and 16
-$tablet: 769px !default
+$tablet: 768px !default
 // 960px container + 40px
 $desktop: 100% !default
 // 1152px container + 40
@@ -8,6 +8,8 @@ $widescreen: 1192px !default
 // 1344px container + 40
 $fullhd: 1384px !default
 $microtablet: 768px !default;
+$ipadpro: 1024px !default;
+
 
 $red: rgba(255, 48, 48, 0.9);
 $white: #fff;
@@ -16,6 +18,7 @@ $gray: #333;
 $midgray: #ccc;
 $lightgray: #f8f9fa;
 $grayins: #DDDEE2;
+$darkred: #c90000
 
 h2 
   font-size: 35px;
@@ -24,11 +27,10 @@ h2
   text-transform: uppercase;
 
 h3
-  font-size: 28px;
+  font-size: 1.4rem;
   font-weight: 500;
-  line-height: 52px;
-  text-transform: uppercase;
-
+  margin-bottom: 1vw;
+  margin-top: 1vw;
 
 =mobile
   @media screen and (max-width: $tablet - 1px)
@@ -36,6 +38,10 @@ h3
 
 =microtablet
   @media screen and (min-width: $microtablet), print
+    @content
+
+=ipadpro
+   @media screen and (min-width: $tablet) and (max-width: $ipadpro)
     @content
 
 =tablet
@@ -60,3 +66,9 @@ h3
   right: $right
   bottom: $bottom
   left: $left
+
+@mixin per($val)
+  -webkit-perspective: $val; 
+  -moz-perspective: $val; 
+  -ms-perspective: $val; 
+  perspective: $val;

@@ -31,33 +31,49 @@
               :image='Page.image'
             >
             </page>
-            <speakers 
+             <!-- <app-talks 
               :items="Speakers"
-               v-if="Page.url === 'speakers' || Page.url === 'home'"
+               v-if="Page.url === 'home' || Page.url === 'speakers'"
             >
-            </speakers>
-            <about-venue
-              v-if="Page.url === 'home'"
-              title="At the heart of London"
-              subtitle="At the iconic Curzon Soho Cinema"
+            </app-talks> -->
+             <highlights 
+              :items="Speakers"
+              :year='this.Year'
+              v-if="Page.url === 'home' || Page.url === 'speakers'"
             >
-            </about-venue>
+            </highlights>
+            <!-- <schedule
+                v-if="Page.url === 'home' || Page.url === 'workshops' || Page.url === 'speakers'"
+               :items="Schedule"
+               :speakers="Speakers"
+            >
+            </schedule> -->
+            <gallery 
+              :gallery="Gallery"
+            />
             <sponsors 
               :items="Sponsors"
               title="Our Sponsors"
               v-if="Page.url === 'sponsors' || Page.url === 'home'"
             >
             </sponsors>
+            
+             <!-- <about-venue
+              v-if="Page.url === 'home'"
+              title="At the heart of London"
+              subtitle="At the iconic Curzon Soho Cinema"
+            >
+            </about-venue> -->
             <faq 
               :items="Faqs"
                v-if="Page.url === 'about' || Page.url === 'home'"
             >
-            </faq>
-            
+            </faq>            
         </div>
       </div>
     </section> 
     </div>
+    <app-footer v-if="Page" />
   </div>
 </template>
 
@@ -67,9 +83,17 @@
   import page from '@/components/page';
   import carousel from '@/components/carousel';
   import faq from '@/components/faq';
-  import speakers from '@/components/speakers';
+  import highlights from '@/components/highlights';
+  import speakers2019 from '@/components/speakers2019';
   import sponsors from '@/components/sponsors';
   import venuestatic from '@/components/about-venue';
+  import schedule from '@/components/schedule';
+  import appFooter from '@/components/footer';
+  import appTalks from '@/components/talks';
+  import payments from '@/components/payments';
+  import smoosh from '@/components/smoosh';
+  import gallery from '@/components/gallery';
+
 
   export default {
     components: {
@@ -78,9 +102,16 @@
       'page': page,
       'carousel': carousel,
       'faq': faq, 
-      'speakers': speakers,
+      'highlights': highlights,
+      'speakers2019': speakers2019,
       'sponsors': sponsors,
-      'about-venue': venuestatic
+      'about-venue': venuestatic,
+      'schedule': schedule,
+      'app-footer': appFooter,
+      'app-talks': appTalks,
+      'payments': payments,
+      'smoosh': smoosh,
+      'gallery': gallery
     },
     data: () => ({
       pagename: 'Home',
@@ -94,7 +125,7 @@
     },
     head () {
       return {
-        title: 'CityJSConf 2019'
+        title: 'CityJS Conference 2019, London UK'
       }
     },
     created () {
@@ -102,10 +133,16 @@
       this.$store.dispatch('getFaqs');
       this.$store.dispatch('getSpeakers');
       this.$store.dispatch('getSponsors');
+      this.$store.dispatch('getSchedule');
     },
     computed: {
+      Year () {
+        console.log(process.env.YEAR_KEY);
+        return process.env.YEAR_KEY;
+      },
       Pages () {
-        return this.$store.state.pages;
+         this.$store.state.pages
+        return this.$store.state.pages
       },
       Faqs () {
         return this.$store.state.faqs;
@@ -116,9 +153,17 @@
       Sponsors () {
         return this.$store.state.sponsors;
       },
+      Schedule () {
+        return this.$store.state.schedule;
+      },
+      gallery () {
+        return this.$store.state.gallery;
+      },
       Page  () {
         let page = this.Pages.filter((page) => {
           let route = this.$route.params.page;
+
+          console.log(process.env.YEAR);
 
           if (typeof route === 'undefined') {
             route = 'home'

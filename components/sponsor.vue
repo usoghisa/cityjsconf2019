@@ -1,15 +1,17 @@
 <template>
     <div v-if="TypedItems.length > 0">
-        <h3 class="" >{{level}}</h3>
+        <h3 class="uppercase" >{{level}}</h3>
         <section class="section">
             <div class="">
                 <div class="columns">
-                        <div class=' column carousel-item has-background is-active'
+                        <div class=' column  has-background is-active'
                             v-for="item in TypedItems"
                             v-bind:key="item._id"
                         >
                             <a :href="`${item.url}`">
-                                <img class="sponsor" v-if="typeof item.image!== 'undefined'"  :src="`http://api.spiralthread.com/${item.image.path}`">
+                                 <figure class="sponsor">
+                                      <img  v-if="typeof item.image!== 'undefined'" alt="sponsor"  :src="`//api.spiralthread.com/${item.image.path}`">
+                                </figure>
                             </a>
                         </div>                
                 </div>
@@ -31,9 +33,14 @@
         },
         computed: {
             TypedItems() {
-              return this.items.filter(item => {
-                return item.level === this.level;
-              })   
+              if (typeof this.items!== 'undefined') {
+                    return this.items.filter(item => {
+                    return item.level === this.level;
+                })   
+              } else {
+                  return [];
+              }
+            
             }
         }
     };
@@ -41,4 +48,7 @@
 
 <style lang="sass" scoped>
   @import '~/assets/css/mq.sass';
+  
+  .uppercase
+    text-transform: uppercase;
 </style>

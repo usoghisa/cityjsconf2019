@@ -1,11 +1,11 @@
 <template>
   <div class="sponsors">
-    <section class="hero columns"  :style="style">
+    <section class="hero columns">
       <div class="hero-body">
         <div>
             <app-h2
                 title="Our Sponsors"
-                subtitle="CITYJSCONF WOULDN'T BE POSSIBLE WITHOUT OUR AMAZING SPONSORS"
+                subtitle="CITYJS CONFERENCE WOULDN'T BE POSSIBLE WITHOUT OUR AMAZING SPONSORS"
                 :is-h2="true"
             >
             </app-h2>
@@ -28,7 +28,7 @@
               </div>
             </div>
             <div class="columns is-centered is-half">
-               <div class="column is-half has-text-centered">
+               <div class="column is-10 has-text-centered">
                 <app-sponsor
                   :items="items"
                   level="Gold"
@@ -37,8 +37,8 @@
                 </app-sponsor>
               </div>
             </div>
-             <div class="columns is-centered is-half">
-               <div class="column is-half has-text-centered">
+             <div class="columns is-centered ">
+               <div class="column is-10 has-text-centered">
                 <app-sponsor
                   :items="items"
                   level="Silver"
@@ -48,10 +48,20 @@
               </div>
             </div>
              <div class="columns is-centered is-half">
-               <div class="column is-half has-text-centered">
+               <div class="column is-10 has-text-centered">
                 <app-sponsor
                   :items="items"
                   level="Bronze"
+                  :is-h2="false"
+                >
+                </app-sponsor>
+              </div>
+            </div>
+            <div class="columns is-centered is-half">
+               <div class="column is-10 has-text-centered">
+                <app-sponsor
+                  :items="items"
+                  level="Video"
                   :is-h2="false"
                 >
                 </app-sponsor>

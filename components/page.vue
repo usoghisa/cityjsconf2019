@@ -16,10 +16,10 @@
             :subtitle='subtitle'
         >
         </app-about>
-         <app-venue 
+         <!-- <app-venue 
             v-if="title === 'Venue'"
         >
-        </app-venue>
+        </app-venue> -->
     </div>
 </template>
 

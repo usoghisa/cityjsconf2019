@@ -13,15 +13,15 @@
                         <div class="card-content">
                             <div class="media">
                                 <div class="media-content copy">
-                                    <p class="title is-4 no-padding">Our venue</p>
-                                      <p class="subtitle"> Curzon Soho will be our venue for 2019 </p>
+                                    <p class="title is-4 no-padding">Curzon Soho will be our venue for the 2019 main event</p>
+                                      <p class="subtitle"> Our venue  </p>
                                     <div class="banner-heading">
                                         <span > </span>
                                     </div>
                                 </div>
                             </div>
                             <div class="content">
-                                <p>Our event is taking place at one of the most iconic places right at the city
+                                <p>Our main event, on the 3rd of May,  is taking place at one of the most iconic places right at the city
                                 centre of London, in the heart of Soho next to China Town and by minutes away from
                                 Picadilly Circus.
                                 </p>
@@ -52,7 +52,7 @@
         },
          computed: {
             style () {
-                return `background-image: url('http://api.spiralthread.com/images/curozn.png')`;
+                return `background-image: url('//api.spiralthread.com/images/curozn.png')`;
             }
         },
         props: {

@@ -2,7 +2,7 @@
  <nav class="navbar" :style="style">
     <div class="container ">
       <div class="navbar-brand">
-          <a class="navbar-item">
+          <a  href="/home" class="navbar-item logo">
             <img src="/images/logo.png" alt="City of London JavaScript Conference logo" />
           </a>
           <span class="navbar-burger" v-on:click="toggleNav" v-bind:class="{ 'is-active': isActive }">
@@ -11,14 +11,13 @@
             <span></span>
           </span>
       </div>
-      <div  class="navbar-end navbar-menu" :class="{ 'is-active': isActive }">
+      <div  class="navbar-end navbar-menu" :class="{ 'is-active': isActive }"  :style="style">
         <div class="navbar-item is-active">
             <nuxt-link 
               v-if="item.hide === 'No' && item.isRedirect  === 'No'" 
               class="navbar-item r-item" 
               :key="item.id" 
               :to="item.url"
-              :style="style"
                v-for="item in items"
             >
               {{item.title}}
@@ -29,7 +28,6 @@
               v-for="item in items"
               v-if="item.hide === 'No' && item.isRedirect === 'Yes'" 
               :href="item.url"
-              :style="style"
               :key="item.id" 
             >
             {{item.title}}
@@ -88,6 +86,21 @@ export default {
 <style lang="sass">
   @import '~/assets/css/mq.sass';
 
+  .navbar-item
+    +mobile
+      background: $white;
+      color: $black;
+    +ipadpro
+      background: $white;
+      color: $black;
+    +ipadpro
+      background: transparent;
+
+
+  .logo 
+    +mobile
+      background: transparent;
+      
   .navbar
     position: fixed;
     top: 0;
@@ -100,14 +113,16 @@ export default {
 
   a.r-item
     color: $white;
+    font-weight: bold;
+    text-transform: uppercase;
     padding: 0.5rem 1.75rem
     &:hover
       background: none;
       color: $white;
     +mobile
       color: $black
-      &:hover
-       text-decoration: underline;
+    +ipadpro
+      color: $black;
 
   .navbar-burger
     &:hover

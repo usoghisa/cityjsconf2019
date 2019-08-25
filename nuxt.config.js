@@ -1,5 +1,4 @@
 const { join } = require('path')
-const axios = require('axios')
 const _ = require('lodash')
 
 module.exports = {
@@ -11,28 +10,37 @@ module.exports = {
     '/',
   ]
  },
+  metaInfo: {
+    htmlAttrs: {
+      lang: 'en',
+      amp: true
+    },
+    bodyAttrs: {
+      class: ['dark-mode', 'mobile']
+    }
+  },
  env: {
     baseUrl: process.env.BASE_URL || 'http://localhost:3000'
   },
   head: {
-    title: 'CityJSConf 2019',
+    title: 'CityJS Conference 2019 - London, UK',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: 'City of London Conference by the London JS Community' },
-      { property: 'og:title', content: 'City of London JavaScript Conference' },
+      { property: 'og:title', content: 'CityJS Conference 2019, London, 1 - 3 May 2019' },
       { property: 'og:description', content: 'City of London JavaScript Conference by the London JS Community' },
-      { property: 'og:image', content: 'http://api.spiralthread.com/images/audience.png' },
-      { property: 'og:url', content: 'http://www.cityjsconf.org' },
+      { property: 'og:image', content: '//api.spiralthread.com/images/audience.png' },
+      { property: 'og:url', content: '//www.cityjsconf.org' },
       { name: 'twitter:card', content: 'summary_large_image' },
       { property: 'og:site_name', content: 'City of London JavaScript Conference' },
       { name: 'twitter:image:alt', content: 'City of London JavaScript Conference' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/images/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400' },
-      { rel: 'stylesheet', href: 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' },
+      { rel: 'stylesheet', href: '//fonts.googleapis.com/css?family=Roboto:300,400,500,700' },
+      { rel: 'stylesheet', href: '//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400' },
+      { rel: 'stylesheet', href: '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' },
     ]
   },
   /*
@@ -45,8 +53,8 @@ module.exports = {
     /*
     ** Run ESLint on save
     */
-    extend (config, { isDev, isClient }) {
-      if (isDev && isClient) {
+    extend (config, { isClient, loaders: { vue } }) {
+      if (config.dev && isClient) {
         config.module.rules.push({
           enforce: 'pre',
           test: /\.(js|vue)$/,
@@ -54,19 +62,11 @@ module.exports = {
           exclude: /(node_modules)/
         })
       }
-
-      if (!isClient) {
-        // This instructs Webpack to include `vue2-google-maps`'s Vue files
-        // for server-side rendering
-        config.externals.splice(0, 0, function (context, request, callback) {
-          if (/^vue2-google-maps($|\/)/.test(request)) {
-            callback(null, false)
-          } else {
-            callback()
-          }
-        })
-      }
-
+      
+      // if (isClient) {
+      //   config.entry.vendor.push('babel-polyfill')
+      // }
+               
     },
     postcss: {
       plugins: {
@@ -81,9 +81,9 @@ module.exports = {
     { src: '~plugins/ga', ssr: false },
   ],
   modules: [
-    '@nuxtjs/axios', 
     '@nuxtjs/dotenv', 
     '@nuxtjs/bulma',
     'nuxt-fontawesome',
+    '@nuxtjs/pwa',
   ],
 }
