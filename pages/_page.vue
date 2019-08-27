@@ -11,11 +11,7 @@
       <div class="home"
         v-if="page"
       >
-         <carousel 
-          slides="[]"
-          v-if="page.url === 'home'"
-        >
-        </carousel> 
+      <component :is="loadComponent" name="'carousel'" />
       </div>
     </section>
   </div>
@@ -58,13 +54,19 @@
                 route = 'home'
               }
 
-              console.log(page);
-
               return page.url.toString() === route;
             })[0];
+            return page;
+          },
+          loadComponent () {
+             if (!this.name) {
+                return null
+            }
 
-              return page;
-          }
+            console.log(this)
+    
+            return () => import(`@/components/${this.name}`)
+          },
         },
         methods: {
           async fetch({store}) {
