@@ -1,5 +1,6 @@
 <template>
   <div>
+    test
     <div class="overlay">
       <div class="overlay-container">
         <section id="home">
@@ -41,6 +42,7 @@
 import timer from '@/components/timer';
 import h2 from '@/components/h2';
 export default {
+  name: 'carousel',
   props: {
     slides: {
       type: String
@@ -61,6 +63,7 @@ export default {
 
   .contend
     color: $white;
+    background: $red;
     font-size: 2.4736rem
     font-weight: 700
     line-height: 1.375
@@ -80,7 +83,7 @@ export default {
 
   .video_contain
     position: absolute;
-    background: url('/images/background.jpg') no-repeat top
+    background:red no-repeat top
     background-repeat: no-repeat;
     background-size: cover;
     padding: 150px 0;

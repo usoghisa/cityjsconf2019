@@ -2,16 +2,20 @@
   <div>
     <div id="inner">
     <section>
-      <app-nav 
+      <!-- <app-nav 
         v-bind:items='pages'
       >
-      </app-nav>
+      </app-nav> -->
     </section>
     <section class="hero">
       <div class="home"
-        v-if="page"
+       v-if="this.page && this.components"
       >
-      <component :is="loadComponent" name="'carousel'" />
+        <template v-for="(component, i) in this.components" >
+          {{component.name}}
+            <component :key="i" v-bind:is="component"></component>
+        </template>
+
       </div>
     </section>
   </div>
@@ -21,23 +25,15 @@
 <script>
     import { mapGetters } from 'vuex'
     import Vue from 'vue'
-    
-    import banner from '@/components/banner';
-    import carousel from '@/components/carousel';
-    import nav from '@/components/nav';
-
     export default {
-        components: {
-            'app-nav': nav,
-            'banner': banner,
-            'carousel': carousel,
+        components:{
+
         },
         created (store) {
           this.$store.dispatch('pages/get');
         },
         async mounted () {
           let pagename= this.$route.params.page;
-
           if (typeof pagename !== 'undefined') {
             this.pagename = pagename;
           }
@@ -58,15 +54,27 @@
             })[0];
             return page;
           },
-          loadComponent () {
-             if (!this.name) {
-                return null
-            }
+          async components () {
+            let widgets = [
+                {
+                    type: 'carousel',
+                    name: 'carousel'
+                },
+                {
+                    type: 'gallery',
+                    name: 'gallery'
+                }
+            ];
+            let componentsToLoad = await widgets.forEach((component, index) => {
+               import(`@/components/${component.type}`).then(comp => {
+                  this.components[index] = comp.default;
+                })
+            });
 
             console.log(this)
-    
-            return () => import(`@/components/${this.name}`)
-          },
+
+            return componentsToLoad;
+          }
         },
         methods: {
           async fetch({store}) {

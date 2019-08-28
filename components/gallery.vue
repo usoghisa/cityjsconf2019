@@ -34,6 +34,7 @@
 <script>
     import h2 from '@/components/h2';
     export default {
+        name: 'gallery',
         data: function() {
             return {
                 isActive: false
