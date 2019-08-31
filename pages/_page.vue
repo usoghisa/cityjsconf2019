@@ -9,13 +9,11 @@
     </section>
     <section class="hero">
       <div class="home"
-       v-if="this.page && this.components"
+       v-if="this.page && this.componentss"
       >
-        <template v-for="(component, i) in this.components" >
-          {{component.name}}
-            <component :key="i" v-bind:is="component"></component>
-        </template>
-
+        <template v-for="(component, i) in this.componentss">
+            <component :key="i" :is="component.default"></component>
+        </template> 
       </div>
     </section>
   </div>
@@ -26,11 +24,12 @@
     import { mapGetters } from 'vuex'
     import Vue from 'vue'
     export default {
-        components:{
-
-        },
+         data: () => ({
+          pagename: 'Home',
+        }),
         created (store) {
           this.$store.dispatch('pages/get');
+          
         },
         async mounted () {
           let pagename= this.$route.params.page;
@@ -41,6 +40,7 @@
         computed: { 
           ...mapGetters({
             pages: 'pages/pages',
+            widgets: 'widgets/widgets'
           }),
           page  () {
             let page = this.pages.filter((page) => {
@@ -52,28 +52,13 @@
 
               return page.url.toString() === route;
             })[0];
+
+            this.$store.dispatch('widgets/get', page);
+
             return page;
           },
-          async components () {
-            let widgets = [
-                {
-                    type: 'carousel',
-                    name: 'carousel'
-                },
-                {
-                    type: 'gallery',
-                    name: 'gallery'
-                }
-            ];
-            let componentsToLoad = await widgets.forEach((component, index) => {
-               import(`@/components/${component.type}`).then(comp => {
-                  this.components[index] = comp.default;
-                })
-            });
-
-            console.log(this)
-
-            return componentsToLoad;
+          componentss () {
+           return this.widgets;
           }
         },
         methods: {

@@ -46,6 +46,7 @@
     "run": "^1.4.0",
     "tls": "0.0.1",
     "vue-agile": "^0.3.7",
+    "vue-async-computed": "^3.7.0",
     "vue-bulma-accordion": "^0.4.7",
     "vue-carousel": "^0.14.0",
     "vue-scroll": "^2.1.7",

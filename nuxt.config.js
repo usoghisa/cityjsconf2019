@@ -79,6 +79,7 @@ module.exports = {
     { src: '~plugins/gmaps', ssr: false },
     { src: '~plugins/scroll', ssr: false },
     { src: '~plugins/ga', ssr: false },
+    { src: '~plugins/async', ssr: false },
   ],
   modules: [
     '@nuxtjs/dotenv', 

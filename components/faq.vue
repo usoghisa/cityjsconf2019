@@ -31,6 +31,7 @@
     import bulmaAccordion from 'bulma-extensions/bulma-accordion/dist/js/bulma-accordion.min.js'
     import 'bulma-extensions/bulma-accordion/dist/css/bulma-accordion.min.css';
     export default {
+        name: 'faq',
         props: {
             items: {
               type: Array
