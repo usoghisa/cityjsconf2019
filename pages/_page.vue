@@ -1,12 +1,6 @@
 <template>
   <div>
     <div id="inner">
-    <section>
-      <!-- <app-nav 
-        v-bind:items='pages'
-      >
-      </app-nav> -->
-    </section>
     <section class="hero">
       <div class="home"
        v-if="this.page && this.componentss"
@@ -22,7 +16,6 @@
 
 <script>
     import { mapGetters } from 'vuex'
-    import Vue from 'vue'
     export default {
          data: () => ({
           pagename: 'Home',

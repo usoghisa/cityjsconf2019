@@ -1,6 +1,5 @@
 <template>
   <div>
-    test
     <div class="overlay">
       <div class="overlay-container">
         <section id="home">
