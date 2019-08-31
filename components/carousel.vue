@@ -62,7 +62,6 @@ export default {
 
   .contend
     color: $white;
-    background: $red;
     font-size: 2.4736rem
     font-weight: 700
     line-height: 1.375
@@ -82,6 +81,7 @@ export default {
 
   .video_contain
     position: absolute;
+    background: url('/images/background.jpg') no-repeat top
     background:red no-repeat top
     background-repeat: no-repeat;
     background-size: cover;

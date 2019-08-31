@@ -1,26 +1,34 @@
 <template>
-    <section class="section ">
-      <div class="container ">
-        <div class="columns">
-         <div class="column is-two">
-            <h2 class="title" v-html="current.title"></h2>
-            <p class="subtitle" v-html="current.description"></p>
-            <app-payments 
-                v-if="current.title === 'Buy Tickets'"
-            >
-            </app-payments>
-          </div>
-          <div class="column img" :style="style">
-          </div>
+    <div>
+        <app-banner 
+            :title="current-title"
+        />
+        <section class="section ">
+
+        <div class="container ">
+            <div class="columns">
+            <div class="column is-two">
+                <h2 class="title" v-html="current.title"></h2>
+                <p class="subtitle" v-html="current.description"></p>
+                <app-payments 
+                    v-if="current.title === 'Buy Tickets'"
+                >
+                </app-payments>
+            </div>
+            <div class="column img" :style="style">
+            </div>
+            </div>
         </div>
-      </div>
-    </section>
+        </section>
+    </div>
 </template>
 
 <script>
     import payments from '@/components/payments';
-    import { mapGetters } from 'vuex';
+    import banner from '@/components/banner';
     
+    import { mapGetters } from 'vuex';
+
     export default {
         data: function() {
             return {
@@ -28,7 +36,8 @@
             }
         },
         components: {
-            'app-payments': payments
+            'app-payments': payments,
+            'app-banner': banner
         },
         computed: {
             ...mapGetters({

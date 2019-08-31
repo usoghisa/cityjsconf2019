@@ -29,6 +29,7 @@
 <script>
     import h2 from '@/components/h2';
     import { mapGetters } from 'vuex';
+
     export default {
         data: function() {
             return {
