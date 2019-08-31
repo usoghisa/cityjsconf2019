@@ -2,7 +2,7 @@
     <section class="section bg-red">
     <div class="" id="videos">
         <app-h2
-            :title="`Our ${this.year} Highlights`"
+            :title="`Our ${current.year} Highlights`"
             :subtitle="`View from our amazing ${this.year} speakers (sponsored by Pusher)`"
             :is-h2="true"
             :white="true"
@@ -52,11 +52,10 @@
 import bulmaCarousel from "bulma-extensions/bulma-carousel/dist/js/bulma-carousel.min.js";
 import "bulma-extensions/bulma-carousel/dist/css/bulma-carousel.min.css";
 import h2 from '@/components/h2';
+import { mapGetters } from 'vuex';
+
 export default {
   props: {
-    items: {
-      type: Array,
-    },
      year: String
   },
   components: {
@@ -69,18 +68,24 @@ export default {
     isMobile () {
         return (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) ? true : false;
     },
-   speakers () {
+    ...mapGetters({
+      items: 'speakers/speakers',
+      current: 'pages/current',
+    }),
+    speakers () {
         if (typeof this.items!== 'undefined') {
          return this.items.filter(item => {
-             return (item.year === parseInt(this.year)) 
+             return (item.year === parseInt(this.current.year)) 
              && (item.event === "talk" || item.event === "both")
          }); 
         } else {
             return [];
         }
     }
+  },
+  created (store) {
+    this.$store.dispatch('speakers/get');
   }
-  
 };
 </script>
 

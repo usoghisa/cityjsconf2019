@@ -1,7 +1,7 @@
 export default {
     set(state, speakers) {
-        if (typeof widgets !== 'undefined') {
-         state.list = speakers;
+        if (typeof speakers !== 'undefined') {
+          state.list = speakers;
         }
     }
 }

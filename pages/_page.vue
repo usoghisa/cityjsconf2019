@@ -22,7 +22,6 @@
         }),
         created (store) {
           this.$store.dispatch('pages/get');
-          
         },
         async mounted () {
           let pagename= this.$route.params.page;
@@ -46,6 +45,7 @@
               return page.url.toString() === route;
             })[0];
 
+            this.$store.dispatch('pages/current', page);
             this.$store.dispatch('widgets/get', page);
 
             return page;

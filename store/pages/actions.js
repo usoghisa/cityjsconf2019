@@ -6,4 +6,7 @@ export default {
           commit('set', data.entries);
         })
     },
+    async current ({commit}, page) {
+      commit('current', page);
+  },
 }

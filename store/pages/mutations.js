@@ -5,5 +5,8 @@ export default {
             return a.orderOnTopMenu-b.orderOnTopMenu
         });
         }
+    },
+    current(state, page) {
+        return state.current = page;
     }
 }
