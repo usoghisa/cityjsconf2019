@@ -9,26 +9,48 @@
                 :white="true"
             >
             </app-h2>
-                <div class="columns">
-                  <div class="section">
+                <div class="columns is-multiline">
+                    <div class="column is-12">
                     <div class="polaroid">
                       <img src="/images/previous_year/elle.jpg">
-                        <div class="container">
+                        <div class="pictitle">
                           <p>ELLE</p>
                         </div>
                       </div>
                     <div class="polaroid">
-                      <img src="/images/previous_year/audience.jpg">
-                        <div class="container">
+                      <img src="/images/previous_year/dylan.jpg">
+                        <div class="pictitle">
+                          <p>DYLAN</p>
+                        </div>
+                      </div>
+                    <div class="polaroid">
+                      <img src="/images/previous_year/audience2.jpg">
+                        <div class="pictitle">
                           <p>AUDIENCE</p>
                         </div>
+                      </div>
+                  </div>
+                  <div class="column is-12">
+                  <div class="polaroid">
+                    <img src="/images/previous_year/elle.jpg">
+                      <div class="pictitle">
+                        <p>ELLE</p>
+                      </div>
                     </div>
-                    <div class="polaroid">
-                      <img src="/images/previous_year/elle.jpg">
-                        <div class="container">
-                          <p>ELLE</p>
-                        </div>
+                  <div class="polaroid">
+                    <img src="/images/previous_year/audience.jpg">
+                      <div class="pictitle">
+                        <p>AUDIENCE</p>
+                      </div>
                     </div>
+                  <div class="polaroid">
+                    <img src="/images/previous_year/elle.jpg">
+                      <div class="pictitle">
+                        <p>ELLE</p>
+                      </div>
+                    </div>
+                </div>
+
                 </div>
                 <!-- <div class="column">
                 <div class="polaroid">
@@ -96,9 +118,6 @@
 <style lang="sass" scoped>
     @import '~/assets/css/mq.sass';
 
-    .tile
-        background-color: rgba(255, 48, 48, 0.9);
-
     .nopadding
         padding: 0;
 
@@ -107,23 +126,24 @@
         background: $black;
         padding: 20px;
 
-    .section
+    .column
         display: flex;
-        flex-direction: row// this is default;
+        flex-direction: row;// this is default;
 
 
     .polaroid
       width: 80%
-      background-color: white;
+      background-color: #FF3332;
       margin: 10px;
+      color: black;
 
 
-    img
-      width: 100%;
+
 
     .container
       text-align: center;
       padding: 10px 20px;
+
 
 
 
