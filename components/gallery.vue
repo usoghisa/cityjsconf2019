@@ -9,7 +9,7 @@
                 :white="true"
             >
             </app-h2>
-                <div class="columns is-multiline">
+                <div class="columns is-multiline is-desktop">
                     <div class="column is-12">
                     <div class="polaroid">
                       <img src="/images/previous_year/elle.jpg">
@@ -45,7 +45,7 @@
                     </div>
                   <div class="polaroid">
                     <img src="/images/previous_year/elle.jpg">
-                      <div class="pictitle">
+                      <div class="pictitle is-h2">
                         <p>ELLE</p>
                       </div>
                     </div>
@@ -133,9 +133,17 @@
 
     .polaroid
       width: 80%
-      background-color: #FF3332;
+      background-color: white;
       margin: 10px;
       color: black;
+
+    .pictitle
+      margin: 55px 0px;
+      text-align: center;
+
+
+
+
 
 
 
