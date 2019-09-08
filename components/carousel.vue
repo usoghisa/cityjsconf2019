@@ -3,53 +3,48 @@
     <div class="overlay">
       <div class="overlay-container">
         <section id="home">
-            <div class="video_shader"></div>
-            <div class="video_contain">
-            </div>
+          <div class="video_shader"></div>
+          <div class="video_contain"></div>
         </section>
-        <div class="columns has-text-centered slide is-marginless ">
-          <div class="column is-two-thirds  is-6 is-offset-4 contend">
+        <div class="columns has-text-centered slide is-marginless">
+          <div class="column is-two-thirds is-6 is-offset-4 contend">
             <h1>
-              <b>City of London JavaScript Conference
-                <br/>
-                CityJS Conference
-                <br/>
+              <b>
+                City of London JavaScript Conference
+                <br />CityJS Conference
+                <br />
                 <!-- 1 - 3 May 2019 -->
-                <br/>
+                <br />
               </b>
             </h1>
             <!-- <h2 class="location">Curzon Soho | Microsoft Reactor</h2> -->
-            <a 
-                href="#videos" 
-                class="is-info  button info is-primary">
-                 View our 2019 videos
-            </a>
+            <a href="#videos" class="is-info button info is-primary">View our 2019 videos</a>
           </div>
         </div>
       </div>
     </div>
-      <!-- <Timer 
+    <!-- <Timer 
         starttime="May 1, 2019 09:00:00" 
         endtime="May 1, 2019 17:00:00"
       >
-      </Timer> -->
-    </div>
+    </Timer>-->
+  </div>
 </template>
 
 
 <script>
-import timer from '@/components/timer';
-import h2 from '@/components/h2';
+import timer from "@/components/timer";
+import h2 from "@/components/h2";
 export default {
-  name: 'carousel',
+  name: "carousel",
   props: {
     slides: {
       type: String
     }
   },
   components: {
-    'Timer': timer,
-    'app-h2': h2,
+    Timer: timer,
+    "app-h2": h2
   }
 };
 </script>
@@ -86,7 +81,7 @@ export default {
     background-repeat: no-repeat;
     background-size: cover;
     padding: 150px 0;
-    height: 100vw;
+    height: 120vw;
     background-position-y: -185px;
     -webkit-background-size: contain;
     -moz-background-size: contain;
@@ -113,7 +108,7 @@ export default {
     display: block;
     overflow: hidden;
     +mobile
-      height: 113vw;
+      height: 100vw;
       min-height: 300px;
     +microtablet 
       height: 600px;

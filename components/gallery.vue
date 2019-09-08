@@ -60,7 +60,7 @@
             >
               <img src="/images/previous_year/audience.jpg" />
               <div class="pictitle">
-                <p>Events</p>
+                <p>Moments</p>
               </div>
             </a>
           </div>
