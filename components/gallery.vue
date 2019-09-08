@@ -10,7 +10,7 @@
               href="https://www.flickr.com/photos/182802514@N02/albums/72157710741420497"
               target="_blank"
             >
-              <img class="is-2" src="/images/previous_year/audience2.jpg" />
+              <img class="is-2" src="/images/previous_year/audience.jpg" />
               <div class="pictitle">
                 <p>Audience</p></p>
               </div>
@@ -95,7 +95,6 @@ export default {
   },
   computed: {},
   props: {
-    gallery: Array
   }
 };
 </script>
