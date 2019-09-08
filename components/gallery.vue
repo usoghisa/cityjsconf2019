@@ -2,7 +2,7 @@
   <section class="blackbag">
     <div class="container">
       <div class="row">
-        <app-h2 title="Our Gallery" subtitle="join us this year" :is-h2="true" :white="true"></app-h2>
+        <app-h2 title="Our Gallery" subtitle="some of the best moments" :is-h2="true" :white="true"></app-h2>
         <div class="columns is-multiline">
           <div class="column is-4 is-12-mobile">
             <a
@@ -12,7 +12,7 @@
             >
               <img class="is-2" src="/images/previous_year/audience.jpg" />
               <div class="pictitle">
-                <p>Audience</p></p>
+                <p>Audience</p>
               </div>
             </a>
           </div>
@@ -34,7 +34,7 @@
               href="https://www.flickr.com/photos/182802514@N02/albums/72157710741317572"
               target="_blank"
             >
-              <img src="/images/previous_year/audience2.jpg" />
+              <img src="/images/previous_year/cinemas.jpg" />
               <div class="pictitle">
                 <p>CityJS 2019</p>
               </div>
@@ -70,12 +70,19 @@
               href="https://www.flickr.com/photos/182802514@N02/albums/72157710740775736"
               target="_blank"
             >
-              <img src="/images/previous_year/elle.jpg" />
+              <img src="/images/previous_year/workshops.jpeg" />
               <div class="pictitle is-h2">
                 <p>Workshops</p>
               </div>
             </a>
           </div>
+        </div>
+
+        <div class="is-12">
+          <p class="is-pulled-left photography">
+            photography
+            <a href="https://www.instagram.com/mnmarkg/">@mnmarkg</a>
+          </p>
         </div>
       </div>
     </div>
@@ -83,7 +90,6 @@
 </template>
 
 <script>
-
 import h2 from "@/components/h2";
 export default {
   data: function() {
@@ -95,8 +101,7 @@ export default {
     "app-h2": h2
   },
   computed: {},
-  props: {
-  }
+  props: {}
 };
 </script>
 
@@ -125,6 +130,15 @@ export default {
         +mobile
          float: left;
          width: 24%;
+
+        
+    .photography
+      color: $white;
+      font-size: 12px;
+      margin-left: 20px;
+      a
+        color: $white;
+        font-weight: bold;
 
 
     .pictitle
