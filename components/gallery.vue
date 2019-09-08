@@ -83,6 +83,7 @@
 </template>
 
 <script>
+
 import h2 from "@/components/h2";
 export default {
   data: function() {

@@ -41,6 +41,7 @@
 import timer from '@/components/timer';
 import h2 from '@/components/h2';
 export default {
+  name: 'carousel',
   props: {
     slides: {
       type: String
@@ -81,6 +82,7 @@ export default {
   .video_contain
     position: absolute;
     background: url('/images/background.jpg') no-repeat top
+    background:red no-repeat top
     background-repeat: no-repeat;
     background-size: cover;
     padding: 150px 0;

@@ -1,10 +1,5 @@
 <template>
     <div>
-        <!-- <app-h2
-            :title="title"
-            :subtitle="subtitle"
-        >
-        </app-h2> -->
         <section class="about-home section backimg is-mobile" :style="style">
             <div class="container">
                 <div class="columns level-right">
@@ -14,13 +9,13 @@
                                 <div class="media">
                                     <div class="media-content copy">
                                         <div class="title is-4 no-padding"  v-html="subtitle"></div>
-                                        <p class="subtitle" v-html="title"></p>
+                                        <p class="subtitle" v-html="current.title"></p>
                                         <div class="banner-heading">
                                             <span > </span>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="content" v-html="description">
+                                <div class="content" v-html="current.description">
                                 </div>
                             </div>
                         </div>
@@ -33,6 +28,7 @@
 
 <script>
     import h2 from '@/components/h2';
+    import { mapGetters } from 'vuex';
 
     export default {
         data: function() {
@@ -43,9 +39,12 @@
         components: {
             'app-h2': h2,
         },
-         computed: {
+        computed: {
+            ...mapGetters({
+               current: 'pages/current',
+            }),
             style () {
-                return `background-image: url(//api.spiralthread.com/${this.image.path});`;
+                return `background-image: url(//api.spiralthread.com/${this.current.image.path});`;
             }
         },
         props: {

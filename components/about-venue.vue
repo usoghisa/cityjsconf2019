@@ -1,10 +1,5 @@
 <template>
     <div>
-        <!-- <app-h2
-            :title="title"
-            :subtitle="subtitle"
-        >
-        </app-h2> -->
         <section class="section backimgVenue is-mobile" :style="style">
         <div class="container">
             <div class="columns level-right">
@@ -40,7 +35,7 @@
 
 <script>
     import h2 from '@/components/h2';
-
+    import { mapGetters } from 'vuex';
     export default {
         data: function() {
             return {
@@ -51,6 +46,9 @@
             'app-h2': h2,
         },
          computed: {
+            ...mapGetters({
+               current: 'pages/current',
+            }),
             style () {
                 return `background-image: url('//api.spiralthread.com/images/curozn.png')`;
             }
