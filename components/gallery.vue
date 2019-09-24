@@ -3,78 +3,65 @@
     <div class="container">
       <div class="row">
         <app-h2 title="Our Gallery" subtitle="some of the best moments" :is-h2="true" :white="true"></app-h2>
-        <div class="columns is-multiline">
-          <div class="column is-4 is-12-mobile">
-            <a
-              class="polaroid"
-              href="https://www.flickr.com/photos/182802514@N02/albums/72157710741420497"
-              target="_blank"
-            >
-              <img class="is-2" src="/images/previous_year/audience.jpg" />
-              <div class="pictitle">
-                <p>Audience</p>
+
+        <div class="columns row columns is-mobile is-multiline">
+          <div class="column is-8">
+            <div class="columns row columns is-mobile is-multiline">
+              <div class="column is-12 is-12-mobile side-crop">
+                <a
+                  class="polaroid"
+                  href="https://www.flickr.com/photos/182802514@N02/albums/72157710741420497"
+                  target="_blank"
+                >
+                  <img class="is-2" src="/images/previous_year/audience.jpg" />
+                  <div class="pictitle">
+                    <p>2019</p>
+                  </div>
+                </a>
               </div>
-            </a>
+
+              <div class="column is-6 is-12-mobile">
+                <a
+                  class="polaroid"
+                  href="https://www.flickr.com/photos/182802514@N02/albums/72157710741420497"
+                  target="_blank"
+                >
+                  <img class="is-2" src="/images/previous_year/workshops.jpeg" />
+                  <div class="pictitle">
+                    <p>2019</p>
+                  </div>
+                </a>
+              </div>
+
+              <div class="column is-6 is-12-mobile">
+                <a
+                  class="polaroid"
+                  href="https://www.flickr.com/photos/182802514@N02/albums/72157710741420497"
+                  target="_blank"
+                >
+                  <img class="is-2" src="/images/previous_year/audience2.jpg" />
+                  <div class="pictitle">
+                    <p>2019</p>
+                  </div>
+                </a>
+              </div>
+            </div>
           </div>
-          <div class="column is-4 is-12-mobile">
-            <a
-              class="polaroid"
-              href="https://www.flickr.com/photos/182802514@N02/albums/72157710741387967"
-              target="_blank"
-            >
-              <img src="/images/previous_year/dylan.jpg" />
-              <div class="pictitle">
-                <p>Our speakers</p>
+          <div class="column is-4">
+            <div class="columns">
+              <div class="column is-12 is-12-mobile">
+                <a
+                  class="polaroid"
+                  href="https://www.flickr.com/photos/182802514@N02/albums/72157710741420497"
+                  target="_blank"
+                >
+                  <img class="is-2" src="/images/previous_year/ex2.jpg" />
+                  <div class="pictitle">
+                    <p>2019</p>
+                  </div>
+                </a>
               </div>
-            </a>
-          </div>
-          <div class="column is-4 is-12-mobile">
-            <a
-              class="polaroid"
-              href="https://www.flickr.com/photos/182802514@N02/albums/72157710741317572"
-              target="_blank"
-            >
-              <img src="/images/previous_year/cinemas.jpg" />
-              <div class="pictitle">
-                <p>CityJS 2019</p>
-              </div>
-            </a>
-          </div>
-          <div class="column is-4 is-12-mobile">
-            <a
-              class="polaroid"
-              href="https://www.flickr.com/photos/182802514@N02/albums/72157710741317572"
-              target="_blank"
-            >
-              <img src="/images/previous_year/elle.jpg" />
-              <div class="pictitle">
-                <p>CityJS 2018</p>
-              </div>
-            </a>
-          </div>
-          <div class="column is-4 is-12-mobile">
-            <a
-              class="polaroid"
-              href="https://www.flickr.com/photos/182802514@N02/albums/72157710741131147"
-              target="_blank"
-            >
-              <img src="/images/previous_year/audience.jpg" />
-              <div class="pictitle">
-                <p>Moments</p>
-              </div>
-            </a>
-          </div>
-          <div class="column is-4 is-12-mobile">
-            <a
-              class="polaroid"
-              href="https://www.flickr.com/photos/182802514@N02/albums/72157710740775736"
-              target="_blank"
-            >
-              <img src="/images/previous_year/workshops.jpeg" />
-              <div class="pictitle is-h2">
-                <p>Workshops</p>
-              </div>
-            </a>
+            </div>
           </div>
         </div>
 
@@ -145,6 +132,7 @@ export default {
       margin: 0px 0px;
       text-align: center;
       position: absolute;
+      display: none;
       width: 95%;
       padding: 20px;
       background: #fff;
@@ -164,6 +152,17 @@ export default {
       padding: 10px 20px;
 
 
-
+    .side-crop 
+      max-width: 100%; 
+      overflow: hidden;
+      height: 250px;
+      position: relative
+      display: block;
+      img
+        max-width: initial;
+        top: -242px;
+        position: absolute;
+        left: 0px;
+        width: 100%;
 
 </style>

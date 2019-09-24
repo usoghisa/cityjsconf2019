@@ -1,65 +1,64 @@
 <template>
-    <div>
-        <section class="about-home section backimg is-mobile" :style="style">
-            <div class="container">
-                <div class="columns level-right">
-                    <div class="column is-4 is-offset-4">
-                        <div class="card ">
-                            <div class="card-content ">
-                                <div class="media">
-                                    <div class="media-content copy">
-                                        <div class="title is-4 no-padding"  v-html="subtitle"></div>
-                                        <p class="subtitle" v-html="current.title"></p>
-                                        <div class="banner-heading">
-                                            <span > </span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="content" v-html="current.description">
-                                </div>
-                            </div>
-                        </div>
+  <div>
+    <section class="about-home section backimg is-mobile" :style="style">
+      <div class="container">
+        <div class="columns level-right">
+          <div class="column is-4 is-offset-4">
+            <div class="card">
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-content copy">
+                    <div class="title is-4 no-padding" v-html="subtitle"></div>
+                    <p class="subtitle" v-html="current.title"></p>
+                    <div class="banner-heading">
+                      <span></span>
                     </div>
+                  </div>
                 </div>
+                <div class="content" v-html="current.description"></div>
+              </div>
             </div>
-        </section>
-    </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
 </template>
 
 <script>
-    import h2 from '@/components/h2';
-    import { mapGetters } from 'vuex';
+import h2 from "@/components/h2";
+import { mapGetters } from "vuex";
 
-    export default {
-        data: function() {
-            return {
-                isActive: false
-            }
-        },
-        components: {
-            'app-h2': h2,
-        },
-        computed: {
-            ...mapGetters({
-               current: 'pages/current',
-            }),
-            style () {
-                return `background-image: url(//api.spiralthread.com/${this.current.image.path});`;
-            }
-        },
-        props: {
-            title: String,
-            description: String,
-            image: Object,
-            subtitle: String
-        }
+export default {
+  data: function() {
+    return {
+      isActive: false
     };
+  },
+  components: {
+    "app-h2": h2
+  },
+  computed: {
+    ...mapGetters({
+      current: "pages/current"
+    }),
+    style() {
+      return `background-image: url(//api.spiralthread.com/${this.current.image.path});`;
+    }
+  },
+  props: {
+    title: String,
+    description: String,
+    image: Object,
+    subtitle: String
+  }
+};
 </script>
 
 <style lang="sass" scoped>
     @import '~/assets/css/mq.sass';
     .about-home
-        margin-top: -230px;
+        margin-top: -130px;
         +mobile
           margin-top: 0vw;
     .backimg
@@ -67,7 +66,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         padding: 220px 0;
-        height: 800px;
+        height: 672px;
         +mobile
             background-position: 30% -200px;
             background-repeat: no-repeat;
@@ -75,7 +74,7 @@
             padding: 150px 0;
             height: 255vw;
         .card
-            top: -23px;
+            top: -50px;
             +mobile
                 top: 35vw;
     h2
@@ -115,7 +114,6 @@
         padding: 10.3rem
     
     .card-content
-        margin-top: 50px;
         +mobile
             margin-top: 70%;
             margin-bottom: 20%;
