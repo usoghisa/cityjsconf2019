@@ -1,10 +1,8 @@
 <template>
   <section class="blackbag">
-    <div class="container">
+    <div class="">
       <div class="row">
-        <app-h2 title="Our Gallery" subtitle="some of the best moments" :is-h2="true" :white="true"></app-h2>
-
-        <div class="columns row columns is-mobile is-multiline">
+            <div class="columns row columns is-mobile is-multiline">
           <div class="column is-8">
             <div class="columns row columns is-mobile is-multiline">
               <div class="column is-12 is-12-mobile side-crop">
@@ -39,7 +37,7 @@
                   href="https://www.flickr.com/photos/182802514@N02/albums/72157710741420497"
                   target="_blank"
                 >
-                  <img class="is-2" src="/images/previous_year/audience2.jpg" />
+                  <img class="is-2" src="/images/previous_year/audience.jpg" />
                   <div class="pictitle">
                     <p>2019</p>
                   </div>
@@ -48,19 +46,35 @@
             </div>
           </div>
           <div class="column is-4">
-            <div class="columns">
-              <div class="column is-12 is-12-mobile">
+            <div class="columns is-multiline">
+
+
+               <div class="column is-12 is-12-mobile side-crop">
                 <a
                   class="polaroid"
                   href="https://www.flickr.com/photos/182802514@N02/albums/72157710741420497"
                   target="_blank"
                 >
-                  <img class="is-2" src="/images/previous_year/ex2.jpg" />
+                  <img class="is-2" src="/images/previous_year/audience.jpg" />
                   <div class="pictitle">
                     <p>2019</p>
                   </div>
                 </a>
               </div>
+   <div class="column is-12 is-12-mobile">
+                <a
+                  class="polaroid"
+                  href="https://www.flickr.com/photos/182802514@N02/albums/72157710741420497"
+                  target="_blank"
+                >
+                  <img class="is-2" src="/images/previous_year/people.jpg" />
+                  <div class="pictitle">
+                    <p>2019</p>
+                  </div>
+                </a>
+              </div>
+
+            </div>
             </div>
           </div>
         </div>
