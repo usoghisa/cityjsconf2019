@@ -2,8 +2,6 @@
   <section class="blackbag">
     <div class>
       <div class="row">
-        <!-- <app-h2 title="Our Gallery" subtitle="some of the best moments" :is-h2="true" :white="true"></app-h2> -->
-
         <div class="columns row columns is-mobile is-multiline">
           <div class="column is-8">
             <div class="columns row columns is-mobile is-multiline">
@@ -33,7 +31,6 @@
 
               <div class="column is-6 is-12-mobile">
                 <a
-                  class
                   href="https://www.flickr.com/photos/182802514@N02/albums/72157710741420497"
                   target="_blank"
                 >
@@ -94,13 +91,24 @@ export default {
 
     .blackbag
         background: $black;
-        padding: 20px;
-
+        
     .column
         display: flex;
         flex-direction: row;// this is default;
         padding: 0px;
 
+    .columns
+      overflow: hidden;
+
+    .polaroid
+      margin: 10px;
+      color: black;
+      position: relative;
+      display: block;
+      img
+        +mobile
+         float: left;
+         width: 24%;
 
         
     .photography
@@ -157,12 +165,11 @@ export default {
       position: relative;
       display: block;
       padding: 0px;
-      margin: 0px;
+      margin:
       img
         flex-shrink: 0;
         min-width: 100%;
-        xmin-height: 100%
+        min-height: 100%
         position: absolute;
         top: 0;
-        left: 0px;
 </style>

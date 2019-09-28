@@ -172,4 +172,5 @@ export default {
                 font-size: 1.4rem  !important;
             a
                 color: $black !important;
+
   </style>
