@@ -1,15 +1,14 @@
 <template>
   <section class="blackbag">
-    <div class="container">
+    <div class>
       <div class="row">
-        <app-h2 title="Our Gallery" subtitle="some of the best moments" :is-h2="true" :white="true"></app-h2>
+        <!-- <app-h2 title="Our Gallery" subtitle="some of the best moments" :is-h2="true" :white="true"></app-h2> -->
 
         <div class="columns row columns is-mobile is-multiline">
           <div class="column is-8">
             <div class="columns row columns is-mobile is-multiline">
               <div class="column is-12 is-12-mobile side-crop">
                 <a
-                  class="polaroid"
                   href="https://www.flickr.com/photos/182802514@N02/albums/72157710741420497"
                   target="_blank"
                 >
@@ -22,7 +21,6 @@
 
               <div class="column is-6 is-12-mobile">
                 <a
-                  class="polaroid"
                   href="https://www.flickr.com/photos/182802514@N02/albums/72157710741420497"
                   target="_blank"
                 >
@@ -35,7 +33,7 @@
 
               <div class="column is-6 is-12-mobile">
                 <a
-                  class="polaroid"
+                  class
                   href="https://www.flickr.com/photos/182802514@N02/albums/72157710741420497"
                   target="_blank"
                 >
@@ -47,21 +45,16 @@
               </div>
             </div>
           </div>
-          <div class="column is-4">
-            <div class="columns">
-              <div class="column is-12 is-12-mobile">
-                <a
-                  class="polaroid"
-                  href="https://www.flickr.com/photos/182802514@N02/albums/72157710741420497"
-                  target="_blank"
-                >
-                  <img class="is-2" src="/images/previous_year/ex2.jpg" />
-                  <div class="pictitle">
-                    <p>2019</p>
-                  </div>
-                </a>
+          <div class="column is-4 fill">
+            <a
+              href="https://www.flickr.com/photos/182802514@N02/albums/72157710741420497"
+              target="_blank"
+            >
+              <img class="is-2" src="/images/previous_year/ex2.jpg" />
+              <div class="pictitle">
+                <p>2019</p>
               </div>
-            </div>
+            </a>
           </div>
         </div>
 
@@ -106,17 +99,8 @@ export default {
     .column
         display: flex;
         flex-direction: row;// this is default;
+        padding: 0px;
 
-
-    .polaroid
-      margin: 10px;
-      color: black;
-      position: relative;
-      display: block;
-      img
-        +mobile
-         float: left;
-         width: 24%;
 
         
     .photography
@@ -165,4 +149,20 @@ export default {
         left: 0px;
         width: 100%;
 
+    .fill
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      position: relative;
+      display: block;
+      padding: 0px;
+      margin: 0px;
+      img
+        flex-shrink: 0;
+        min-width: 100%;
+        xmin-height: 100%
+        position: absolute;
+        top: 0;
+        left: 0px;
 </style>

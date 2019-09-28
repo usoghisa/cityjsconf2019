@@ -8,7 +8,8 @@
         :white="true"
       ></app-h2>
       <div class="columns">
-        <div :class="isMobile ? 'column is-1' : 'column is-3'">
+        <!-- <div :class="isMobile ? 'column is-1' : 'column is-3'"> -->
+        <div class="column">
           <div
             class="carousel carousel-animated carousel-animate-slide"
             :data-size="isMobile ? '1' : '3'"
@@ -171,6 +172,4 @@ export default {
                 font-size: 1.4rem  !important;
             a
                 color: $black !important;
-
-
-</style>
+  </style>
