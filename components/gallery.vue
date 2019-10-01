@@ -5,7 +5,7 @@
         <div class="columns row columns is-mobile is-multiline">
           <div class="column is-8">
             <div class="columns row columns is-mobile is-multiline">
-              <div class="column is-12 is-12-mobile side-crop">
+              <div class="column is-12 is-12-mobile">
                 <a
                   href="https://www.flickr.com/photos/182802514@N02/albums/72157710741420497"
                   target="_blank"
@@ -44,7 +44,7 @@
           </div>
           <div class="column is-4">
             <div class="columns row columns is-mobile is-multiline">
-              <div class="column is-12 side-crop">
+              <div class="column is-12">
                 <a
                   href="https://www.flickr.com/photos/182802514@N02/albums/72157710741420497"
                   target="_blank"
@@ -107,13 +107,6 @@ export default {
     .blackbag
         background: $black;
 
-    .column
-        display: flex;
-        flex-direction: row;// this is default;
-        padding: 0px;
-
-    .columns
-      overflow: hidden;
 
         
     .photography
@@ -170,7 +163,6 @@ export default {
       position: relative;
       display: block;
       padding: 0px;
-      margin:
       img
         flex-shrink: 0;
         min-width: 100%;
