@@ -22,7 +22,7 @@
                   href="https://www.flickr.com/photos/182802514@N02/albums/72157710741420497"
                   target="_blank"
                 >
-                  <img class="is-2" src="/images/previous_year/workshops.jpeg" />
+                  <img class="is-2" src="/images/previous_year/audience.jpg" />
                   <div class="pictitle">
                     <p>2019</p>
                   </div>
@@ -106,8 +106,6 @@ export default {
 
     .blackbag
         background: $black;
-
-
         
     .photography
       color: $white;
@@ -116,7 +114,6 @@ export default {
       a
         color: $white;
         font-weight: bold;
-
 
     .pictitle
       margin: 0px 0px;
