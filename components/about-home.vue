@@ -9,7 +9,7 @@
                 <div class="media">
                   <div class="media-content copy">
                     <div class="title is-4 no-padding" v-html="subtitle"></div>
-                    <p class="subtitle" v-html="current.title"></p>
+                    <p class="subtitle" v-html="current.subtitle"></p>
                     <div class="banner-heading">
                       <span></span>
                     </div>
