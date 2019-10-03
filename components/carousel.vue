@@ -78,9 +78,9 @@ export default {
     width: 240%;
     height: 200vw;
     +mobile
-      top: 0px;
-      height: 200vw;
-      background-position-y: 0;
+      top: -7%;
+      left: -70%;
+      width: 342%;
     +tablet
     +desktop
 
