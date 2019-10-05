@@ -43,7 +43,7 @@ export default {
       current: "pages/current"
     }),
     style() {
-      return `background-image: url(//api.spiralthread.com/${this.current.image.path});`;
+      return `background-image: url(/images/audience.jpg); background-repeat: no-repeat; background-size: cover;`;
     }
   },
   props: {
@@ -68,10 +68,10 @@ export default {
         padding: 220px 0;
         height: 672px;
         +mobile
-            background-position: 30% -200px;
+            background-position: 41% -273px;
             background-repeat: no-repeat;
             background-size: cover;
-            padding: 150px 0;
+            padding: 2.0rem 0;
             height: 255vw;
         .card
             top: -50px;

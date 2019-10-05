@@ -68,20 +68,25 @@ export default {
 
   .video_contain
     position: absolute;
-    background: url('/images/audience.jpg') no-repeat top
+    background: url(/videos/test.jpg) no-repeat top;
     background-repeat: no-repeat;
     padding: 150px 0;
     height: 100vw;
-    background-position-y: -185px;
-    top: 0%;
-    left: -70%;
-    width: 240%;
-    height: 200vw;
+    background-position-y: -156px;
+    left: 0;
+    width: 98%;
+    height: 215vw;
+    top: -1.2rem;
+    background-size: contain;
     +mobile
-      top: -7%;
-      left: -70%;
-      width: 342%;
+      top: -35%;
+      left: -9%;
+      width: 320%;
     +tablet
+      left: 3px;
+      width: 98%;
+      height: 215vw;
+      top: -1.5rem;
     +desktop
 
   .location

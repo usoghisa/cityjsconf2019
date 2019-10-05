@@ -9,6 +9,8 @@ npm-debug.log
 .env
 .env.dev
 
+.DS_Store
+
 # Nuxt generate
 dist
 

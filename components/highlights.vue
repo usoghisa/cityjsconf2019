@@ -125,10 +125,16 @@ export default {
         position: absolute
         bottom: 10px
 
-    .carousel-item
-        a
-            color: $black;
-            font-size: 20px;
+
+    .carousel 
+      .carousel-container 
+        .carousel-item
+            flex-basis: 30%;
+            +mobile
+              flex-basis: 100%;
+            a
+                color: $black;
+                font-size: 20px;
 
     .card-image
        overflow: hidden
