@@ -7,7 +7,7 @@
                 <section class="accordions faqs">
                     <article class="accordion "
                         :class="{ 'is-active': index === 0 }" 
-                        v-for="(item, index) in items"
+                        v-for="(item, index) in faqs"
                         v-bind:key="item._id"
                     >
                         <div class="accordion-header toggle">
@@ -30,7 +30,10 @@
 <script>
     import bulmaAccordion from 'bulma-extensions/bulma-accordion/dist/js/bulma-accordion.min.js'
     import 'bulma-extensions/bulma-accordion/dist/css/bulma-accordion.min.css';
+    import { mapGetters } from 'vuex'
+
     export default {
+        name: 'faq',
         props: {
             items: {
               type: Array
@@ -39,6 +42,14 @@
         mounted: function() {
                 this.accordions = bulmaAccordion.attach()
         },
+        created (store) {
+            this.$store.dispatch('faqs/get');
+        },
+        computed: { 
+            ...mapGetters({
+                faqs: 'faqs/faqs',
+            })
+        }
     }
 </script>
 

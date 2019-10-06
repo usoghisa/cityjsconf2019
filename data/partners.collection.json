@@ -1,0 +1,359 @@
+[
+    {
+        "name": "Trunomi",
+        "image": {
+            "path": "images\/2018sponsors\/trunomi.png"
+        },
+        "url": "www.trunomi.com",
+        "level": "",
+        "_mby": "5ba3ca7b6531330bbd0003ca",
+        "_by": "5ba3ca7b6531330bbd0003ca",
+        "_modified": 1541140949,
+        "_created": 1538944926,
+        "_id": "5bba6f9e653133f6e70001e5"
+    },
+    {
+        "name": "JS Weekly",
+        "image": {
+            "path": "images\/2018sponsors\/jsweekly.png"
+        },
+        "url": "http:\/\/www.jsweekly.com",
+        "level": "Bronze",
+        "_mby": "5ba3ca7b6531330bbd0003ca",
+        "_by": "5ba3ca7b6531330bbd0003ca",
+        "_modified": 1553354726,
+        "_created": 1538944989,
+        "_id": "5bba6fdd653133f73b000293",
+        "middle": "No"
+    },
+    {
+        "name": "IG Index",
+        "image": {
+            "path": "images\/2018sponsors\/IG_flat_red_bg.png"
+        },
+        "url": "igindex.com",
+        "level": "",
+        "_mby": "5ba3ca7b6531330bbd0003ca",
+        "_by": "5ba3ca7b6531330bbd0003ca",
+        "_modified": 1541140935,
+        "_created": 1538945013,
+        "_id": "5bba6ff5653133f74b0002f8"
+    },
+    {
+        "name": "City Uni",
+        "image": {
+            "path": "images\/2018sponsors\/cityuni.png"
+        },
+        "url": "city.ac.uk",
+        "level": "",
+        "_mby": "5ba3ca7b6531330bbd0003ca",
+        "_by": "5ba3ca7b6531330bbd0003ca",
+        "_modified": 1541140926,
+        "_created": 1538945040,
+        "_id": "5bba7010653133f76f0002aa"
+    },
+    {
+        "name": "Utility Warehouse",
+        "image": {
+            "path": "images\/2019-sponsors\/utilitywarehouse.png"
+        },
+        "url": "http:\/\/uw.engineering",
+        "level": "Gold",
+        "_mby": "5ba3ca7b6531330bbd0003ca",
+        "_by": "5ba3ca7b6531330bbd0003ca",
+        "_modified": 1553354346,
+        "_created": 1539013374,
+        "_id": "5bbb7afe65313324790000d8"
+    },
+    {
+        "name": "London JS Community",
+        "image": {
+            "path": "images\/2018sponsors\/london-js.png"
+        },
+        "url": "https:\/\/www.meetup.com\/London-JavaScript-Community\/",
+        "level": "Community",
+        "_mby": "5ba3ca7b6531330bbd0003ca",
+        "_by": "5ba3ca7b6531330bbd0003ca",
+        "_modified": 1554112914,
+        "_created": 1539516927,
+        "_id": "5bc329ff6531335b32000245",
+        "middle": "Yes"
+    },
+    {
+        "name": "JS Monthly",
+        "image": {
+            "path": "images\/2018sponsors\/jsmonthly.jpeg"
+        },
+        "url": "https:\/\/www.meetup.com\/js-monthly\/",
+        "level": "Community",
+        "_mby": "5ba3ca7b6531330bbd0003ca",
+        "_by": "5ba3ca7b6531330bbd0003ca",
+        "_modified": 1554112950,
+        "_created": 1539516978,
+        "_id": "5bc32a326531335b5f000114",
+        "middle": "Yes"
+    },
+    {
+        "name": "Devit",
+        "image": {
+            "path": "images\/2018sponsors\/devit-logo.svg"
+        },
+        "url": "https:\/\/devitconf.org\/",
+        "level": "",
+        "_mby": "5ba3ca7b6531330bbd0003ca",
+        "_by": "5ba3ca7b6531330bbd0003ca",
+        "_modified": 1541169729,
+        "_created": 1539517039,
+        "_id": "5bc32a6f6531335b830002fc"
+    },
+    {
+        "name": "Women Who Code",
+        "image": {
+            "path": "images\/2018sponsors\/wwc.jpg"
+        },
+        "url": "https:\/\/www.womenwhocode.com\/",
+        "level": "Community",
+        "_mby": "5ba3ca7b6531330bbd0003ca",
+        "_by": "5ba3ca7b6531330bbd0003ca",
+        "_modified": 1554112907,
+        "_created": 1539517087,
+        "_id": "5bc32a9f6531335bb7000210",
+        "middle": "Yes"
+    },
+    {
+        "name": "London Node User Group",
+        "image": {
+            "path": "images\/2018sponsors\/lnug.png"
+        },
+        "url": "https:\/\/lnug.org\/",
+        "level": "Community",
+        "_mby": "5ba3ca7b6531330bbd0003ca",
+        "_by": "5ba3ca7b6531330bbd0003ca",
+        "_modified": 1554112931,
+        "_created": 1539517126,
+        "_id": "5bc32ac66531335bdb0003e5",
+        "middle": "Yes"
+    },
+    {
+        "name": "Dazn",
+        "image": {
+            "path": "images\/2019-sponsors\/DAZN_BoxedLogo_01_RGB.jpg"
+        },
+        "url": "https:\/\/engineering.dazn.com",
+        "level": "Platinum",
+        "_mby": "5ba3ca7b6531330bbd0003ca",
+        "_by": "5ba3ca7b6531330bbd0003ca",
+        "_modified": 1545143732,
+        "_created": 1539517412,
+        "_id": "5bc32be46531335cbc00027b"
+    },
+    {
+        "name": "JavaScript Works",
+        "image": {
+            "path": "images\/2018sponsors\/jsworks.png"
+        },
+        "url": "",
+        "level": "",
+        "_mby": "5ba3ca7b6531330bbd0003ca",
+        "_by": "5ba3ca7b6531330bbd0003ca",
+        "_modified": 1541140898,
+        "_created": 1539517885,
+        "_id": "5bc32dbd6531335e720000db"
+    },
+    {
+        "name": "techdomains",
+        "image": {
+            "path": "images\/2018sponsors\/techdom.png"
+        },
+        "url": "https:\/\/get.tech\/",
+        "level": "",
+        "_mby": "5ba3ca7b6531330bbd0003ca",
+        "_by": "5ba3ca7b6531330bbd0003ca",
+        "_modified": 1553354679,
+        "_created": 1539544025,
+        "_id": "5bc393d9653133b5b8000321",
+        "middle": "No"
+    },
+    {
+        "name": "HalfStack",
+        "image": {
+            "path": "images\/halfstack-logo.png"
+        },
+        "url": "https:\/\/halfstackconf.com\/",
+        "level": "Community",
+        "_mby": "5ba3ca7b6531330bbd0003ca",
+        "_by": "5ba3ca7b6531330bbd0003ca",
+        "_modified": 1554112853,
+        "_created": 1541143590,
+        "_id": "5bdbfc266531335c6900027b",
+        "middle": "Yes"
+    },
+    {
+        "name": "Nexmo",
+        "image": {
+            "path": "images\/2019-sponsors\/Nexmo_VonageAPI_horiz.png"
+        },
+        "url": "http:\/\/www.nexmo.com",
+        "level": "Silver",
+        "_mby": "5ba3ca7b6531330bbd0003ca",
+        "_by": "5ba3ca7b6531330bbd0003ca",
+        "_modified": 1553355110,
+        "_created": 1545143168,
+        "_id": "5c19038065313351040001be",
+        "middle": "Yes"
+    },
+    {
+        "name": "Manning",
+        "image": {
+            "path": "images\/2019-sponsors\/manning.png"
+        },
+        "url": "https:\/\/manning.com",
+        "level": "Bronze",
+        "_mby": "5ba3ca7b6531330bbd0003ca",
+        "_by": "5ba3ca7b6531330bbd0003ca",
+        "_modified": 1553354665,
+        "_created": 1547776031,
+        "_id": "5c41301f6531332522000338",
+        "middle": "No"
+    },
+    {
+        "name": "Cloudinary",
+        "image": {
+            "path": "images\/2019-sponsors\/cloudinary_logo_for_dark_bg.png"
+        },
+        "url": "https:\/\/cloudinary.com\/",
+        "level": "Silver",
+        "_mby": "5ba3ca7b6531330bbd0003ca",
+        "_by": "5ba3ca7b6531330bbd0003ca",
+        "_modified": 1553354659,
+        "_created": 1550045233,
+        "_id": "5c63d0316531338cdc00022d",
+        "middle": "No"
+    },
+    {
+        "name": "MongoDB",
+        "image": {
+            "path": "images\/2019-sponsors\/logo-cmyk.png"
+        },
+        "url": "https:\/\/www.mongodb.com\/",
+        "level": "Silver",
+        "_mby": "5ba3ca7b6531330bbd0003ca",
+        "_by": "5ba3ca7b6531330bbd0003ca",
+        "_modified": 1553354643,
+        "_created": 1550224718,
+        "_id": "5c668d4e653133642f000358",
+        "middle": "No"
+    },
+    {
+        "name": "AI Javascript London meetup",
+        "image": {
+            "path": "images\/aijs.png"
+        },
+        "url": "https:\/\/www.meetup.com\/AI-JavaScript-London\/",
+        "level": "Community",
+        "_mby": "5ba3ca7b6531330bbd0003ca",
+        "_by": "5ba3ca7b6531330bbd0003ca",
+        "_modified": 1554112878,
+        "_created": 1550652546,
+        "_id": "5c6d14826531332d600000a1",
+        "middle": "Yes"
+    },
+    {
+        "name": "Microsoft Reactor",
+        "image": {
+            "path": "images\/2019-sponsors\/New-reactor-color-06.png"
+        },
+        "url": "https:\/\/developer.microsoft.com\/en-us\/reactor\/",
+        "level": "Bronze",
+        "_mby": "5ba3ca7b6531330bbd0003ca",
+        "_by": "5ba3ca7b6531330bbd0003ca",
+        "_modified": 1553354623,
+        "_created": 1552309773,
+        "_id": "5c865e0d653133acdb00023b",
+        "middle": "No"
+    },
+    {
+        "name": "Cooper Press",
+        "image": {
+            "path": "images\/2019-sponsors\/cooperpress.png"
+        },
+        "url": "https:\/\/cooperpress.com\/",
+        "level": "Bronze",
+        "_mby": "5ba3ca7b6531330bbd0003ca",
+        "_by": "5ba3ca7b6531330bbd0003ca",
+        "_modified": 1553354615,
+        "_created": 1552323494,
+        "_id": "5c8693a6653133e9c8000096",
+        "middle": "No"
+    },
+    {
+        "name": "DigitalIQ",
+        "image": {
+            "path": "images\/2019-sponsors\/digiq.png"
+        },
+        "url": "https:\/\/dig-iq.com",
+        "level": "Gold",
+        "_mby": "5ba3ca7b6531330bbd0003ca",
+        "_by": "5ba3ca7b6531330bbd0003ca",
+        "_modified": 1553354598,
+        "_created": 1553352311,
+        "_id": "5c9646776531335077000242",
+        "middle": "Yes"
+    },
+    {
+        "name": "JSCamp",
+        "image": {
+            "path": "images\/2019-sponsors\/jscamp_logo.png"
+        },
+        "url": "https:\/\/jscamp.tech\/",
+        "level": "Community",
+        "middle": "Yes",
+        "_mby": "5ba3ca7b6531330bbd0003ca",
+        "_by": "5ba3ca7b6531330bbd0003ca",
+        "_modified": 1554112789,
+        "_created": 1554112789,
+        "_id": "5ca1e1156531332aac00036e"
+    },
+    {
+        "name": "JSNation",
+        "image": {
+            "path": "images\/2019-sponsors\/jsnation.png"
+        },
+        "url": "https:\/\/jsnation.com\/",
+        "level": "Community",
+        "middle": "Yes",
+        "_mby": "5ba3ca7b6531330bbd0003ca",
+        "_by": "5ba3ca7b6531330bbd0003ca",
+        "_modified": 1555269778,
+        "_created": 1555269778,
+        "_id": "5cb38892653133924900011f"
+    },
+    {
+        "name": "Pusher",
+        "image": {
+            "path": "images\/2019-sponsors\/puser.png"
+        },
+        "url": "https:\/\/pusher.com",
+        "level": "Video",
+        "middle": "No",
+        "_mby": "5ba3ca7b6531330bbd0003ca",
+        "_by": "5ba3ca7b6531330bbd0003ca",
+        "_modified": 1558600556,
+        "_created": 1555305674,
+        "_id": "5cb414ca65313333090001e9"
+    },
+    {
+        "name": "FoundersAndCoders",
+        "image": {
+            "path": "images\/2018sponsors\/foundersandcoders.png"
+        },
+        "url": "https:\/\/www.foundersandcoders.com\/",
+        "level": "Community",
+        "middle": "Yes",
+        "_mby": "5ba3ca7b6531330bbd0003ca",
+        "_by": "5ba3ca7b6531330bbd0003ca",
+        "_modified": 1555931097,
+        "_created": 1555931097,
+        "_id": "5cbd9fd9653133a38f0003d2"
+    }
+]

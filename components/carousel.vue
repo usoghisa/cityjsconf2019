@@ -3,43 +3,31 @@
     <div class="overlay">
       <div class="overlay-container">
         <section id="home">
-            <div class="video_shader"></div>
-            <div class="video_contain">
-            </div>
+          <div class="video_shader"></div>
+          <div class="video_contain"></div>
         </section>
-        <div class="columns has-text-centered slide is-marginless ">
-          <div class="column is-two-thirds  is-6 is-offset-4 contend">
+        <div class="columns has-text-centered slide is-marginless">
+          <div class="column is-two-thirds is-6 is-offset-4 contend">
             <h1>
-              <b>City of London JavaScript Conference
-                <br/>
-                CityJS Conference
-                <br/>
-                1 - 3 May 2019
-                <br/>
+              <b>
+                City of London JavaScript Conference
+                <br />CityJS Conference
               </b>
             </h1>
-            <h2 class="location">Curzon Soho | Microsoft Reactor</h2>
-            <a 
-                href="/buytickets" 
-                class="is-info  button info is-primary">
-                  Get your tickets
-            </a>
+            <!-- <h2 class="location">Curzon Soho | Microsoft Reactor</h2> -->
+            <!-- <a href="/buytickets" class="is-info button info is-primary">Get your tickets</a> -->
           </div>
         </div>
       </div>
     </div>
-      <Timer 
-        starttime="May 1, 2019 09:00:00" 
-        endtime="May 1, 2019 17:00:00"
-      >
-      </Timer>
-    </div>
+    <!-- <Timer starttime="May 1, 2019 09:00:00" endtime="May 1, 2019 17:00:00"></Timer> -->
+  </div>
 </template>
 
 
 <script>
-import timer from '@/components/timer';
-import h2 from '@/components/h2';
+import timer from "@/components/timer";
+import h2 from "@/components/h2";
 export default {
   props: {
     slides: {
@@ -47,8 +35,8 @@ export default {
     }
   },
   components: {
-    'Timer': timer,
-    'app-h2': h2,
+    Timer: timer,
+    "app-h2": h2
   }
 };
 </script>
@@ -80,25 +68,25 @@ export default {
 
   .video_contain
     position: absolute;
-    background: url('/images/background.jpg') no-repeat top
+    background: url(/images/previous_year/cinema1.jpg) no-repeat top;
     background-repeat: no-repeat;
-    background-size: cover;
     padding: 150px 0;
     height: 100vw;
-    background-position-y: -185px;
-    -webkit-background-size: contain;
-    -moz-background-size: contain;
-    -o-background-size: contain;
+    background-position-y: -156px;
+    left: 0;
+    width: 98%;
+    height: 215vw;
+    top: -1.2rem;
     background-size: contain;
-    top: 0%;
-    left: -70%;
-    width: 200%;
-    height: 200vw;
     +mobile
-      top: 0px;
-      height: 200vw;
-      background-position-y: 0;
+      top: -35%;
+      left: -9%;
+      width: 320%;
     +tablet
+      left: 3px;
+      width: 100%;
+      height: 215vw;
+      top: -1.5rem;
     +desktop
 
   .location

@@ -110,6 +110,9 @@ export default {
     background-color: transparent !important;
     a:hover
       text-decoration: underlined;
+    a:focus
+      background: transparent;
+      color: #fff;
 
   a.r-item
     color: $white;

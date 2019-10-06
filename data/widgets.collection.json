@@ -1,0 +1,56 @@
+[
+    {
+        "title": "About our event",
+        "shortDescription": "<p>CityJSConf is a one day conference, a joint event from the London's JavaScript meetups, including&nbsp;<a href=\"https:\/\/www.meetup.com\/London-JavaScript-Community\/\">London JS Community<\/a>,&nbsp;<a href=\"https:\/\/www.meetup.com\/js-monthly\/\">JS Monthly<\/a>,&nbsp;<a href=\"https:\/\/www.meetup.com\/halfstack\/\">Halfstack<\/a><\/p>\n<p>This is a fantastic opportunity for those meetups that bring great speakers from London and the rest of UK and the world to come together to share their collective knowledge about modern JavaScript development. The event takes place at the heart of London, in one of the best Universities in the UK.<\/p>",
+        "url": "",
+        "image": {
+            "path": "images\/aboutus.png"
+        },
+        "type": "",
+        "custom": "",
+        "_mby": "5ba3ca7b6531330bbd0003ca",
+        "_by": "5ba3ca7b6531330bbd0003ca",
+        "_modified": 1538426778,
+        "_created": 1537519741,
+        "_id": "5ba4b07d653133fabc000236"
+    },
+    {
+        "title": "Speakers",
+        "shortDescription": "<p>We will be announcing our speakers once the Call For Papers is completed. Our Call for papers commitee will be selecting the best talks and offers will be made to the speakers.&nbsp;<\/p>\n<p>We would advise you to first let us know what is the title\/subject of your talk before we make a decision on paying for travel and accommodation.<\/p>",
+        "url": "",
+        "image": [],
+        "type": "",
+        "custom": "",
+        "_mby": "5ba3ca7b6531330bbd0003ca",
+        "_by": "5ba3ca7b6531330bbd0003ca",
+        "_modified": 1538488680,
+        "_created": 1538488680,
+        "_id": "5bb3796865313347c200035a"
+    },
+    {
+        "title": "FAQ",
+        "shortDescription": "",
+        "url": "",
+        "image": [],
+        "type": "Component",
+        "custom": "FAQ",
+        "_mby": "5ba3ca7b6531330bbd0003ca",
+        "_by": "5ba3ca7b6531330bbd0003ca",
+        "_modified": 1566756576,
+        "_created": 1566756361,
+        "_id": "5d62ce0965313342700002cf"
+    },
+    {
+        "title": "Sponsors",
+        "shortDescription": "",
+        "url": "",
+        "image": [],
+        "type": "Component",
+        "custom": "Sponsors",
+        "_mby": "5ba3ca7b6531330bbd0003ca",
+        "_by": "5ba3ca7b6531330bbd0003ca",
+        "_modified": 1566756560,
+        "_created": 1566756516,
+        "_id": "5d62cea4653133433900015d"
+    }
+]

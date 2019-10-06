@@ -5,12 +5,21 @@ module.exports = {
   /*
   ** Headers of the page
   */
- generate: {
-  routes: [
-    '/',
-  ]
- },
- env: {
+  generate: {
+    routes: [
+      '/',
+    ]
+  },
+  metaInfo: {
+    htmlAttrs: {
+      lang: 'en',
+      amp: true
+    },
+    bodyAttrs: {
+      class: ['dark-mode', 'mobile']
+    }
+  },
+  env: {
     baseUrl: process.env.BASE_URL || 'http://localhost:3000'
   },
   head: {
@@ -21,7 +30,7 @@ module.exports = {
       { hid: 'description', name: 'description', content: 'City of London Conference by the London JS Community' },
       { property: 'og:title', content: 'CityJS Conference 2019, London, 1 - 3 May 2019' },
       { property: 'og:description', content: 'City of London JavaScript Conference by the London JS Community' },
-      { property: 'og:image', content: '//api.spiralthread.com/images/audience.png' },
+      { property: 'og:image', content: '//api.spiralthread.com/images/audience.jpg' },
       { property: 'og:url', content: '//www.cityjsconf.org' },
       { name: 'twitter:card', content: 'summary_large_image' },
       { property: 'og:site_name', content: 'City of London JavaScript Conference' },
@@ -44,7 +53,7 @@ module.exports = {
     /*
     ** Run ESLint on save
     */
-    extend (config, { isClient, loaders: { vue } }) {
+    extend(config, { isClient, loaders: { vue } }) {
       if (config.dev && isClient) {
         config.module.rules.push({
           enforce: 'pre',
@@ -53,11 +62,11 @@ module.exports = {
           exclude: /(node_modules)/
         })
       }
-      
+
       // if (isClient) {
       //   config.entry.vendor.push('babel-polyfill')
       // }
-               
+
     },
     postcss: {
       plugins: {
@@ -70,9 +79,10 @@ module.exports = {
     { src: '~plugins/gmaps', ssr: false },
     { src: '~plugins/scroll', ssr: false },
     { src: '~plugins/ga', ssr: false },
+    { src: '~plugins/async', ssr: false },
   ],
   modules: [
-    '@nuxtjs/dotenv', 
+    '@nuxtjs/dotenv',
     '@nuxtjs/bulma',
     'nuxt-fontawesome',
     '@nuxtjs/pwa',
