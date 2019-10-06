@@ -14,8 +14,8 @@
                 <br />CityJS Conference
               </b>
             </h1>
-            <!-- <h2 class="location">Curzon Soho | Microsoft Reactor</h2> -->
-            <!-- <a href="/buytickets" class="is-info button info is-primary">Get your tickets</a> -->
+            <!-- <a href="/buytickets" class="is-info button info is-primary">Get your tickets</a>
+             <a href="/" class="is-info button info is-primary">Submit your proposal</a> -->
           </div>
         </div>
       </div>
@@ -47,6 +47,11 @@ export default {
   h2
     padding: 5px;
 
+  h1 
+    margin-bottom: 4.2rem;
+    margin-top: 5.2rem;
+
+
   .contend
     color: $white;
     font-size: 2.4736rem
@@ -65,6 +70,7 @@ export default {
       font-size: 1.2rem;
       height: 200vw;
       @include position(absolute, $top: 33%, $left: 4%)
+      
 
   .video_contain
     position: absolute;
@@ -80,7 +86,7 @@ export default {
     background-size: contain;
     +mobile
       top: -35%;
-      left: -9%;
+      left: -78%;
       width: 320%;
     +tablet
       left: 3px;
@@ -101,8 +107,8 @@ export default {
     +mobile
       height: 113vw;
       min-height: 300px;
-    +microtablet 
-      height: 600px;
+    +tablet
+      height: 47vw;
       min-height: 40vw;
     +desktop
       min-height: 100vw;

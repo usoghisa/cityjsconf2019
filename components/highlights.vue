@@ -132,6 +132,8 @@ export default {
             flex-basis: 30%;
             +mobile
               flex-basis: 100%;
+            +tablet
+              flex-basis: 50%;
             a
                 color: $black;
                 font-size: 20px;
