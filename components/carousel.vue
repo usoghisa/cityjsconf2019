@@ -68,7 +68,7 @@ export default {
 
   .video_contain
     position: absolute;
-    background: url(/videos/test.jpg) no-repeat top;
+    background: url(/images/previous_year/cinema1.jpg) no-repeat top;
     background-repeat: no-repeat;
     padding: 150px 0;
     height: 100vw;
@@ -84,7 +84,7 @@ export default {
       width: 320%;
     +tablet
       left: 3px;
-      width: 98%;
+      width: 100%;
       height: 215vw;
       top: -1.5rem;
     +desktop

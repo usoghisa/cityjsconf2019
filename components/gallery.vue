@@ -10,7 +10,7 @@
                   href="https://www.flickr.com/photos/182802514@N02/albums/72157710741420497"
                   target="_blank"
                 >
-                  <img class="is-2" src="/images/previous_year/test1.jpg" />
+                  <img class="is-2" src="/images/previous_year/city1.jpg" />
                 </a>
               </div>
 
@@ -19,7 +19,7 @@
                   href="https://www.flickr.com/photos/182802514@N02/albums/72157710741420497"
                   target="_blank"
                 >
-                  <img class="is-2" src="/images/previous_year/test2.jpg" />
+                  <img class="is-2" src="/images/previous_year/city2.jpg" />
                 </a>
               </div>
 
@@ -28,7 +28,7 @@
                   href="https://www.flickr.com/photos/182802514@N02/albums/72157710741420497"
                   target="_blank"
                 >
-                  <img class="is-2" src="/images/previous_year/test2.jpg" />
+                  <img class="is-2" src="/images/previous_year/city3.jpg" />
                 </a>
               </div>
             </div>
@@ -40,7 +40,7 @@
                   href="https://www.flickr.com/photos/182802514@N02/albums/72157710741420497"
                   target="_blank"
                 >
-                  <img class="is-2" src="/images/previous_year/test3.jpg" />
+                  <img class="is-2" src="/images/previous_year/city4.jpg" />
                 </a>
               </div>
 
