@@ -3,7 +3,7 @@
     <section class="about-home section backimg is-mobile" :style="style">
       <div class="container">
         <div class="columns level-right">
-          <div class="column is-4 is-offset-4">
+          <div class="column is-4-desktop is-12-mobile is-12-tablet is-offset-4">
             <div class="card">
               <div class="card-content">
                 <div class="media">
@@ -117,6 +117,7 @@ export default {
         +mobile
             margin-top: 70%;
             margin-bottom: 20%;
+
         .copy
             position: relative;
             display: block;
