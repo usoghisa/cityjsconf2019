@@ -61,6 +61,9 @@ module.exports = {
           loader: 'eslint-loader',
           exclude: /(node_modules)/
         })
+
+        vue.transformAssetUrls.img = ['data-src', 'src'];
+        vue.transformAssetUrls.source = ['data-srcset', 'srcset'];
       }
 
       // if (isClient) {
@@ -80,6 +83,7 @@ module.exports = {
     { src: '~plugins/scroll', ssr: false },
     { src: '~plugins/ga', ssr: false },
     { src: '~plugins/async', ssr: false },
+    { src: '~plugins/vue-lazysizes.client.js', ssr: true },
   ],
   modules: [
     '@nuxtjs/dotenv',

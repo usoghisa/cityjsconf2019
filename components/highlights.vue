@@ -26,7 +26,8 @@
                     <img
                       v-if="typeof item.image!== 'undefined'"
                       :alt="item.name"
-                      :src="`//api.spiralthread.com/${item.image.path}`"
+                      :data-src="`//api.spiralthread.com/${item.image.path}`"
+                      class="lazyload" 
                     />
                   </figure>
                   <div class="media-content">

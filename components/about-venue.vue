@@ -35,7 +35,7 @@
               >
                 <figure class="column is-narrow is-clipped is-hidden-mobile">
                   <p class="image" style="width: 160px;">
-                    <img src="https://mythril.nyc3.cdn.digitaloceanspaces.com/games/icons/2.jpeg" />
+                    <img class="lazysizes" data-src="https://mythril.nyc3.cdn.digitaloceanspaces.com/games/icons/2.jpeg" />
                   </p>
                 </figure>
                 <div class="column" style="position: relative;">
@@ -58,7 +58,7 @@
               >
                 <figure class="column is-narrow is-clipped is-hidden-mobile">
                   <p class="image" style="width: 160px;">
-                    <img src="https://mythril.nyc3.cdn.digitaloceanspaces.com/games/icons/2.jpeg" />
+                    <img class="lazysizes" data-src="https://mythril.nyc3.cdn.digitaloceanspaces.com/games/icons/2.jpeg" />
                   </p>
                 </figure>
                 <div class="column" style="position: relative;">
@@ -81,7 +81,7 @@
               >
                 <figure class="column is-narrow is-clipped is-hidden-mobile">
                   <p class="image" style="width: 160px;">
-                    <img src="https://mythril.nyc3.cdn.digitaloceanspaces.com/games/icons/2.jpeg" />
+                    <img class="lazysizes" data-src="https://mythril.nyc3.cdn.digitaloceanspaces.com/games/icons/2.jpeg" />
                   </p>
                 </figure>
                 <div class="column" style="position: relative;">
