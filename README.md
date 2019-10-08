@@ -1,32 +1,12 @@
-# CityJSConf Website
+# STATIC
 
-To get the project running you will need to clone this project
+This directory contains your static files.
+Each file inside this directory is mapped to /.
 
+Example: /static/robots.txt is mapped as /robots.txt.
 
-# PREREQUISITE 
+More information about the usage of this directory in the documentation:
+https://nuxtjs.org/guide/assets#static
 
-You will neeed to get .env file that contains all the information for configurations. 
-
-
-# Running the project  
-
-Then simply run:
-
-npm install  -- To Install all the depedancies 
-
-
-To run it on development you will need to run 
-
-npm run dev 
-
-To Build the project you will need to run 
-
-npm run generate:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt generate 
-
-This will generate a dist folder that we upload to the gh-pages brunch 
-
-
-
-
-
+**This directory is not required, you can delete it if you don't want to use it.**
 
