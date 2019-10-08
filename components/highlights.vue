@@ -3,7 +3,7 @@
     <div class id="videos">
       <app-h2
         :title="`Our ${current.year} Highlights`"
-        :subtitle="`View from our amazing ${this.year} speakers (sponsored by Pusher)`"
+        :subtitle="`View from our amazing ${current.year} speakers (sponsored by Pusher)`"
         :is-h2="true"
         :white="true"
       ></app-h2>
