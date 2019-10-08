@@ -38,7 +38,9 @@
 <style lang="sass" scoped>
     @import '~/assets/css/mq.sass';
 
-
+    .main
+      height: 100%;
+      
     footer
         background: #000;
         color: #fff

@@ -8,7 +8,7 @@
         </app-nav>
     </section>
     <nuxt/>
-    <app-footer/>
+    <app-footer ng-if="pages"/>
   </div>
 </template>
 <script>

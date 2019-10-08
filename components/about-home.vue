@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section class="about-home section backimg is-mobile" :style="style">
+    <section class="about-home section backimg is-mobile lazyload" :style="style">
       <div class="container">
         <div class="columns level-right">
           <div class="column is-4-desktop is-12-mobile is-12-tablet is-offset-4">
@@ -42,9 +42,6 @@ export default {
     ...mapGetters({
       current: "pages/current"
     }),
-    style() {
-      return `background-image: url(/images/audience.jpg); background-repeat: no-repeat; background-size: cover;`;
-    }
   },
   props: {
     title: String,
@@ -67,12 +64,16 @@ export default {
         background-size: cover;
         padding: 220px 0;
         height: 672px;
-        +mobile
-            background-position: 41% -273px;
-            background-repeat: no-repeat;
-            background-size: cover;
-            padding: 2.0rem 0;
-            height: 255vw;
+        &.lazyloaded
+          background-image: url(/images/audience.jpg); 
+          background-repeat: no-repeat; 
+          background-size: cover;
+          +mobile
+              background-position: 41% -273px;
+              background-repeat: no-repeat;
+              background-size: cover;
+              padding: 2.0rem 0;
+              height: 255vw;
         .card
             top: -50px;
             +mobile
