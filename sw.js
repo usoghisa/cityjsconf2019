@@ -22,16 +22,8 @@ workbox.precaching.precacheAndRoute([
     "revision": "0adf5862e541682fcdb9736ffde64d72"
   },
   {
-    "url": "/_nuxt/464a95395b11a95d083a.js",
-    "revision": "af5c0286622625ccfaa4b23fdc58bbf0"
-  },
-  {
     "url": "/_nuxt/4678a0449cfcef142526.js",
     "revision": "6e1e8a477700ddbd41364b29a8fcec32"
-  },
-  {
-    "url": "/_nuxt/4c0f5746f858dd16089c.js",
-    "revision": "5605dbb3631f9b8f11aebb25dec75a60"
   },
   {
     "url": "/_nuxt/5d524cd1300a4985802a.js",
@@ -44,6 +36,10 @@ workbox.precaching.precacheAndRoute([
   {
     "url": "/_nuxt/61f2520bb5251996dea3.js",
     "revision": "7396abfdf33b60b53e5946a482d1e347"
+  },
+  {
+    "url": "/_nuxt/655696389274753eecb9.js",
+    "revision": "a77fdde38cf3002d3221966e13d6ffb0"
   },
   {
     "url": "/_nuxt/6da3fab03495cdc3dc56.js",
@@ -70,24 +66,20 @@ workbox.precaching.precacheAndRoute([
     "revision": "f399220bea0b5384f855669028e924bc"
   },
   {
-    "url": "/_nuxt/9ad666c01f573e5d79a5.js",
-    "revision": "0162ea18bf88ad24249cebc808c4af25"
+    "url": "/_nuxt/aa734d5821e709f4b46e.js",
+    "revision": "ba3c59747e56084cdab7fcd7d354e971"
+  },
+  {
+    "url": "/_nuxt/b834c443563d6caf8fb7.js",
+    "revision": "777d4f3a46ec70b41a0e777ef288f574"
   },
   {
     "url": "/_nuxt/bd05afb08f90c933010c.js",
     "revision": "5d43c3fc9e8a654bf1082d96e36b121f"
   },
   {
-    "url": "/_nuxt/be302a477d17aa177a75.js",
-    "revision": "2f52c48c774b69b88cb7e0a8f0ec89a5"
-  },
-  {
     "url": "/_nuxt/d22e455889f692ebf99d.js",
     "revision": "943b6e6bf927db806ca1289fc0a92e8e"
-  },
-  {
-    "url": "/_nuxt/d9a8ae7232a3277bbf2c.js",
-    "revision": "776142cd2fb2da97999af07805396a37"
   },
   {
     "url": "/_nuxt/df563c13b70c5f037b96.js",
@@ -112,6 +104,14 @@ workbox.precaching.precacheAndRoute([
   {
     "url": "/_nuxt/f58bca549ac68ff9d1fc.js",
     "revision": "6f6ebe6c8f72ae1164646542509e9720"
+  },
+  {
+    "url": "/_nuxt/fa58683da5d785109be1.js",
+    "revision": "d2928fab736636dcaf304378e8e227ba"
+  },
+  {
+    "url": "/_nuxt/ffb962768e75d687b3d5.js",
+    "revision": "99ae3af64613e7e79fc7d3125c867d95"
   }
 ], {
   "cacheId": "cityjsconf",
