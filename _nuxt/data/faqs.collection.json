@@ -1,0 +1,38 @@
+[
+    {
+        "question": "Will you be able to pay for speakers travel?",
+        "answer": "<p>We would advise you to first let us know what is the title\/subject of your talk before we make a decision on paying for travel and accommodation.<\/p>",
+        "_mby": "5ba3ca7b6531330bbd0003ca",
+        "_by": "5ba3ca7b6531330bbd0003ca",
+        "_modified": 1538557895,
+        "_created": 1538557895,
+        "_id": "5bb487c76531335783000282"
+    },
+    {
+        "question": "Do you have a code of conduct",
+        "answer": "<p>Check our <a href=\"\/coc\" target=\"_blank\" rel=\"noopener\">Code of Conduct<\/a> page<\/p>",
+        "_mby": "5ba3ca7b6531330bbd0003ca",
+        "_by": "5ba3ca7b6531330bbd0003ca",
+        "_modified": 1549987817,
+        "_created": 1538557925,
+        "_id": "5bb487e565313357a00001ae"
+    },
+    {
+        "question": "What is your refund policy?",
+        "answer": "<p>Refunds permitted until 28th of December for the very early birds, tickets are fully transferrable to another attendee until the day prior to the event. Rest of tickets can be refunded by the 28th of February.<\/p>",
+        "_mby": "5ba3ca7b6531330bbd0003ca",
+        "_by": "5ba3ca7b6531330bbd0003ca",
+        "_modified": 1542024920,
+        "_created": 1538557961,
+        "_id": "5bb4880965313357c40003b2"
+    },
+    {
+        "question": "Do I get a free workshop with my ticket?",
+        "answer": "<p>No you have to get your workshop seperately. Workshops tickets will be given seperately.<\/p>",
+        "_mby": "5ba3ca7b6531330bbd0003ca",
+        "_by": "5ba3ca7b6531330bbd0003ca",
+        "_modified": 1544023651,
+        "_created": 1544023651,
+        "_id": "5c07ee63653133f69a00015d"
+    }
+]
