@@ -64,4 +64,8 @@
 </script>
 
 <style>
+.home {
+    display: flex;
+    flex-direction: column;
+}
 </style>
