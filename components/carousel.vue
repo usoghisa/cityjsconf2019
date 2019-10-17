@@ -4,7 +4,7 @@
       <div class="overlay-container">
         <section id="home">
           <div class="video_shader"></div>
-          <div class="video_contain"></div>
+          <div class="video_contain lazyload" data-bg="/images/previous_year/cinema1.jpg"></div>
         </section>
         <div class="columns has-text-centered slide is-marginless">
           <div class="column is-two-thirds is-6 is-offset-4 contend">
@@ -73,27 +73,28 @@ export default {
       
 
   .video_contain
-    position: absolute;
-    background: url(/images/previous_year/cinema1.jpg) no-repeat top;
-    background-repeat: no-repeat;
-    padding: 150px 0;
-    height: 100vw;
-    background-position-y: -156px;
-    left: 0;
-    width: 98%;
-    height: 215vw;
-    top: -1.2rem;
-    background-size: contain;
-    +mobile
-      top: -35%;
-      left: -78%;
-      width: 320%;
-    +tablet
-      left: 3px;
-      width: 100%;
+    &.lazyloaded
+      background: url(/images/previous_year/cinema1.jpg) no-repeat top;
+      position: absolute;
+      background-repeat: no-repeat;
+      padding: 150px 0;
+      height: 100vw;
+      background-position-y: -156px;
+      left: 0;
+      width: 98%;
       height: 215vw;
-      top: -1.5rem;
-    +desktop
+      top: -1.2rem;
+      background-size: contain;
+      +mobile
+        top: -35%;
+        left: -78%;
+        width: 320%;
+      +tablet
+        left: 3px;
+        width: 100%;
+        height: 215vw;
+        top: -1.5rem;
+      +desktop
 
   .location
     font-size: 1.8rem;

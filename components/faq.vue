@@ -1,56 +1,57 @@
 <template>
     <section class="section bg-gray">
-      <div class="container ">
-        <div class="columns">
-         <div class=" column is-two about-content ">
-            <h2 class="title">Frequently Asked Questions</h2>
-                <section class="accordions faqs">
-                    <article class="accordion "
-                        :class="{ 'is-active': index === 0 }" 
-                        v-for="(item, index) in faqs"
-                        v-bind:key="item._id"
+        <div class="container ">
+            <div class="columns">
+                <div class=" column is-two about-content ">
+                    <h2 class="title">Frequently Asked Questions</h2>
+                    <BulmaAccordion
+                        dropdown
+                        :icon="'plus-minus'"
+                        :caretAnimation="{
+                            duration: '.2s',
+                            timerFunc: 'ease-in-out'
+                        }"
+                        :slide="{
+                            duration: '.2s',
+                            timerFunc: 'ease'
+                        }"
                     >
-                        <div class="accordion-header toggle">
-                        <button class="toggle" aria-label="toggle"></button>
-                        <p>{{item.question}}</p>
-                        
-                        </div>
-                        <div class="accordion-body">
-                        <div class="accordion-content"  v-html='item.answer'>
-                        </div>
-                        </div>
-                    </article>
-                </section>
-         </div>
-      </div>
-      </div>
+                        <!-- The wrapper component for all the items -->
+                        <BulmaAccordionItem v-for="(item) in faqs" v-bind:key="item._id">
+                            <h4 slot="title">{{item.question}}</h4>
+                            <p slot="content" v-html="item.answer">{{item.answer}}</p>
+                        </BulmaAccordionItem>
+                    </BulmaAccordion>
+                </div>
+            </div>
+        </div>
     </section>
 </template>
 
 <script>
-    import bulmaAccordion from 'bulma-extensions/bulma-accordion/dist/js/bulma-accordion.min.js'
-    import 'bulma-extensions/bulma-accordion/dist/css/bulma-accordion.min.css';
-    import { mapGetters } from 'vuex'
+import { BulmaAccordion, BulmaAccordionItem } from "vue-bulma-accordion";
+import { mapGetters } from "vuex";
 
-    export default {
-        name: 'faq',
-        props: {
-            items: {
-              type: Array
-            }
-        },
-        mounted: function() {
-                this.accordions = bulmaAccordion.attach()
-        },
-        created (store) {
-            this.$store.dispatch('faqs/get');
-        },
-        computed: { 
-            ...mapGetters({
-                faqs: 'faqs/faqs',
-            })
+export default {
+    name: "faq",
+    props: {
+        items: {
+            type: Array
         }
+    },
+    components: {
+        BulmaAccordion,
+        BulmaAccordionItem
+    },
+    created(store) {
+        this.$store.dispatch("faqs/get");
+    },
+    computed: {
+        ...mapGetters({
+            faqs: "faqs/faqs"
+        })
     }
+};
 </script>
 
 <style lang="sass" scoped>
@@ -69,7 +70,6 @@
     
     .accordion-header
         padding: 40px;
-
     .accordions
         .accordion
             font-size: 18px;

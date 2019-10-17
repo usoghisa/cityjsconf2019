@@ -43,6 +43,12 @@ module.exports = {
       { rel: 'stylesheet', href: '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' },
     ]
   },
+  responsiveLoader: {
+    name: 'img/[hash:7]-[width].[ext]',
+    max: 3000,
+    steps: 7,
+    quality: 90
+  },
   /*
   ** Customize the progress bar color
   */
@@ -61,6 +67,9 @@ module.exports = {
           loader: 'eslint-loader',
           exclude: /(node_modules)/
         })
+
+        vue.transformAssetUrls.img = ['data-src', 'src'];
+        vue.transformAssetUrls.source = ['data-srcset', 'srcset'];
       }
 
       // if (isClient) {
@@ -80,11 +89,13 @@ module.exports = {
     { src: '~plugins/scroll', ssr: false },
     { src: '~plugins/ga', ssr: false },
     { src: '~plugins/async', ssr: false },
+    { src: '~plugins/vue-lazysizes.client.js', ssr: true },
   ],
   modules: [
     '@nuxtjs/dotenv',
     '@nuxtjs/bulma',
     'nuxt-fontawesome',
     '@nuxtjs/pwa',
+    'nuxt-responsive-loader',
   ],
 }
