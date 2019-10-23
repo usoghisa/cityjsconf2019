@@ -8,7 +8,7 @@
         </app-nav>
     </section>
     <nuxt/>
-    <app-footer ng-if="pages"/>
+    <app-footer :style="style"/>
   </div>
 </template>
 <script>
@@ -35,7 +35,15 @@
     computed: { 
       ...mapGetters({
         pages: 'pages/pages',
-      })
+      }),
+      style () {
+        let style = 'display: none;' 
+        if (this.pages) {
+          style = 'display: block'
+        }
+
+        return style;
+      }
     }
   }
 </script>

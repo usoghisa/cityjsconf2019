@@ -23,12 +23,12 @@ module.exports = {
     baseUrl: process.env.BASE_URL || 'http://localhost:3000'
   },
   head: {
-    title: 'CityJS Conference 2019 - London, UK',
+    title: 'CityJS Conference 2020 - London, UK',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: 'City of London Conference by the London JS Community' },
-      { property: 'og:title', content: 'CityJS Conference 2019, London, 1 - 3 May 2019' },
+      { property: 'og:title', content: 'CityJS Conference 2020, London, 27 March 2020' },
       { property: 'og:description', content: 'City of London JavaScript Conference by the London JS Community' },
       { property: 'og:image', content: '//api.spiralthread.com/images/audience.jpg' },
       { property: 'og:url', content: '//www.cityjsconf.org' },

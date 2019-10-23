@@ -10,7 +10,7 @@
                   href="https://www.flickr.com/photos/182802514@N02/albums/72157710741317572"
                   target="_blank"
                 >
-                  <img class="is-2-dektop is-12-mobile" :srcset="require('~/images/previous_year/city1.jpg').srcSet" />
+                  <img class="is-2-dektop is-12-mobile lazyload" :data-src="`/images/previous_year/city1.jpg`" />
                 </a>
               </div>
 
@@ -19,7 +19,10 @@
                   href="https://www.flickr.com/photos/182802514@N02/albums/72157710741420497"
                   target="_blank"
                 >
-                  <img class="is-2-dektop is-12-mobile" :srcset="require('~/images/previous_year/city2.jpg').srcSet" />
+                  <img 
+                    class="is-2-dektop is-12-mobile lazyload" 
+                    :data-src="`/images/previous_year/city2.jpg`" 
+                  />
                 </a>
               </div>
 
@@ -28,7 +31,8 @@
                   href="https://www.flickr.com/photos/182802514@N02/albums/72157710741420497"
                   target="_blank"
                 >
-                  <img class="is-2-dektop is-12-mobile" :srcset="require('~/images/previous_year/city3.jpg').srcSet" />
+                  <img class="is-2-dektop is-12-mobile lazyload" 
+                  :data-src="`/images/previous_year/city3.jpg`" />
                 </a>
               </div>
             </div>
@@ -40,18 +44,12 @@
                   href="https://www.flickr.com/photos/182802514@N02/albums/72157710741317572"
                   target="_blank"
                 >
-                  <img class="is-2-dektop is-12-mobile" :srcset="require('~/images/previous_year/city4.jpg').srcSet" />
+                  <img class="is-2-dektop is-12-mobile lazyload"
+
+                   :data-src="`/images/previous_year/city4.jpg`"
+                  />
                 </a>
               </div>
-
-              <!-- <div class="column is-12">
-                <a
-                  href="https://www.flickr.com/photos/182802514@N02/albums/72157710802789098"
-                  target="_blank"
-                >
-                  <img class="is-2" src="/images/previous_year/2018.jpg" />
-                </a>
-              </div>-->
             </div>
           </div>
         </div>
