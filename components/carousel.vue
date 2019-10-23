@@ -12,10 +12,13 @@
               <b>
                 City of London JavaScript Conference
                 <br />CityJS Conference
+               
               </b>
+               <br />27 March 2020
+                <br />Regent Street Cinema
             </h1>
-            <!-- <a href="/buytickets" class="is-info button info is-primary">Get your tickets</a>
-             <a href="/" class="is-info button info is-primary">Submit your proposal</a> -->
+            <a href="/buytickets" class="is-info button info is-primary">Get your tickets</a>
+             <a href="https://www.papercall.io/cityjs2020" class="is-info button info is-primary">Submit your proposal</a>
           </div>
         </div>
       </div>
@@ -50,13 +53,15 @@ export default {
   h1 
     margin-bottom: 4.2rem;
     margin-top: 5.2rem;
+    +mobile
+      margin-top: 2.5rem;
 
 
   .contend
     color: $white;
-    font-size: 2.4736rem
+    font-size: 1.9rem;
     font-weight: 700
-    line-height: 1.375
+    line-height: 2rem
     text-transform: uppercase
     font-family: 'Oswald', sans-serif;
     position: absolute
@@ -65,12 +70,14 @@ export default {
     padding-bottom: 20px;
     left: 0;
     right: 0;
-    @include position(absolute, $top: 23%, $left: -10%)
+    @include position(absolute, $top: 20%, $left: -10%)
     +mobile
+      top: 0px;
       font-size: 1.2rem;
       height: 200vw;
-      @include position(absolute, $top: 33%, $left: 4%)
-      
+      @include position(absolute, $top: 13%, $left: 4%)
+    +tablet
+      top: 20%;
 
   .video_contain
     &.lazyloaded
@@ -86,7 +93,7 @@ export default {
       top: -1.2rem;
       background-size: contain;
       +mobile
-        top: -35%;
+        top: -25%;
         left: -78%;
         width: 320%;
       +tablet

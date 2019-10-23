@@ -26,6 +26,8 @@
               class="navbar-item r-item is-info " 
               :class="{ button: item.color==='button' }"
               v-for="item in items"
+              data-toggle="collapse" 
+              data-target=".navbar-collapse.show"
               v-if="item.hide === 'No' && item.isRedirect === 'Yes'" 
               :href="item.url"
               :key="item.id" 
@@ -42,6 +44,7 @@
 /* You can get the component styles from the Github repository for this demo */
 </style>
 <script>
+import { mapGetters } from 'vuex'
 export default {
   data: function() {
     return {
@@ -62,6 +65,9 @@ export default {
     }
   },
   computed: {
+    ...mapGetters({
+      pages: 'pages/pages',
+    }),
     style () {
       return (this.scroll) ? "background-color: #000 !important; color: #fff ;" : ""
     }
@@ -74,6 +80,19 @@ export default {
   created () {
     if (process.browser) { 
       window.addEventListener('scroll', this.handleScroll);
+    }
+
+    this.$store.watch(
+      (state, getters) => getters.pages,
+      (newValue, oldValue) => {
+       console.log(newValue);
+       console.log(oldValue);
+      },
+    );
+  },
+   watch: {
+    '$route' () {
+      this.isActive = !this.isActive;
     }
   },
   props: {

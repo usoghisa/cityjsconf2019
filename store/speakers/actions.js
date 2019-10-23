@@ -1,8 +1,8 @@
-import FetchIt from '../fetchit';
+import fetchLocal from '../fetchlocal';
 
 export default {
     async get ({commit}) {
-        await FetchIt.getAllEntries(`speakers`).then(data => {
+        await fetchLocal.getAllEntries(`speakers`).then(data => {
           commit('set', data.entries);
         })
     },

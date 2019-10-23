@@ -4,7 +4,7 @@
        <!-- <h1 class="title">{{title}}</h1>
        <p clsss="subtitle">{{subtitle}}</p> -->
     </div>
-    <section class="hero columns"  :style="style">
+    <section class="hero columns">
       <div class="hero-body">
       </div>
     </section>
@@ -13,7 +13,6 @@
 <script>
   export default {
     props: {
-      title: String,
       description: String,
       bannerImage: String
     },

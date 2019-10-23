@@ -8,9 +8,29 @@
         "shortDescription": "<p>An event run for developers, by developers<\/p>",
         "widgets": [
             {
+                "_id": "5d64ffc1653133ae130002de",
+                "link": "widgets",
+                "display": "Carousel"
+            },
+            {
                 "_id": "5ba4b07d653133fabc000236",
                 "link": "widgets",
                 "display": "About our event"
+            },
+            {
+                "_id": "5d98d5966531334af500024d",
+                "link": "widgets",
+                "display": "about-venue"
+            },
+            {
+                "_id": "5d69d50c653133384d000350",
+                "link": "widgets",
+                "display": "Gallery"
+            },
+            {
+                "_id": "5d62ce0965313342700002cf",
+                "link": "widgets",
+                "display": "FAQ"
             }
         ],
         "tags": "",
@@ -23,21 +43,39 @@
         "topMenu": "Yes",
         "_mby": "5ba3ca7b6531330bbd0003ca",
         "_by": "5ba3ca7b6531330bbd0003ca",
-        "_modified": 1558135667,
+        "_modified": 1570775954,
         "_created": 1537519624,
         "_id": "5ba4b008653133fa510000e4",
         "bannerimage": [],
         "hide": "No",
-        "color": "transparent"
+        "color": "transparent",
+        "components": null,
+        "year": 2019
     },
     {
         "title": "Speakers",
         "subtitle": "",
         "url": "speakers",
         "type": "Standard",
-        "description": "<p>&nbsp;<\/p>\n<p>Call for papers is now closed.&nbsp;<\/p>\n<p>&nbsp;<\/p>\n<p>We would like to thank everyone for submitting your proposals we have been really excited by your response to our call for papers.&nbsp;<\/p>\n<p>&nbsp;<\/p>\n<p>Below you can see some of the speakers selected. We will be revealing some more speakers soon.<\/p>",
+        "description": "<p>&nbsp;<\/p>\n<p>You can apply using this <a href=\"https:\/\/www.papercall.io\/cityjs2020\">link<\/a><\/p>\n<p>&nbsp;<\/p>\n<p>We would like to thank everyone for submitting your proposals we have been really excited by your response to our call for papers.&nbsp;<\/p>\n<p>&nbsp;<\/p>\n<p>Below you can see some of the speakers selected. We will be revealing some more speakers soon.<\/p>",
         "shortDescription": "",
-        "widgets": "",
+        "widgets": [
+            {
+                "_id": "5d6acecf6531334555000322",
+                "link": "widgets",
+                "display": "About page"
+            },
+            {
+                "_id": "5bb3796865313347c200035a",
+                "link": "widgets",
+                "display": "Speakers"
+            },
+            {
+                "_id": "5d6abf6565313335bf0002f2",
+                "link": "widgets",
+                "display": "Highlights"
+            }
+        ],
         "tags": "Speakers",
         "image": {
             "path": "images\/team.png"
@@ -48,12 +86,14 @@
         "topMenu": "Yes",
         "_mby": "5ba3ca7b6531330bbd0003ca",
         "_by": "5ba3ca7b6531330bbd0003ca",
-        "_modified": 1550045810,
+        "_modified": 1570719976,
         "_created": 1537527500,
         "_id": "5ba4cecc6531331b3b000027",
         "bannerimage": [],
         "hide": "No",
-        "color": "transparent"
+        "color": "transparent",
+        "components": null,
+        "year": 2019
     },
     {
         "title": "Schedule",
@@ -62,7 +102,13 @@
         "type": "Standard",
         "description": "",
         "shortDescription": "",
-        "widgets": "",
+        "widgets": [
+            {
+                "_id": "5d6acecf6531334555000322",
+                "link": "widgets",
+                "display": "About page"
+            }
+        ],
         "tags": "",
         "image": {
             "path": "images\/aboutus.png"
@@ -73,23 +119,31 @@
         "topMenu": "Yes",
         "_mby": "5ba3ca7b6531330bbd0003ca",
         "_by": "5ba3ca7b6531330bbd0003ca",
-        "_modified": 1541247018,
+        "_modified": 1567283283,
         "_created": 1537527683,
         "_id": "5ba4cf836531331c08000093",
         "bannerimage": {
             "path": "images\/aboutus.png"
         },
         "hide": "Yes",
-        "color": "transparent"
+        "color": "transparent",
+        "components": null,
+        "year": null
     },
     {
         "title": "Buy Tickets",
         "subtitle": "",
         "url": "buytickets",
         "type": "Standard",
-        "description": "<p>Get your tickets now for the Conference day and the workshops, numbers are limited for both get yours as soon as you can. For Workshops, you can optionally donate, all the profits from your donations will be given to non-profit&nbsp;groups.<\/p>\n<p>If the tickets section not loading please use this <a href=\"https:\/\/ti.to\/cityjsconf-london\/cityjsconf-2019\">tickets website<\/a> to get your tickets<\/p>\n<p>&nbsp;<\/p>\n<p>&nbsp;<\/p>",
+        "description": "<p>Get your tickets now for the Conference day and the workshops, numbers are limited for both get yours as soon as you can. For Workshops, you can optionally donate, all the profits from your donations will be given to non-profit&nbsp;groups.<\/p>\n<p>If the tickets section not loading please get your&nbsp; tickets using our <a href=\"https:\/\/ti.to\/cityjsconf-london\/cityjs-2020\">ticket provider<\/a><\/p>\n<p>&nbsp;<\/p>\n<p>&nbsp;<\/p>",
         "shortDescription": "",
-        "widgets": "",
+        "widgets": [
+            {
+                "_id": "5d6acecf6531334555000322",
+                "link": "widgets",
+                "display": "About page"
+            }
+        ],
         "tags": "",
         "image": {
             "path": "images\/team.png"
@@ -100,26 +154,34 @@
         "topMenu": "Yes",
         "_mby": "5ba3ca7b6531330bbd0003ca",
         "_by": "5ba3ca7b6531330bbd0003ca",
-        "_modified": 1558430978,
+        "_modified": 1570858548,
         "_created": 1537527719,
         "_id": "5ba4cfa76531331c27000015",
         "bannerimage": {
             "path": "images\/speakers.png"
         },
-        "hide": "Yes",
-        "color": "transparent"
+        "hide": "No",
+        "color": "transparent",
+        "components": null,
+        "year": null
     },
     {
         "title": "Venue",
         "subtitle": "",
         "url": "venue",
         "type": "Standard",
-        "description": "<p>The conference main event will take place at Curzon Soho, whilst the workshops will take place at Microsoft Reactor.<\/p>\n<p>&nbsp;<\/p>\n<p id=\"yui_3_17_2_29_1426334107708_10786\">Curzon Soho is known as the filmmakers cinema because it&rsquo;s the kind of venue where you could find yourself sitting next to a screenwriter or director. The bar is often buzzing with the sound of highly energised conversations discussing film but there are enough in the corner spots to tuck yourself away whilst waiting for your film to start.<\/p>\n<p>&nbsp;<\/p>\n<p>Soho hosts regular director Q&amp;As, documentary events, previews and often has exhibitions linked to the films being screened.<\/p>\n<p>&nbsp;<\/p>\n<p>In 1998, the cinema was divided into a three screen complex and renamed Curzon Soho. With a fully licensed bar on the mezzanine level, the venue has proved hugely successful, voted London&rsquo;s Number One cinema by Time Out readers.<\/p>\n<p>&nbsp;<\/p>\n<p>&nbsp;<\/p>\n<p><strong>Screen Capacities &amp; Access:<\/strong><\/p>\n<p><strong>Screen 1<\/strong>&nbsp;- 249 seats, 4 of which removable for 2 wheelchair spaces (front row of rear seating section).<\/p>\n<p>&nbsp;<\/p>\n<p><strong>Getting here:&nbsp;<\/strong><\/p>\n<p>Tube: Leicester Square, Piccadilly Circus, Tottenham Court Road.<\/p>\n<p>Buses: 14,19,38.<\/p>\n<p>Rail: Charing Cross<\/p>",
+        "description": "<p>The conference main event will take place at Regent Street Cinema.<\/p>\n<p>Built in 1848 and housed within the Polytechnic Institution on London&rsquo;s Regent Street, the cinema was the first in the country to show moving pictures. In 1896, the cinema showcased the Lumi&egrave;re brothers&rsquo; Cin&eacute;matographe to a paying audience, and, as the curtain fell, British cinema was born.<\/p>\n<p>After being used as a student lecture hall by the university of Westminister since 1980, it was restored into a working cinema featuring a state-of-the-art auditorium as well as an inclusive space for learning, cultural exchange and exhibitions. It is a truly landmark venue for the British film industry in the heart of London&rsquo;s West End.<\/p>\n<p>&nbsp;<\/p>\n<p><strong>Screen Capacities &amp; Access:<\/strong><\/p>\n<p>187-seat&nbsp; and 2 wheelchair spaces (front row of rear seating section).<\/p>\n<p>&nbsp;<\/p>\n<p><strong>Getting here:&nbsp;<\/strong><\/p>\n<p>Tube: Oxford Circus, Great Portland Street<\/p>\n<p>&nbsp;<\/p>",
         "shortDescription": "",
-        "widgets": "",
+        "widgets": [
+            {
+                "_id": "5d6acecf6531334555000322",
+                "link": "widgets",
+                "display": "About page"
+            }
+        ],
         "tags": "",
         "image": {
-            "path": "images\/curzon.jpeg"
+            "path": "images\/cinemaimagesmall.jpg"
         },
         "displayAtHome": "",
         "orderOnTopMenu": 4,
@@ -127,12 +189,16 @@
         "topMenu": "Yes",
         "_mby": "5ba3ca7b6531330bbd0003ca",
         "_by": "5ba3ca7b6531330bbd0003ca",
-        "_modified": 1558431418,
+        "_modified": 1570299083,
         "_created": 1537527811,
         "_id": "5ba4d0036531331c83000191",
-        "bannerimage": [],
+        "bannerimage": {
+            "path": "images\/cinemaimagesmall.jpg"
+        },
         "hide": "Yes",
-        "color": "transparent"
+        "color": "transparent",
+        "components": null,
+        "year": null
     },
     {
         "title": "Sponsors",
@@ -141,7 +207,13 @@
         "type": "",
         "description": "<p><span style=\"font-weight: 400;\">Sponsoring CityJS Conference means that developers, problem solvers, tinkerers and decision makers will be exposed to your brand, will get to know you better and recognize your effort in supporting their community.<\/span><\/p>\n<p>&nbsp;<\/p>\n<p><span style=\"font-weight: 400;\">We understand that networking is such an important part of any conference, thus we&rsquo;ll make sure to allow plenty of opportunities for you to reach out to the community.<\/span><\/p>\n<p>&nbsp;<\/p>\n<p>If you wish to help us,&nbsp;<a href=\"mailto:cityjsconf@gmail.com\">contact us<\/a>.<\/p>",
         "shortDescription": "",
-        "widgets": "",
+        "widgets": [
+            {
+                "_id": "5d6acecf6531334555000322",
+                "link": "widgets",
+                "display": "About page"
+            }
+        ],
         "tags": "sponsors",
         "image": {
             "path": "images\/sponsors.png"
@@ -152,21 +224,29 @@
         "topMenu": "Yes",
         "_mby": "5ba3ca7b6531330bbd0003ca",
         "_by": "5ba3ca7b6531330bbd0003ca",
-        "_modified": 1549498127,
+        "_modified": 1570579897,
         "_created": 1537527843,
         "_id": "5ba4d0236531331ca20002c4",
         "bannerimage": [],
         "hide": "No",
-        "color": "transparent"
+        "color": "transparent",
+        "components": null,
+        "year": 2020
     },
     {
         "title": "About",
         "subtitle": "",
         "url": "about",
         "type": "Standard",
-        "description": "<p>a Community Event organised by the Community, a Javascript Conference that was requested due to the popularity and success of a monthly meet-up put together by 4 different JavaScript groups in London, including&nbsp;<a href=\"https:\/\/www.meetup.com\/London-JavaScript-Community\/\">London JS Community<\/a>,&nbsp;<a href=\"https:\/\/www.meetup.com\/js-monthly\/\">JS Monthly<\/a>,&nbsp;<a href=\"https:\/\/www.meetup.com\/halfstack\/\">Halfstack<\/a> and <a href=\"https:\/\/www.meetup.com\/london-nodejs\/\">Node User Group<\/a><\/p>\n<p>&nbsp;<\/p>\n<p><span style=\"font-weight: 400;\">The right conference, for developers, solution architects, and other tech individuals aiming stay in touch with the industry, be updated on innovative changes around the industry and JS as an entity, absorb knowledge while you can hop on and off thought-provoking workshops and talks this is possibly the most central and reasonably priced event to attend in London. Our aim is indeed to run a Community event for the community, we hope people can see that and be part of it.<\/span><\/p>",
+        "description": "<p>A Community Event organised by the Community, a Javascript Conference that was requested due to the popularity and success of a monthly meet-up put together by 4 different JavaScript groups in London, including&nbsp;<a href=\"https:\/\/www.meetup.com\/London-JavaScript-Community\/\">London JS Community<\/a>,&nbsp;<a href=\"https:\/\/www.meetup.com\/js-monthly\/\">JS Monthly<\/a>,&nbsp;<a href=\"https:\/\/www.meetup.com\/halfstack\/\">Halfstack<\/a> and <a href=\"https:\/\/www.meetup.com\/london-nodejs\/\">Node User Group<\/a><\/p>\n<p>&nbsp;<\/p>\n<p><span style=\"font-weight: 400;\">The right conference, for developers, solution architects, and other tech individuals aiming stay in touch with the industry, be updated on innovative changes around the industry and JS as an entity, absorb knowledge while you can hop on and off thought-provoking workshops and talks this is possibly the most central and reasonably priced event to attend in London. Our aim is indeed to run a Community event for the community, we hope people can see that and be part of it.<\/span><\/p>",
         "shortDescription": "",
-        "widgets": "",
+        "widgets": [
+            {
+                "_id": "5d6acecf6531334555000322",
+                "link": "widgets",
+                "display": "About page"
+            }
+        ],
         "tags": "",
         "image": {
             "path": "images\/team2.png"
@@ -177,14 +257,16 @@
         "topMenu": "",
         "_mby": "5ba3ca7b6531330bbd0003ca",
         "_by": "5ba3ca7b6531330bbd0003ca",
-        "_modified": 1558431000,
+        "_modified": 1570400216,
         "_created": 1537529017,
         "_id": "5ba4d4b965313320fa00015f",
         "bannerimage": {
             "path": "images\/aboutus.png"
         },
         "hide": "No",
-        "color": "transparent"
+        "color": "transparent",
+        "components": null,
+        "year": null
     },
     {
         "title": "Call For Papers",
@@ -193,7 +275,13 @@
         "type": "",
         "description": "<p>We are having some issues with Papercall with the call for papers please send us an email at <a href=\"mailto:cityjsconf@gmail.com\">cityjsconf@gmail.com<\/a> with the talk you wish to submit.<\/p>\n<p>&nbsp;<\/p>\n<p>Our deadline is 31\/01\/2019.<\/p>",
         "shortDescription": "",
-        "widgets": "",
+        "widgets": [
+            {
+                "_id": "5d6acecf6531334555000322",
+                "link": "widgets",
+                "display": "About page"
+            }
+        ],
         "tags": "",
         "image": {
             "path": "images\/aboutus.png"
@@ -208,19 +296,27 @@
         "hide": "Yes",
         "_mby": "5ba3ca7b6531330bbd0003ca",
         "_by": "5ba3ca7b6531330bbd0003ca",
-        "_modified": 1548979200,
+        "_modified": 1567283123,
         "_created": 1539518983,
         "_id": "5bc33207653133630f0002d3",
-        "color": "button"
+        "color": "button",
+        "components": null,
+        "year": null
     },
     {
         "title": "Workshops",
         "subtitle": "",
         "url": "workshops",
         "type": "Standard",
-        "description": "<p>We will be holding workshops on Wednesday 1st of May and Thursday 2nd of May. Those workshops will be free for everyone and it will be available on a first come first served. Information will be made available soon.&nbsp;<\/p>\n<p>The picture on the right is from last year when Kyle Simpson came for two workshops for our 2018 conference.<\/p>\n<p>The workshops will run at&nbsp;<a href=\"https:\/\/developer.microsoft.com\/en-us\/reactor\/\">Microsoft Reactor<\/a>&nbsp;and other locations to be announced soon.<\/p>\n<p>&nbsp;<\/p>",
+        "description": "<p>We will announce the workshops for our conference soon.<\/p>\n<p>&nbsp;<\/p>",
         "shortDescription": "",
-        "widgets": "",
+        "widgets": [
+            {
+                "_id": "5d6acecf6531334555000322",
+                "link": "widgets",
+                "display": "About page"
+            }
+        ],
         "tags": "",
         "image": {
             "path": "images\/workshops.png"
@@ -234,21 +330,29 @@
         "color": "",
         "_mby": "5ba3ca7b6531330bbd0003ca",
         "_by": "5ba3ca7b6531330bbd0003ca",
-        "_modified": 1558431398,
+        "_modified": 1571294118,
         "_created": 1542368172,
-        "_id": "5beeabac653133ec0c0003b9"
+        "_id": "5beeabac653133ec0c0003b9",
+        "components": null,
+        "year": null
     },
     {
         "title": "Past Events",
         "subtitle": "",
         "url": "past",
         "type": "",
-        "description": "<p>Visit the following links to see our events during the previous years:<\/p>\n<p>&nbsp;<\/p>\n<p><a href=\"http:\/\/2018.cityjsconf.org\">2018<\/a><\/p>",
+        "description": "<p>Visit the following links to see our events during the previous years:<\/p>\n<p>&nbsp;<\/p>\n<p><a href=\"http:\/\/2018.cityjsconf.org\">2018<\/a><\/p>\n<p><a href=\"\/2019\">2019<\/a><\/p>",
         "shortDescription": "",
-        "widgets": "",
+        "widgets": [
+            {
+                "_id": "5d6acecf6531334555000322",
+                "link": "widgets",
+                "display": "About page"
+            }
+        ],
         "tags": "",
         "image": {
-            "path": "images\/audience.jpg"
+            "path": "images\/2019.jpg"
         },
         "displayAtHome": "",
         "orderOnTopMenu": 7,
@@ -259,21 +363,29 @@
         "color": "",
         "_mby": "5ba3ca7b6531330bbd0003ca",
         "_by": "5ba3ca7b6531330bbd0003ca",
-        "_modified": 1553292641,
+        "_modified": 1570778403,
         "_created": 1547499495,
-        "_id": "5c3cf7e7653133186b00011f"
+        "_id": "5c3cf7e7653133186b00011f",
+        "components": null,
+        "year": null
     },
     {
         "title": "Code of Conduct",
         "subtitle": "",
         "url": "coc",
         "type": "Standard",
-        "description": "<p>All attendees, speakers, sponsors, and volunteers at CITYJS are required to agree with the following code of conduct. Organizers will enforce this code throughout the event. We are expecting corporation from all participants to help to ensure a safe environment for everybody.<\/p>\n<p>&nbsp;<\/p>\n<p><strong>Need help?<\/strong><\/p>\n<p>Contact Us!<\/p>\n<p>Twitter: @cityjsconf<br \/>Email:&nbsp; aris@cityjsconf.org<br \/>Phone (HU): +44 7809468179<\/p>\n<p>Conference staff will be happy to help participants contact hotel\/venue security or local law enforcement, provide escorts, or otherwise assist those experiencing harassment to feel safe for the duration of the conference.<\/p>\n<p>We value your attendance.<\/p>\n<p>&nbsp;<\/p>\n<p><strong>Purpose of this document<\/strong><\/p>\n<p>CITYJS is dedicated to providing a harassment-free conference experience for everyone, regardless of gender, sexual orientation, disability, physical appearance, body size, race, or religion. We do not tolerate harassment of conference participants in any form. Sexual language and imagery are not appropriate for any conference venue, including talks, workshops, parties, Twitter and other online media.<\/p>\n<p>Conference participants violating these rules may be sanctioned or expelled from the conference without a refund at the discretion of the conference organizers.<\/p>\n<p>Sponsors are also subject to the anti-harassment policy. In particular, sponsors should not use sexualized images, activities, or other material. Booth staff (including volunteers) should not use sexualized clothing\/uniforms\/costumes, or otherwise create a sexualized environment.<\/p>\n<p>&nbsp;<\/p>\n<p><strong>Reporting<\/strong><\/p>\n<p>If someone makes you or anyone else feel unsafe or unwelcome, please report it as soon as possible. If you see or hear someone do something, that might violate this Code of Conduct, please report it.<\/p>\n<p>You can make a personal report by:<\/p>\n<ul>\n<li>Contacting a staff member, identified by our bright yellow tshirts with our logo on it<\/li>\n<li>Twitter direct messages: our DMs on twitter are always open<\/li>\n<li>Email - but it might take up a few hours or a day before we can respond on email during or after the event.<\/li>\n<\/ul>\n<p>&nbsp;<\/p>\n<p><strong>Enforcement<\/strong><\/p>\n<p>Participants asked to stop any harassing behavior are expected to comply immediately.<\/p>\n<p>If a participant engages in harassing behaviour, event organisers retain the right to take any actions to keep the event a welcoming environment for all participants. This includes warning the offender or expulsion from the conference with no refund.<\/p>\n<p>We expect participants to follow these rules at conference and workshop venues and conference-related social events.<\/p>\n<p>&nbsp;<\/p>\n<p><strong>Harassment<\/strong><\/p>\n<p>Harassment includes, but is not limited to:<\/p>\n<ul>\n<li>Verbal or written comments that reinforce social structures of domination related to gender, gender identity and expression, sexual orientation, disability, physical appearance, body size, race, age, religion<\/li>\n<li>Sexual images in public spaces<\/li>\n<li>Deliberate intimidation, stalking, or following<\/li>\n<li>Harassing photography or recording<\/li>\n<li>Sustained disruption of talks or other events<\/li>\n<li>Inappropriate physical contact<\/li>\n<li>Unwelcome sexual attention<\/li>\n<li>Advocating for, or encouraging, any of the above behaviour<\/li>\n<li>We will have colored lanyards for attendees to indicate their comfort level with being photographed:<\/li>\n<\/ul>\n<ul>\n<li><strong>Black<\/strong> means It's OK to take photographs <br \/>(within the boundaries of the Code of Conduct)<\/li>\n<li><strong>Red<\/strong> means you should not take photos of someone, nor should you ask if you may<\/li>\n<\/ul>\n<p>&nbsp;<\/p>\n<p><strong>Inclusive Language<\/strong><\/p>\n<p>In our commitment to a harassment-free and inclusive environment we strongly believe it's important to pay attention to harmful language patterns.<\/p>\n<p>&nbsp;<\/p>\n<p><strong>Ableism<\/strong><\/p>\n<p>Words like \"crazy\", \"dumb\", \"insane\" or \"lame\" are examples of ableist language, devaluating people who have physical or mental disabilities. Its appearance often stems not from any intentional desire to offend, but from our innate sense of what it means to be normal. These words can be avoided by using more fitting, clearer descriptions of what we want to communicate.<\/p>\n<p>To find out more about ableism and replacement terms please read <a href=\"http:\/\/www.autistichoya.com\/p\/ableist-words-and-terms-to-avoid.html\">this guide.<\/a><\/p>\n<p>&nbsp;<\/p>\n<p><strong>Sexism<\/strong><\/p>\n<p>Using gendered terms like \"dude\" or \"guys\" to address a mixed-gendered group of people contributes to furthering exclusion of underrepresented individuals. We strongly advise avoiding gendered pronouns as well as gendered terms.<\/p>\n<p>For more information please familiarise yourself with the <a href=\"http:\/\/geekfeminism.wikia.com\/wiki\/Nonsexist_language\">Geek Feminism wiki guide.<\/a><\/p>\n<p>&nbsp;<\/p>\n<p><strong>Attribution<\/strong><\/p>\n<p>This Code of Conduct was based on <a href=\"https:\/\/2018.jsconf.eu\/\">JSConf EU<\/a>, <a href=\"http:\/\/2018.jsconfau.com\/\">CSSConf \/ JSConf AU<\/a>, <a href=\"http:\/\/geekfeminism.wikia.com\/wiki\/Conference_anti-harassment\/Policy\">The Geek Feminism wiki<\/a>, the work of<a href=\"https:\/\/frameshiftconsulting.com\/code-of-conduct-training\/\">Valerie Aurora<\/a>, <a href=\"https:\/\/wealljs.org\/code-of-conduct\">WeAllJS<\/a>, and <a href=\"http:\/\/confcodeofconduct.com\/\">Conference Code of Conduct<\/a>.<\/p>",
+        "description": "<p>All attendees, speakers, sponsors, and volunteers at CITYJS are required to agree with the following code of conduct. Organizers will enforce this code throughout the event. We are expecting corporation from all participants to help to ensure a safe environment for everybody.<\/p>\n<p>&nbsp;<\/p>\n<p><strong>Need help?<\/strong><\/p>\n<p>Contact Us!<\/p>\n<p>Twitter: @cityjsconf<br \/>Email:&nbsp; aris@cityjsconf.org<br \/>Phone (UK): +44 7809468179<\/p>\n<p>Conference staff will be happy to help participants contact hotel\/venue security or local law enforcement, provide escorts, or otherwise assist those experiencing harassment to feel safe for the duration of the conference.<\/p>\n<p>We value your attendance.<\/p>\n<p>&nbsp;<\/p>\n<p><strong>Purpose of this document<\/strong><\/p>\n<p>CITYJS is dedicated to providing a harassment-free conference experience for everyone, regardless of gender, sexual orientation, disability, physical appearance, body size, race, or religion. We do not tolerate harassment of conference participants in any form. Sexual language and imagery are not appropriate for any conference venue, including talks, workshops, parties, Twitter and other online media.<\/p>\n<p>Conference participants violating these rules may be sanctioned or expelled from the conference without a refund at the discretion of the conference organizers.<\/p>\n<p>Sponsors are also subject to the anti-harassment policy. In particular, sponsors should not use sexualized images, activities, or other material. Booth staff (including volunteers) should not use sexualized clothing\/uniforms\/costumes, or otherwise create a sexualized environment.<\/p>\n<p>&nbsp;<\/p>\n<p><strong>Reporting<\/strong><\/p>\n<p>If someone makes you or anyone else feel unsafe or unwelcome, please report it as soon as possible. If you see or hear someone do something, that might violate this Code of Conduct, please report it.<\/p>\n<p>You can make a personal report by:<\/p>\n<ul>\n<li>Contacting a staff member, identified by our bright yellow tshirts with our logo on it<\/li>\n<li>Twitter direct messages: our DMs on twitter are always open<\/li>\n<li>Email - but it might take up a few hours or a day before we can respond on email during or after the event.<\/li>\n<\/ul>\n<p>&nbsp;<\/p>\n<p><strong>Enforcement<\/strong><\/p>\n<p>Participants asked to stop any harassing behavior are expected to comply immediately.<\/p>\n<p>If a participant engages in harassing behaviour, event organisers retain the right to take any actions to keep the event a welcoming environment for all participants. This includes warning the offender or expulsion from the conference with no refund.<\/p>\n<p>We expect participants to follow these rules at conference and workshop venues and conference-related social events.<\/p>\n<p>&nbsp;<\/p>\n<p><strong>Harassment<\/strong><\/p>\n<p>Harassment includes, but is not limited to:<\/p>\n<ul>\n<li>Verbal or written comments that reinforce social structures of domination related to gender, gender identity and expression, sexual orientation, disability, physical appearance, body size, race, age, religion<\/li>\n<li>Sexual images in public spaces<\/li>\n<li>Deliberate intimidation, stalking, or following<\/li>\n<li>Harassing photography or recording<\/li>\n<li>Sustained disruption of talks or other events<\/li>\n<li>Inappropriate physical contact<\/li>\n<li>Unwelcome sexual attention<\/li>\n<li>Advocating for, or encouraging, any of the above behaviour<\/li>\n<li>We will have colored lanyards for attendees to indicate their comfort level with being photographed:<\/li>\n<\/ul>\n<ul>\n<li><strong>Black<\/strong> means It's OK to take photographs <br \/>(within the boundaries of the Code of Conduct)<\/li>\n<li><strong>Red<\/strong> means you should not take photos of someone, nor should you ask if you may<\/li>\n<\/ul>\n<p>&nbsp;<\/p>\n<p><strong>Inclusive Language<\/strong><\/p>\n<p>In our commitment to a harassment-free and inclusive environment we strongly believe it's important to pay attention to harmful language patterns.<\/p>\n<p>&nbsp;<\/p>\n<p><strong>Ableism<\/strong><\/p>\n<p>Words like \"crazy\", \"dumb\", \"insane\" or \"lame\" are examples of ableist language, devaluating people who have physical or mental disabilities. Its appearance often stems not from any intentional desire to offend, but from our innate sense of what it means to be normal. These words can be avoided by using more fitting, clearer descriptions of what we want to communicate.<\/p>\n<p>To find out more about ableism and replacement terms please read <a href=\"http:\/\/www.autistichoya.com\/p\/ableist-words-and-terms-to-avoid.html\">this guide.<\/a><\/p>\n<p>&nbsp;<\/p>\n<p><strong>Sexism<\/strong><\/p>\n<p>Using gendered terms like \"dude\" or \"guys\" to address a mixed-gendered group of people contributes to furthering exclusion of underrepresented individuals. We strongly advise avoiding gendered pronouns as well as gendered terms.<\/p>\n<p>For more information please familiarise yourself with the <a href=\"http:\/\/geekfeminism.wikia.com\/wiki\/Nonsexist_language\">Geek Feminism wiki guide.<\/a><\/p>\n<p>&nbsp;<\/p>\n<p><strong>Attribution<\/strong><\/p>\n<p>This Code of Conduct was based on <a href=\"https:\/\/2018.jsconf.eu\/\">JSConf EU<\/a>, <a href=\"http:\/\/2018.jsconfau.com\/\">CSSConf \/ JSConf AU<\/a>, <a href=\"http:\/\/geekfeminism.wikia.com\/wiki\/Conference_anti-harassment\/Policy\">The Geek Feminism wiki<\/a>, the work of<a href=\"https:\/\/frameshiftconsulting.com\/code-of-conduct-training\/\">Valerie Aurora<\/a>, <a href=\"https:\/\/wealljs.org\/code-of-conduct\">WeAllJS<\/a>, and <a href=\"http:\/\/confcodeofconduct.com\/\">Conference Code of Conduct<\/a>.<\/p>",
         "shortDescription": "",
-        "widgets": "",
+        "widgets": [
+            {
+                "_id": "5d6acecf6531334555000322",
+                "link": "widgets",
+                "display": "About page"
+            }
+        ],
         "tags": "",
         "image": {
-            "path": "images\/audience.jpg"
+            "path": "images\/Slice-1.png"
         },
         "displayAtHome": "Yes",
         "orderOnTopMenu": 7,
@@ -284,18 +396,26 @@
         "color": "button",
         "_mby": "5ba3ca7b6531330bbd0003ca",
         "_by": "5ba3ca7b6531330bbd0003ca",
-        "_modified": 1558431455,
+        "_modified": 1570745465,
         "_created": 1549987666,
-        "_id": "5c62ef526531335084000178"
+        "_id": "5c62ef526531335084000178",
+        "components": null,
+        "year": null
     },
     {
         "title": "Scholarships",
         "subtitle": "",
         "url": "scholarships",
         "type": "Standard",
-        "description": "<div id=\":c8\">\n<div class=\"btm\"><strong>CityJSConf<\/strong> is a community joint event created by our Londons JavaScript meet-up groups. This is a non-profitable&nbsp;conference and our purpose is to give back to our community. Thanks to the great generosity of our sponsors we are giving away 20 tickets for this year&rsquo;s main event.<\/div>\n<\/div>\n<div class=\"\">\n<div id=\":ca\" class=\"ii gt adO\">\n<div id=\":c9\" class=\"a3s aXjCH \">\n<p>&nbsp;<\/p>\n<p>We wish to support our community and highly encourage students and others coming from diverse backgrounds (people of color, LGBTQIA, people with disabilities, refugees, women, students and people facing economic or social hardships) to apply for scholarships. Travel and accommodation expenses are not included.<\/p>\n<p>&nbsp;<\/p>\n<p>If you are keen to attend CityJSConf but have difficulty attending the conference due to lack of money or resources, this is your chance. We will be delighted to have you with us!<\/p>\n<h2>&nbsp;<\/h2>\n<p><strong>Deadline for applications: 20th of April 2019.&nbsp;<\/strong><\/p>\n<p>&nbsp;<\/p>\n<h2>QUESTIONS<\/h2>\n<p>For any questions please contact us by email&nbsp;<a href=\"mailto:cityjsconf@gmail.com\" target=\"_blank\" rel=\"noopener\">cityjsconf@gmail.com<\/a><\/p>\n<\/div>\n<\/div>\n<\/div>\n<p>&nbsp;<\/p>",
+        "description": "<div id=\":c8\">\n<div class=\"btm\"><strong>CityJSConf<\/strong> is a community joint event created by our Londons JavaScript meet-up groups. This is a non-profitable&nbsp;conference and our purpose is to give back to our community. Thanks to the great generosity of our sponsors we are giving away 20 tickets for this year&rsquo;s main event.<\/div>\n<\/div>\n<div class=\"\">\n<div id=\":ca\" class=\"ii gt adO\">\n<div id=\":c9\" class=\"a3s aXjCH \">\n<p>&nbsp;<\/p>\n<p>We wish to support our community and highly encourage students and others coming from diverse backgrounds (people of color, LGBTQIA, people with disabilities, refugees, women, students and people facing economic or social hardships) to apply for scholarships. Travel and accommodation expenses are not included.<\/p>\n<p>&nbsp;<\/p>\n<p>If you are keen to attend CityJSConf but have difficulty attending the conference due to lack of money or resources, this is your chance. We will be delighted to have you with us!<\/p>\n<p>We will make the application for the scholarships available very soon, stay tuned.<\/p>\n<p>&nbsp;<\/p>\n<h2>QUESTIONS<\/h2>\n<p>For any questions please contact us by email&nbsp;<a href=\"mailto:cityjsconf@gmail.com\" target=\"_blank\" rel=\"noopener\">cityjsconf@gmail.com<\/a><\/p>\n<\/div>\n<\/div>\n<\/div>\n<p>&nbsp;<\/p>",
         "shortDescription": "<p>dT<\/p>",
-        "widgets": "",
+        "widgets": [
+            {
+                "_id": "5d6acecf6531334555000322",
+                "link": "widgets",
+                "display": "About page"
+            }
+        ],
         "tags": "",
         "image": {
             "path": "images\/team.png"
@@ -309,32 +429,77 @@
         "color": "",
         "_mby": "5ba3ca7b6531330bbd0003ca",
         "_by": "5ba3ca7b6531330bbd0003ca",
-        "_modified": 1563528991,
+        "_modified": 1570781167,
         "_created": 1554151523,
-        "_id": "5ca27863653133bf86000333"
+        "_id": "5ca27863653133bf86000333",
+        "components": null,
+        "year": null
     },
     {
-        "title": 2019,
+        "title": "CityJS Conference 2019",
         "subtitle": "CityJSConf 2019",
         "url": 2019,
         "type": "",
-        "description": "",
-        "shortDescription": "",
+        "description": "<p>In our second edition of CityJSConf we had another successful event hosted at Curzon Soho Cinema and Microsoft Reactor.&nbsp;<\/p>\n<p>&nbsp;<\/p>\n<p>The first two days had 6 Free workshops that were given by our sponsors and other very well known speakers covering areas such as Fullstack Development, Machine Learning, Artificial Intelligence, JamStack and MongoDB Serveless tools.&nbsp;<\/p>\n<p>&nbsp;<\/p>\n<p>During the main event we had 10 international speakers and 1 comedy act Smoosh.&nbsp;<\/p>\n<p>&nbsp;<\/p>\n<p>Our talks covered a number of areas as well and highlights can be seen below.<\/p>",
+        "shortDescription": "<p>In our second edition of CityJSConf we had another successful event hosted at Curzon Soho Cinema and Microsoft Reactor.&nbsp;<\/p>\n<p>&nbsp;<\/p>\n<p>The first two days had 6 Free workshops that were given by our sponsors and other very well known speakers covering areas such as Fullstack Development, Machine Learning, Artificial Intelligence, JamStack and MongoDB Serveless tools.&nbsp;<\/p>\n<p>&nbsp;<\/p>\n<p>During the main event we had 10 international speakers and 1 comedy act Smoosh.&nbsp;<\/p>\n<p>&nbsp;<\/p>\n<p>Our talks covered a number of areas as well and highlights can be seen below.<\/p>",
         "widgets": [
             {
-                "_id": "5ba4b07d653133fabc000236",
+                "_id": "5d6acecf6531334555000322",
                 "link": "widgets",
-                "display": "About our event"
+                "display": "About page"
+            },
+            {
+                "_id": "5d6abf6565313335bf0002f2",
+                "link": "widgets",
+                "display": "Highlights"
             },
             {
                 "_id": "5d62cea4653133433900015d",
                 "link": "widgets",
                 "display": "Sponsors"
+            }
+        ],
+        "tags": "",
+        "image": {
+            "path": "images\/2019.jpg"
+        },
+        "displayAtHome": "",
+        "orderOnTopMenu": 7,
+        "isRedirect": "",
+        "topMenu": "No",
+        "bannerimage": [],
+        "hide": "Yes",
+        "color": "",
+        "_mby": "5ba3ca7b6531330bbd0003ca",
+        "_by": "5ba3ca7b6531330bbd0003ca",
+        "_modified": 1570580020,
+        "_created": 1566751651,
+        "_id": "5d62bba36531332b3e0000eb",
+        "components": null,
+        "year": 2019
+    },
+    {
+        "title": "CityJS Conference 2018",
+        "subtitle": "CityJS 2018",
+        "url": 2018,
+        "type": "",
+        "description": "",
+        "shortDescription": "",
+        "widgets": [
+            {
+                "_id": "5d6acecf6531334555000322",
+                "link": "widgets",
+                "display": "About page"
             },
             {
-                "_id": "5bb3796865313347c200035a",
+                "_id": "5d6abf6565313335bf0002f2",
                 "link": "widgets",
-                "display": "Speakers"
+                "display": "Highlights"
+            },
+            {
+                "_id": "5d62cea4653133433900015d",
+                "link": "widgets",
+                "display": "Sponsors"
             }
         ],
         "tags": "",
@@ -346,12 +511,12 @@
         "bannerimage": [],
         "hide": "",
         "color": "",
+        "components": "",
+        "year": 2018,
         "_mby": "5ba3ca7b6531330bbd0003ca",
         "_by": "5ba3ca7b6531330bbd0003ca",
-        "_modified": 1566758966,
-        "_created": 1566751651,
-        "_id": "5d62bba36531332b3e0000eb",
-        "components": null,
-        "year": 2019
+        "_modified": 1567940701,
+        "_created": 1567940606,
+        "_id": "5d74dffe653133c5c0000213"
     }
 ]

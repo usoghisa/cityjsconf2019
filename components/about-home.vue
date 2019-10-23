@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section class="about-home section backimg is-mobile lazyload" :style="style">
+    <section class="about-home section backimg is-mobile lazyload">
       <div class="container">
         <div class="columns level-right">
           <div class="column is-4-desktop is-12-mobile is-12-tablet is-offset-4">
