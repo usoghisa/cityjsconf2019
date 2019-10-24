@@ -23,6 +23,11 @@
                 "display": "about-venue"
             },
             {
+                "_id": "5d6abf6565313335bf0002f2",
+                "link": "widgets",
+                "display": "Highlights"
+            },
+            {
                 "_id": "5d69d50c653133384d000350",
                 "link": "widgets",
                 "display": "Gallery"
@@ -43,7 +48,7 @@
         "topMenu": "Yes",
         "_mby": "5ba3ca7b6531330bbd0003ca",
         "_by": "5ba3ca7b6531330bbd0003ca",
-        "_modified": 1570775954,
+        "_modified": 1571825948,
         "_created": 1537519624,
         "_id": "5ba4b008653133fa510000e4",
         "bannerimage": [],
