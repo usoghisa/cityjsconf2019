@@ -50,7 +50,7 @@
                current: 'pages/current',
             }),
             style () {
-                return `background-image: url('/images/cinema.jpg')`;
+                return `background-image: url('/images/cinemax.jpg')`;
             }
         },
         props: {

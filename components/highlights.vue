@@ -44,7 +44,10 @@ export default {
     mixins: [VueScreenSize.VueScreenSizeMixin],
     computed: {
         slideCount() {
-            return Math.floor(this.$vssWidth/540)
+
+            const ismobile =  (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) ? true : false;
+
+            return ismobile ? 1 : Math.floor(this.$vssWidth/540)
         },
         ...mapGetters({
             items: "speakers/speakers",

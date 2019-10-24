@@ -38,3 +38,14 @@
     font-weight: bold;
     font-size: 1.1em;
 }
+
+@media only screen and (max-width: 600px) {
+    .highlightCardWrapper {
+        width: 100%;
+    }
+
+    .imageDiv {
+        width: 100%;
+        background-position-x: -84px;
+    }
+}
