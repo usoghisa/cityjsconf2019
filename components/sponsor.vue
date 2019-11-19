@@ -10,7 +10,7 @@
                         >
                             <a :href="`${item.url}`">
                                  <figure class="sponsor">
-                                      <img  v-if="typeof item.image!== 'undefined'" alt="sponsor"  :src="`//api.spiralthread.com/${item.image.path}`">
+                                      <img  v-if="typeof item.image!== 'undefined'" alt="sponsor"  :src="`/siteimages/${item.image.path}`">
                                 </figure>
                             </a>
                         </div>                

@@ -23,6 +23,11 @@
                 "display": "about-venue"
             },
             {
+                "_id": "5d62cea4653133433900015d",
+                "link": "widgets",
+                "display": "Sponsors"
+            },
+            {
                 "_id": "5d6abf6565313335bf0002f2",
                 "link": "widgets",
                 "display": "Highlights"
@@ -48,14 +53,14 @@
         "topMenu": "Yes",
         "_mby": "5ba3ca7b6531330bbd0003ca",
         "_by": "5ba3ca7b6531330bbd0003ca",
-        "_modified": 1571825948,
+        "_modified": 1572213086,
         "_created": 1537519624,
         "_id": "5ba4b008653133fa510000e4",
         "bannerimage": [],
         "hide": "No",
         "color": "transparent",
         "components": null,
-        "year": 2019
+        "year": 2020
     },
     {
         "title": "Speakers",
@@ -217,6 +222,11 @@
                 "_id": "5d6acecf6531334555000322",
                 "link": "widgets",
                 "display": "About page"
+            },
+            {
+                "_id": "5d62cea4653133433900015d",
+                "link": "widgets",
+                "display": "Sponsors"
             }
         ],
         "tags": "sponsors",
@@ -229,7 +239,7 @@
         "topMenu": "Yes",
         "_mby": "5ba3ca7b6531330bbd0003ca",
         "_by": "5ba3ca7b6531330bbd0003ca",
-        "_modified": 1570579897,
+        "_modified": 1572105022,
         "_created": 1537527843,
         "_id": "5ba4d0236531331ca20002c4",
         "bannerimage": [],

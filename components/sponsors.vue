@@ -19,7 +19,7 @@
             <div class="columns is-centered is-half">
             <div class="column is-half has-text-centered">
                 <app-sponsor
-                  :items="sponsors"
+                  :items="filteredSponsors"
                   level="Platinum"
                   :is-h2="false"
                 >
@@ -29,7 +29,7 @@
             <div class="columns is-centered is-half">
                <div class="column is-10 has-text-centered">
                 <app-sponsor
-                  :items="sponsors"
+                  :items="filteredSponsors"
                   level="Gold"
                   :is-h2="false"
                 >
@@ -39,7 +39,7 @@
              <div class="columns is-centered ">
                <div class="column is-10 has-text-centered">
                 <app-sponsor
-                  :items="sponsors"
+                  :items="filteredSponsors"
                   level="Silver"
                   :is-h2="false"
                 >
@@ -59,7 +59,7 @@
             <div class="columns is-centered is-half">
                <div class="column is-10 has-text-centered">
                 <app-sponsor
-                  :items="sponsors"
+                  :items="filteredSponsors"
                   level="Video"
                   :is-h2="false"
                 >
@@ -69,7 +69,7 @@
             <div class="columns is-centered is-half">
                <div class="column is-one has-text-centered">
                 <app-sponsor
-                  :items="sponsors"
+                  :items="filteredSponsors"
                   level="Community"
                   :is-h2="false"
                 >
@@ -101,7 +101,16 @@
     computed: { 
       ...mapGetters({
         sponsors: 'sponsors/sponsors',
+        pages: 'pages/current'
       }),
+      filteredSponsors() {
+        let sponsors = this.sponsors.filter((sponsor) => {
+          return sponsor.Year.includes(this.pages.year); 
+        });
+
+
+        return sponsors;
+      }
     }
   };
 </script>
