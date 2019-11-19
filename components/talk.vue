@@ -8,7 +8,7 @@
                 <div class="columns">
                     <div class="column is-3 " v-if="talk.type !== 'standard'">
                         <figure class="image is-128x128">
-                            <img v-if="talk.image" :src="`//api.spiralthread.com/${talk.image.path}`" alt="Placeholder image">
+                            <img v-if="talk.image" :src="`siteimages/${talk.image.path}`" alt="Placeholder image">
                         </figure>
                     </div>
                     <div class="column is-9">

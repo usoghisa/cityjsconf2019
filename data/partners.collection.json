@@ -8,12 +8,16 @@
         "level": "",
         "_mby": "5ba3ca7b6531330bbd0003ca",
         "_by": "5ba3ca7b6531330bbd0003ca",
-        "_modified": 1541140949,
+        "_modified": 1572205995,
         "_created": 1538944926,
-        "_id": "5bba6f9e653133f6e70001e5"
+        "_id": "5bba6f9e653133f6e70001e5",
+        "middle": null,
+        "Year": [
+            2018
+        ]
     },
     {
-        "name": "JS Weekly",
+        "name": "JS Weekly", 
         "image": {
             "path": "images\/2018sponsors\/jsweekly.png"
         },
@@ -21,10 +25,15 @@
         "level": "Bronze",
         "_mby": "5ba3ca7b6531330bbd0003ca",
         "_by": "5ba3ca7b6531330bbd0003ca",
-        "_modified": 1553354726,
+        "_modified": 1572205986,
         "_created": 1538944989,
         "_id": "5bba6fdd653133f73b000293",
-        "middle": "No"
+        "middle": "No",
+        "Year": [
+            2020,
+            2019,
+            2018
+        ]
     },
     {
         "name": "IG Index",
@@ -35,9 +44,13 @@
         "level": "",
         "_mby": "5ba3ca7b6531330bbd0003ca",
         "_by": "5ba3ca7b6531330bbd0003ca",
-        "_modified": 1541140935,
+        "_modified": 1572205971,
         "_created": 1538945013,
-        "_id": "5bba6ff5653133f74b0002f8"
+        "_id": "5bba6ff5653133f74b0002f8",
+        "middle": null,
+        "Year": [
+            2018
+        ]
     },
     {
         "name": "City Uni",
@@ -48,9 +61,13 @@
         "level": "",
         "_mby": "5ba3ca7b6531330bbd0003ca",
         "_by": "5ba3ca7b6531330bbd0003ca",
-        "_modified": 1541140926,
+        "_modified": 1572205963,
         "_created": 1538945040,
-        "_id": "5bba7010653133f76f0002aa"
+        "_id": "5bba7010653133f76f0002aa",
+        "middle": null,
+        "Year": [
+            2018
+        ]
     },
     {
         "name": "Utility Warehouse",
@@ -61,9 +78,14 @@
         "level": "Gold",
         "_mby": "5ba3ca7b6531330bbd0003ca",
         "_by": "5ba3ca7b6531330bbd0003ca",
-        "_modified": 1553354346,
+        "_modified": 1572205951,
         "_created": 1539013374,
-        "_id": "5bbb7afe65313324790000d8"
+        "_id": "5bbb7afe65313324790000d8",
+        "middle": null,
+        "Year": [
+            2018,
+            2019
+        ]
     },
     {
         "name": "London JS Community",
@@ -74,10 +96,15 @@
         "level": "Community",
         "_mby": "5ba3ca7b6531330bbd0003ca",
         "_by": "5ba3ca7b6531330bbd0003ca",
-        "_modified": 1554112914,
+        "_modified": 1572205932,
         "_created": 1539516927,
         "_id": "5bc329ff6531335b32000245",
-        "middle": "Yes"
+        "middle": "Yes",
+        "Year": [
+            2018,
+            2019,
+            2020
+        ]
     },
     {
         "name": "JS Monthly",
@@ -88,10 +115,15 @@
         "level": "Community",
         "_mby": "5ba3ca7b6531330bbd0003ca",
         "_by": "5ba3ca7b6531330bbd0003ca",
-        "_modified": 1554112950,
+        "_modified": 1572205898,
         "_created": 1539516978,
         "_id": "5bc32a326531335b5f000114",
-        "middle": "Yes"
+        "middle": "Yes",
+        "Year": [
+            2018,
+            2019,
+            2020
+        ]
     },
     {
         "name": "Devit",
@@ -102,9 +134,13 @@
         "level": "",
         "_mby": "5ba3ca7b6531330bbd0003ca",
         "_by": "5ba3ca7b6531330bbd0003ca",
-        "_modified": 1541169729,
+        "_modified": 1572205920,
         "_created": 1539517039,
-        "_id": "5bc32a6f6531335b830002fc"
+        "_id": "5bc32a6f6531335b830002fc",
+        "middle": null,
+        "Year": [
+            2018
+        ]
     },
     {
         "name": "Women Who Code",
@@ -115,10 +151,15 @@
         "level": "Community",
         "_mby": "5ba3ca7b6531330bbd0003ca",
         "_by": "5ba3ca7b6531330bbd0003ca",
-        "_modified": 1554112907,
+        "_modified": 1572205881,
         "_created": 1539517087,
         "_id": "5bc32a9f6531335bb7000210",
-        "middle": "Yes"
+        "middle": "Yes",
+        "Year": [
+            2018,
+            2019,
+            2020
+        ]
     },
     {
         "name": "London Node User Group",
@@ -129,10 +170,15 @@
         "level": "Community",
         "_mby": "5ba3ca7b6531330bbd0003ca",
         "_by": "5ba3ca7b6531330bbd0003ca",
-        "_modified": 1554112931,
+        "_modified": 1572205909,
         "_created": 1539517126,
         "_id": "5bc32ac66531335bdb0003e5",
-        "middle": "Yes"
+        "middle": "Yes",
+        "Year": [
+            2018,
+            2019,
+            2020
+        ]
     },
     {
         "name": "Dazn",
@@ -143,9 +189,14 @@
         "level": "Platinum",
         "_mby": "5ba3ca7b6531330bbd0003ca",
         "_by": "5ba3ca7b6531330bbd0003ca",
-        "_modified": 1545143732,
+        "_modified": 1572211062,
         "_created": 1539517412,
-        "_id": "5bc32be46531335cbc00027b"
+        "_id": "5bc32be46531335cbc00027b",
+        "middle": null,
+        "Year": [
+            2018,
+            2019
+        ]
     },
     {
         "name": "JavaScript Works",
@@ -156,9 +207,13 @@
         "level": "",
         "_mby": "5ba3ca7b6531330bbd0003ca",
         "_by": "5ba3ca7b6531330bbd0003ca",
-        "_modified": 1541140898,
+        "_modified": 1572205862,
         "_created": 1539517885,
-        "_id": "5bc32dbd6531335e720000db"
+        "_id": "5bc32dbd6531335e720000db",
+        "middle": null,
+        "Year": [
+            2018
+        ]
     },
     {
         "name": "techdomains",
@@ -169,10 +224,13 @@
         "level": "",
         "_mby": "5ba3ca7b6531330bbd0003ca",
         "_by": "5ba3ca7b6531330bbd0003ca",
-        "_modified": 1553354679,
+        "_modified": 1572205847,
         "_created": 1539544025,
         "_id": "5bc393d9653133b5b8000321",
-        "middle": "No"
+        "middle": "No",
+        "Year": [
+            2018
+        ]
     },
     {
         "name": "HalfStack",
@@ -183,10 +241,15 @@
         "level": "Community",
         "_mby": "5ba3ca7b6531330bbd0003ca",
         "_by": "5ba3ca7b6531330bbd0003ca",
-        "_modified": 1554112853,
+        "_modified": 1572205840,
         "_created": 1541143590,
         "_id": "5bdbfc266531335c6900027b",
-        "middle": "Yes"
+        "middle": "Yes",
+        "Year": [
+            2018,
+            2019,
+            2020
+        ]
     },
     {
         "name": "Nexmo",
@@ -197,10 +260,13 @@
         "level": "Silver",
         "_mby": "5ba3ca7b6531330bbd0003ca",
         "_by": "5ba3ca7b6531330bbd0003ca",
-        "_modified": 1553355110,
+        "_modified": 1572205831,
         "_created": 1545143168,
         "_id": "5c19038065313351040001be",
-        "middle": "Yes"
+        "middle": "Yes",
+        "Year": [
+            2019
+        ]
     },
     {
         "name": "Manning",
@@ -211,10 +277,13 @@
         "level": "Bronze",
         "_mby": "5ba3ca7b6531330bbd0003ca",
         "_by": "5ba3ca7b6531330bbd0003ca",
-        "_modified": 1553354665,
+        "_modified": 1572205824,
         "_created": 1547776031,
         "_id": "5c41301f6531332522000338",
-        "middle": "No"
+        "middle": "No",
+        "Year": [
+            2019
+        ]
     },
     {
         "name": "Cloudinary",
@@ -225,10 +294,13 @@
         "level": "Silver",
         "_mby": "5ba3ca7b6531330bbd0003ca",
         "_by": "5ba3ca7b6531330bbd0003ca",
-        "_modified": 1553354659,
+        "_modified": 1572205816,
         "_created": 1550045233,
         "_id": "5c63d0316531338cdc00022d",
-        "middle": "No"
+        "middle": "No",
+        "Year": [
+            2019
+        ]
     },
     {
         "name": "MongoDB",
@@ -239,10 +311,13 @@
         "level": "Silver",
         "_mby": "5ba3ca7b6531330bbd0003ca",
         "_by": "5ba3ca7b6531330bbd0003ca",
-        "_modified": 1553354643,
+        "_modified": 1572205807,
         "_created": 1550224718,
         "_id": "5c668d4e653133642f000358",
-        "middle": "No"
+        "middle": "No",
+        "Year": [
+            2019
+        ]
     },
     {
         "name": "AI Javascript London meetup",
@@ -253,10 +328,13 @@
         "level": "Community",
         "_mby": "5ba3ca7b6531330bbd0003ca",
         "_by": "5ba3ca7b6531330bbd0003ca",
-        "_modified": 1554112878,
+        "_modified": 1572205799,
         "_created": 1550652546,
         "_id": "5c6d14826531332d600000a1",
-        "middle": "Yes"
+        "middle": "Yes",
+        "Year": [
+            2019
+        ]
     },
     {
         "name": "Microsoft Reactor",
@@ -267,10 +345,13 @@
         "level": "Bronze",
         "_mby": "5ba3ca7b6531330bbd0003ca",
         "_by": "5ba3ca7b6531330bbd0003ca",
-        "_modified": 1553354623,
+        "_modified": 1572205773,
         "_created": 1552309773,
         "_id": "5c865e0d653133acdb00023b",
-        "middle": "No"
+        "middle": "No",
+        "Year": [
+            2019
+        ]
     },
     {
         "name": "Cooper Press",
@@ -281,10 +362,15 @@
         "level": "Bronze",
         "_mby": "5ba3ca7b6531330bbd0003ca",
         "_by": "5ba3ca7b6531330bbd0003ca",
-        "_modified": 1553354615,
+        "_modified": 1572205753,
         "_created": 1552323494,
         "_id": "5c8693a6653133e9c8000096",
-        "middle": "No"
+        "middle": "No",
+        "Year": [
+            2018,
+            2019,
+            2020
+        ]
     },
     {
         "name": "DigitalIQ",
@@ -295,10 +381,13 @@
         "level": "Gold",
         "_mby": "5ba3ca7b6531330bbd0003ca",
         "_by": "5ba3ca7b6531330bbd0003ca",
-        "_modified": 1553354598,
+        "_modified": 1572205744,
         "_created": 1553352311,
         "_id": "5c9646776531335077000242",
-        "middle": "Yes"
+        "middle": "Yes",
+        "Year": [
+            2019
+        ]
     },
     {
         "name": "JSCamp",
@@ -310,9 +399,12 @@
         "middle": "Yes",
         "_mby": "5ba3ca7b6531330bbd0003ca",
         "_by": "5ba3ca7b6531330bbd0003ca",
-        "_modified": 1554112789,
+        "_modified": 1572205737,
         "_created": 1554112789,
-        "_id": "5ca1e1156531332aac00036e"
+        "_id": "5ca1e1156531332aac00036e",
+        "Year": [
+            2019
+        ]
     },
     {
         "name": "JSNation",
@@ -324,9 +416,12 @@
         "middle": "Yes",
         "_mby": "5ba3ca7b6531330bbd0003ca",
         "_by": "5ba3ca7b6531330bbd0003ca",
-        "_modified": 1555269778,
+        "_modified": 1572205730,
         "_created": 1555269778,
-        "_id": "5cb38892653133924900011f"
+        "_id": "5cb38892653133924900011f",
+        "Year": [
+            2019
+        ]
     },
     {
         "name": "Pusher",
@@ -338,9 +433,12 @@
         "middle": "No",
         "_mby": "5ba3ca7b6531330bbd0003ca",
         "_by": "5ba3ca7b6531330bbd0003ca",
-        "_modified": 1558600556,
+        "_modified": 1572205719,
         "_created": 1555305674,
-        "_id": "5cb414ca65313333090001e9"
+        "_id": "5cb414ca65313333090001e9",
+        "Year": [
+            2019
+        ]
     },
     {
         "name": "FoundersAndCoders",
@@ -352,8 +450,11 @@
         "middle": "Yes",
         "_mby": "5ba3ca7b6531330bbd0003ca",
         "_by": "5ba3ca7b6531330bbd0003ca",
-        "_modified": 1555931097,
+        "_modified": 1572205700,
         "_created": 1555931097,
-        "_id": "5cbd9fd9653133a38f0003d2"
+        "_id": "5cbd9fd9653133a38f0003d2",
+        "Year": [
+            2019
+        ]
     }
 ]

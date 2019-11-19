@@ -25,7 +25,7 @@
   .hero
     margin: 0;
     padding: 0;
-    background-image: url('//api.spiralthread.com/images/aboutus.png');
+    background-image: url('/siteimages/images/aboutus.png');
     -webkit-background-size: cover;
     background-size: cover;
     height: 250px;
