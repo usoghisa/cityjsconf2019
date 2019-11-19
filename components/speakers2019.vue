@@ -22,7 +22,7 @@
                                         v-if="typeof 
                                             item.image!== 'undefined'"  
                                             width="150" :alt="item.name" 
-                                            :src="`//api.spiralthread.com/${item.thumbnail.path}`"
+                                            :src="`/siteimages/${item.thumbnail.path}`"
                                             class="speaker"
                                     />
                                 </figure>
@@ -36,7 +36,7 @@
                                         v-if="typeof 
                                             item.image!== 'undefined'"  
                                             :alt="item.name" 
-                                            :src="`//api.spiralthread.com/${item.thumbnail.path}`"
+                                            :src="`/siteimages/${item.thumbnail.path}`"
                                             class="speaker"
                                     />
                                 </figure>
