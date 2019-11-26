@@ -1,5 +1,6 @@
 <template>
   <div class="sponsors">
+   test {{this.pages.year}}
     <section class="hero columns">
       <div class="hero-body">
         <div>
@@ -46,10 +47,10 @@
                 </app-sponsor>
               </div>
             </div>
-             <div class="columns is-centered is-half">
+             <div class="columns is-centered ">
                <div class="column is-10 has-text-centered">
                 <app-sponsor
-                  :items="items"
+                  :items="filteredSponsors"
                   level="Bronze"
                   :is-h2="false"
                 >
@@ -107,7 +108,6 @@
         let sponsors = this.sponsors.filter((sponsor) => {
           return sponsor.Year.includes(this.pages.year); 
         });
-
 
         return sponsors;
       }

@@ -65,7 +65,7 @@ export default {
         padding: 220px 0;
         height: 672px;
         &.lazyloaded
-          background-image: url(/siteimages/images/audience.jpg); 
+          background-image: url(/images/audience.jpg); 
           background-repeat: no-repeat; 
           background-size: cover;
           +mobile
