@@ -2,9 +2,9 @@
     <section class="section bg-red">
         <div class id="videos">
             <app-h2
-                :title="`Our ${current.year} Highlights`"
+                :title="`Our ${this.current.url ==='home'? '2019' : this.current.year} Highlights`"
                 :subtitle="
-                    `View from our amazing ${current.year} speakers (sponsored by Pusher)`
+                    `View from our amazing ${this.current.url ==='home'? '2019' : this.current.year} speakers (sponsored by Pusher)`
                 "
                 :is-h2="true"
                 :white="true"

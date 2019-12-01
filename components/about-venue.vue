@@ -72,9 +72,9 @@
         height: 650px;
         background-position-y: -155px;
         +mobile
-            background-position: 1px -264px;
+            background-position: -420px 4px;
             background-repeat: no-repeat;
-            background-size: cover;
+            background-size: sc;
             padding: 150px 0;
             height: 194vw;
     .media-content
