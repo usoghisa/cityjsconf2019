@@ -54,9 +54,9 @@
         "color": "transparent",
         "components": "",
         "year": 2020,
-        "_modified": 1575212691,
-        "_created": 1575212691,
-        "_id": "5de3d693653133e08c000172"
+        "_modified": 1575213910,
+        "_created": 1575213910,
+        "_id": "5de3db56653133e56f0003c5"
     },
     {
         "title": "Speakers",
@@ -83,7 +83,9 @@
             }
         ],
         "tags": "Speakers",
-        "image": "",
+        "image": {
+            "path": "images\/2019.jpg"
+        },
         "displayAtHome": "No",
         "orderOnTopMenu": 1,
         "isRedirect": "No",
@@ -93,9 +95,10 @@
         "color": "transparent",
         "components": "",
         "year": 2019,
-        "_modified": 1575212691,
-        "_created": 1575212691,
-        "_id": "5de3d693653133e08c000312"
+        "_modified": 1575214175,
+        "_created": 1575213910,
+        "_id": "5de3db56653133e56f0001f7",
+        "_mby": "5ba3ca7b6531330bbd0003ca"
     },
     {
         "title": "Schedule",
@@ -122,9 +125,9 @@
         "color": "transparent",
         "components": "",
         "year": "",
-        "_modified": 1575212691,
-        "_created": 1575212691,
-        "_id": "5de3d693653133e08c000307"
+        "_modified": 1575213910,
+        "_created": 1575213910,
+        "_id": "5de3db56653133e56f000094"
     },
     {
         "title": "Buy Tickets",
@@ -141,19 +144,22 @@
             }
         ],
         "tags": "",
-        "image": "",
+        "image": {
+            "path": "images\/team.png"
+        },
         "displayAtHome": "",
         "orderOnTopMenu": 8,
         "isRedirect": "No",
         "topMenu": "Yes",
-        "bannerimage": "",
+        "bannerimage": [],
         "hide": "No",
         "color": "transparent",
         "components": "",
         "year": "",
-        "_modified": 1575212691,
-        "_created": 1575212691,
-        "_id": "5de3d693653133e08c000366"
+        "_modified": 1575215349,
+        "_created": 1575213910,
+        "_id": "5de3db56653133e56f00001b",
+        "_mby": "5ba3ca7b6531330bbd0003ca"
     },
     {
         "title": "Venue",
@@ -180,9 +186,9 @@
         "color": "transparent",
         "components": "",
         "year": "",
-        "_modified": 1575212691,
-        "_created": 1575212691,
-        "_id": "5de3d693653133e08c0001a1"
+        "_modified": 1575213910,
+        "_created": 1575213910,
+        "_id": "5de3db56653133e56f0000ae"
     },
     {
         "title": "Sponsors",
@@ -204,7 +210,9 @@
             }
         ],
         "tags": "sponsors",
-        "image": "",
+        "image": {
+            "path": "images\/sponsors.png"
+        },
         "displayAtHome": "",
         "orderOnTopMenu": 5,
         "isRedirect": "No",
@@ -214,9 +222,10 @@
         "color": "transparent",
         "components": "",
         "year": 2020,
-        "_modified": 1575212691,
-        "_created": 1575212691,
-        "_id": "5de3d693653133e08c000082"
+        "_modified": 1575214282,
+        "_created": 1575213910,
+        "_id": "5de3db56653133e56f000083",
+        "_mby": "5ba3ca7b6531330bbd0003ca"
     },
     {
         "title": "About",
@@ -233,19 +242,22 @@
             }
         ],
         "tags": "",
-        "image": "",
+        "image": {
+            "path": "images\/aboutus.png"
+        },
         "displayAtHome": "",
         "orderOnTopMenu": 3,
         "isRedirect": "No",
         "topMenu": "",
-        "bannerimage": "",
+        "bannerimage": [],
         "hide": "No",
         "color": "transparent",
         "components": "",
         "year": "",
-        "_modified": 1575212691,
-        "_created": 1575212691,
-        "_id": "5de3d693653133e08c000195"
+        "_modified": 1575214298,
+        "_created": 1575213910,
+        "_id": "5de3db56653133e56f000152",
+        "_mby": "5ba3ca7b6531330bbd0003ca"
     },
     {
         "title": "Call For Papers",
@@ -272,9 +284,9 @@
         "color": "button",
         "components": "",
         "year": "",
-        "_modified": 1575212691,
-        "_created": 1575212691,
-        "_id": "5de3d693653133e08c0003bc"
+        "_modified": 1575213910,
+        "_created": 1575213910,
+        "_id": "5de3db56653133e56f0000cd"
     },
     {
         "title": "Workshops",
@@ -301,9 +313,9 @@
         "color": "",
         "components": "",
         "year": "",
-        "_modified": 1575212691,
-        "_created": 1575212691,
-        "_id": "5de3d693653133e08c0001ab"
+        "_modified": 1575213910,
+        "_created": 1575213910,
+        "_id": "5de3db56653133e56f00032f"
     },
     {
         "title": "Past Events",
@@ -320,19 +332,22 @@
             }
         ],
         "tags": "",
-        "image": "",
+        "image": [],
         "displayAtHome": "",
         "orderOnTopMenu": 7,
         "isRedirect": "No",
         "topMenu": "Yes",
-        "bannerimage": [],
+        "bannerimage": {
+            "path": "images\/aboutus.png"
+        },
         "hide": "Yes",
         "color": "",
         "components": "",
         "year": "",
-        "_modified": 1575212691,
-        "_created": 1575212691,
-        "_id": "5de3d693653133e08c00007e"
+        "_modified": 1575215669,
+        "_created": 1575213910,
+        "_id": "5de3db56653133e56f000037",
+        "_mby": "5ba3ca7b6531330bbd0003ca"
     },
     {
         "title": "Code of Conduct",
@@ -349,7 +364,9 @@
             }
         ],
         "tags": "",
-        "image": "",
+        "image": {
+            "path": "images\/team2.png"
+        },
         "displayAtHome": "Yes",
         "orderOnTopMenu": 7,
         "isRedirect": "No",
@@ -359,16 +376,17 @@
         "color": "button",
         "components": "",
         "year": "",
-        "_modified": 1575212691,
-        "_created": 1575212691,
-        "_id": "5de3d693653133e08c00039b"
+        "_modified": 1575215071,
+        "_created": 1575213910,
+        "_id": "5de3db56653133e56f0001d2",
+        "_mby": "5ba3ca7b6531330bbd0003ca"
     },
     {
         "title": "Scholarships",
         "subtitle": "",
         "url": "scholarships",
         "type": "Standard",
-        "description": "<div id=\":c8\">\n<div class=\"btm\"><strong>CityJSConf<\/strong> is a community joint event created by our Londons JavaScript meet-up groups. This is a non-profitable&nbsp;conference and our purpose is to give back to our community. Thanks to the great generosity of our sponsors we are giving away 20 tickets for this year&rsquo;s main event.<\/div>\n<\/div>\n<div class=\"\">\n<div id=\":ca\" class=\"ii gt adO\">\n<div id=\":c9\" class=\"a3s aXjCH \">\n<p>&nbsp;<\/p>\n<p>We wish to support our community and highly encourage students and others coming from diverse backgrounds (people of color, LGBTQIA, people with disabilities, refugees, women, students and people facing economic or social hardships) to apply for scholarships. Travel and accommodation expenses are not included.<\/p>\n<p>&nbsp;<\/p>\n<p>If you are keen to attend CityJSConf but have difficulty attending the conference due to lack of money or resources, this is your chance. We will be delighted to have you with us!<\/p>\n<p>Applications for Scholarships are now open, please apply using our <a href=\"https:\/\/docs.google.com\/forms\/d\/e\/1FAIpQLSe2vlQbWtjWY-x02gpf3E9GIuxN6VoHY9blzSYTXBUzDipsDQ\/viewform?usp=sf_link\">application form<\/a>.<\/p>\n<p>Application deadline ends on 01\/02\/2020<\/p>\n<h2>QUESTIONS<\/h2>\n<p>For any questions please contact us by email&nbsp;<a href=\"mailto:cityjsconf@gmail.com\" target=\"_blank\" rel=\"noopener\">cityjsconf@gmail.com<\/a><\/p>\n<\/div>\n<\/div>\n<\/div>\n<p>&nbsp;<\/p>",
+        "description": "<div id=\":c8\">\n<div class=\"btm\"><strong>CityJSConf<\/strong> is a community joint event created by our Londons JavaScript meet-up groups. This is a non-profitable&nbsp;conference and our purpose is to give back to our community. Thanks to the great generosity of our sponsors we are giving away 20 tickets for this year&rsquo;s main event.<\/div>\n<\/div>\n<div class=\"\">\n<div id=\":ca\" class=\"ii gt adO\">\n<div id=\":c9\" class=\"a3s aXjCH \">\n<p>&nbsp;<\/p>\n<p>We wish to support our community and highly encourage students and others coming from diverse backgrounds (people of color, LGBTQIA, people with disabilities, refugees, women, students and people facing economic or social hardships) to apply for scholarships. Travel and accommodation expenses are not included.<\/p>\n<p>&nbsp;<\/p>\n<p>If you are keen to attend CityJSConf but have difficulty attending the conference due to lack of money or resources, this is your chance. We will be delighted to have you with us!<\/p>\n<p>&nbsp;<\/p>\n<p>Applications for Scholarships are now open, please apply using our <a href=\"https:\/\/docs.google.com\/forms\/d\/e\/1FAIpQLSe2vlQbWtjWY-x02gpf3E9GIuxN6VoHY9blzSYTXBUzDipsDQ\/viewform?usp=sf_link\">application form<\/a>.<\/p>\n<p>Application deadline ends on 01\/02\/2020<\/p>\n<h2>&nbsp;<\/h2>\n<h2>QUESTIONS<\/h2>\n<p>For any questions please contact us by email&nbsp;<a href=\"mailto:cityjsconf@gmail.com\" target=\"_blank\" rel=\"noopener\">cityjsconf@gmail.com<\/a><\/p>\n<\/div>\n<\/div>\n<\/div>\n<p>&nbsp;<\/p>",
         "shortDescription": "<p>dT<\/p>",
         "widgets": [
             {
@@ -378,7 +396,9 @@
             }
         ],
         "tags": "",
-        "image": [],
+        "image": {
+            "path": "images\/team.png"
+        },
         "displayAtHome": "",
         "orderOnTopMenu": 2,
         "isRedirect": "No",
@@ -388,9 +408,9 @@
         "color": "",
         "components": "",
         "year": "",
-        "_modified": 1575212781,
-        "_created": 1575212691,
-        "_id": "5de3d693653133e08c0002fb",
+        "_modified": 1575214449,
+        "_created": 1575213910,
+        "_id": "5de3db56653133e56f0002f7",
         "_mby": "5ba3ca7b6531330bbd0003ca"
     },
     {
@@ -418,7 +438,9 @@
             }
         ],
         "tags": "",
-        "image": "",
+        "image": {
+            "path": "images\/2019.jpg"
+        },
         "displayAtHome": "",
         "orderOnTopMenu": 7,
         "isRedirect": "",
@@ -428,9 +450,10 @@
         "color": "",
         "components": "",
         "year": 2019,
-        "_modified": 1575212691,
-        "_created": 1575212691,
-        "_id": "5de3d693653133e08c00031c"
+        "_modified": 1575215593,
+        "_created": 1575213910,
+        "_id": "5de3db56653133e56f0000a3",
+        "_mby": "5ba3ca7b6531330bbd0003ca"
     },
     {
         "title": "CityJS Conference 2018",
@@ -467,8 +490,8 @@
         "color": "",
         "components": "",
         "year": 2018,
-        "_modified": 1575212691,
-        "_created": 1575212691,
-        "_id": "5de3d693653133e08c0001ca"
+        "_modified": 1575213910,
+        "_created": 1575213910,
+        "_id": "5de3db56653133e56f0002f8"
     }
 ]

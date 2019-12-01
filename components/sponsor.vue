@@ -8,9 +8,9 @@
                             v-for="item in TypedItems"
                             v-bind:key="item._id"
                         >
-                            <a :href="`${item.url}`">
+                            <a :href="`${item.url}`" tatget="_blank">
                                  <figure class="sponsor">
-                                      <img  v-if="typeof item.image!== 'undefined'" alt="sponsor"  :src="`//api.spiralthread.com/${item.image.path}`">
+                                      <img  v-if="typeof item.image!== 'undefined'" alt="sponsor"  :src="`/siteimages/${item.image.path}`">
                                 </figure>
                             </a>
                         </div>                

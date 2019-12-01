@@ -30,7 +30,7 @@ module.exports = {
       { hid: 'description', name: 'description', content: 'City of London Conference by the London JS Community' },
       { property: 'og:title', content: 'CityJS Conference 2020, London, 27 March 2020' },
       { property: 'og:description', content: 'City of London JavaScript Conference by the London JS Community' },
-      { property: 'og:image', content: '//api.spiralthread.com/images/audience.jpg' },
+      { property: 'og:image', content: '/siteimages/audience.jpg' },
       { property: 'og:url', content: '//www.cityjsconf.org' },
       { name: 'twitter:card', content: 'summary_large_image' },
       { property: 'og:site_name', content: 'City of London JavaScript Conference' },

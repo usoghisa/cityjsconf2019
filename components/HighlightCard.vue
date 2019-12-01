@@ -23,7 +23,7 @@
         },
         computed: {
             imageUrl() {
-                return `//api.spiralthread.com/${this.item.image.path}`
+                return `/siteimages/${this.item.image.path}`
             }
         }
     };

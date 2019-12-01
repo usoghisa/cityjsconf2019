@@ -44,7 +44,8 @@
                current: 'pages/current',
             }),
             style () {
-               return `background-image: url(//api.spiralthread.com/${this.current.image.path});`;
+               console.log(this.current.image)
+               return `background-image: url(/siteimages/${this.current.image.path});`;
             }
         },
         props: {
