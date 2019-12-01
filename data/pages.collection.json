@@ -88,7 +88,7 @@
         ],
         "tags": "Speakers",
         "image": {
-            "path": "images\/team.png"
+            "path": "images\/2019.jpg"
         },
         "displayAtHome": "No",
         "orderOnTopMenu": 1,
@@ -121,7 +121,7 @@
         ],
         "tags": "",
         "image": {
-            "path": "images\/aboutus.png"
+            "path": "images\/previous_year\/cinema.png"
         },
         "displayAtHome": "",
         "orderOnTopMenu": 1,
@@ -156,7 +156,7 @@
         ],
         "tags": "",
         "image": {
-            "path": "images\/team.png"
+            "path": "images\/aboutus.png"
         },
         "displayAtHome": "",
         "orderOnTopMenu": 8,
@@ -433,7 +433,7 @@
         ],
         "tags": "",
         "image": {
-            "path": "images\/team.png"
+            "path": "images\/aboutus.png"
         },
         "displayAtHome": "",
         "orderOnTopMenu": 2,
