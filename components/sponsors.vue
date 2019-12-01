@@ -1,6 +1,5 @@
 <template>
   <div class="sponsors">
-   test {{this.pages.year}}
     <section class="hero columns">
       <div class="hero-body">
         <div>
