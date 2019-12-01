@@ -6,9 +6,9 @@
             <p>CityJS Conference, a community conference run by the Community</p>
           </div>
           <div class="column is-3">
-                <a class="button is-black" href="past">Past events</a> <br />
-                <a class="button is-black" href="coc">Code of conduct</a> <br />
-                <a class="button is-black" href="about">About</a>
+                <a class="whitelink" href="past">Past events</a> <br />
+                <a class="whitelink" href="coc">Code of conduct</a> <br />
+                <a class="whitelink" href="about">About</a>
           </div>
           <div class="column is-3">
             <!-- <app-newsletter />
@@ -46,7 +46,7 @@
         color: #fff
 
         a
-          .whitelink
+          &.whitelink
             color: $white
 
         .icon

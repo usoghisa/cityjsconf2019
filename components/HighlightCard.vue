@@ -1,5 +1,6 @@
 <template>
     <div :class="$style.highlightCardWrapper">
+      <a :href="item.videoUrl">
        <div :style="{ backgroundImage: 'url(' + imageUrl + ')' }" :class="$style.imageDiv">
         </div>
         <div :class="$style.infoWrap">
@@ -9,7 +10,9 @@
                 <div :class="$style.speakerCompany">{{ item.company }}</div>
             </div>
         </div>
+        </a>
     </div>
+
 </template>
 
 <script>
