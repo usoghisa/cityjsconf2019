@@ -17,7 +17,7 @@
         ]
     },
     {
-        "name": "JS Weekly", 
+        "name": "JS Weekly",
         "image": {
             "path": "images\/2018sponsors\/jsweekly.png"
         },
@@ -25,15 +25,18 @@
         "level": "Bronze",
         "_mby": "5ba3ca7b6531330bbd0003ca",
         "_by": "5ba3ca7b6531330bbd0003ca",
-        "_modified": 1572205986,
+        "_modified": 1574808790,
         "_created": 1538944989,
         "_id": "5bba6fdd653133f73b000293",
         "middle": "No",
         "Year": [
+            2020,
             2019,
             2018,
-            2020 
-       ]
+            2020,
+            2019,
+            2018
+        ]
     },
     {
         "name": "IG Index",
@@ -189,14 +192,18 @@
         "level": "Platinum",
         "_mby": "5ba3ca7b6531330bbd0003ca",
         "_by": "5ba3ca7b6531330bbd0003ca",
-        "_modified": 1572211062,
+        "_modified": 1572211172,
         "_created": 1539517412,
         "_id": "5bc32be46531335cbc00027b",
         "middle": null,
         "Year": [
             2018,
             2019,
-            2020
+            2020,
+            2018,
+            2019,
+            2018,
+            2019
         ]
     },
     {
@@ -266,7 +273,8 @@
         "_id": "5c19038065313351040001be",
         "middle": "Yes",
         "Year": [
-            2019
+            2019,
+            2020
         ]
     },
     {
@@ -281,7 +289,7 @@
         "_modified": 1572205824,
         "_created": 1547776031,
         "_id": "5c41301f6531332522000338",
-        "middle": "No",
+        "middle": "Yes",
         "Year": [
             2019,
             2020
@@ -335,7 +343,8 @@
         "_id": "5c6d14826531332d600000a1",
         "middle": "Yes",
         "Year": [
-            2019
+            2019,
+            2020
         ]
     },
     {
@@ -458,5 +467,22 @@
         "Year": [
             2019
         ]
+    },
+    {
+        "name": "Twillio",
+        "image": {
+            "path": "images\/sponsors\/twilio-logo-red.dfec78ee.png"
+        },
+        "url": "http:\/\/www.twilio.com\/",
+        "level": "Silver",
+        "middle": "No",
+        "Year": [
+            2020
+        ],
+        "_mby": "5ba3ca7b6531330bbd0003ca",
+        "_by": "5ba3ca7b6531330bbd0003ca",
+        "_modified": 1575326790,
+        "_created": 1575326790,
+        "_id": "5de59446653133f2460003d3"
     }
 ]
