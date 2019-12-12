@@ -19,7 +19,7 @@
         "shortDescription": "<p>We will be announcing our speakers once the Call For Papers is completed. Our Call for papers commitee will be selecting the best talks and offers will be made to the speakers.&nbsp;<\/p>\n<p>We would advise you to first let us know what is the title\/subject of your talk before we make a decision on paying for travel and accommodation.<\/p>",
         "url": "",
         "image": [],
-        "type": "",
+        "type": "Component",
         "custom": "",
         "_mby": "5ba3ca7b6531330bbd0003ca",
         "_by": "5ba3ca7b6531330bbd0003ca",
@@ -130,5 +130,18 @@
         "_modified": 1570297345,
         "_created": 1570297238,
         "_id": "5d98d5966531334af500024d"
+    },
+    {
+        "title": "Speakers",
+        "shortDescription": "",
+        "url": "",
+        "image": [],
+        "type": "Component",
+        "custom": "speakers",
+        "_mby": "5ba3ca7b6531330bbd0003ca",
+        "_by": "5ba3ca7b6531330bbd0003ca",
+        "_modified": 1575581288,
+        "_created": 1575581183,
+        "_id": "5de975ff653133d0e70000ba"
     }
 ]

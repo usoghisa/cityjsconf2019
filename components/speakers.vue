@@ -7,10 +7,10 @@
             :is-h2="true"
         >
         </app-h2>
-       <div class="row columns is-mobile is-multiline"> 
+        <div class="row columns is-mobile is-multiline"> 
             <div 
                 class="column is-one-quarter-desktop is-full-mobile"  
-                v-for="item in speakers"
+                v-for="item in filteredSpeakers"
                 v-bind:key="item._id"
             >
                 <div class="card">
@@ -53,8 +53,9 @@
                             </div>
                         </div>
                     </div>
-                    <!--  -->
                 </div>
+
+                <!-- <Speaker :data="item" /> -->
             </div>
         </div>
     </div>
@@ -65,37 +66,47 @@
 import bulmaCarousel from "bulma-extensions/bulma-carousel/dist/js/bulma-carousel.min.js";
 import "bulma-extensions/bulma-carousel/dist/css/bulma-carousel.min.css";
 import h2 from '@/components/h2';
+import { mapGetters } from 'vuex'
+
 export default {
-  props: {
-    items: {
-      type: Array
-    }
-  },
   components: {
     'app-h2': h2,
   },
   mounted: function() {
     this.carousel = bulmaCarousel.attach();
+    this.$store.dispatch('speakers/get');
   },
   computed: {
+    ...mapGetters({
+        speakers: 'speakers/speakers',
+    }),
     isMobile () {
         return (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) ? true : false;
     }, 
-    speakers () {
-        if (typeof this.items!== 'undefined') {
-            let speakers = [];
-            speakers = this.items.filter(item => {
-                return (item.year === 2019)
-            }); 
+    filteredSpeakers() {
+         if (typeof this.speakers!== 'undefined') {
+             return this.speakers.filter(speaker => {
+                 return speaker.year === 2019
+             })
+         }
+    },
+    // speakers () {
+    //  //   if (typeof this.speakers!== 'undefined') {
 
-           return speakers.sort(function(a, b) {
-                return a.order-b.order
-            });
+    //         console.log(this.speakers)
+    //     //    return this.speakers.filter(item => {
+    //     //         return (item.year === 2019)
+    //     //     }); 
 
-        } else {
-            return [];
-        }
-    }
+    //     //    return speakers.sort(function(a, b) {
+    //     //         return a.order-b.order
+    //     //     });
+
+    //     // } else {
+    //     //     return [];
+    //     // }
+    //     return [];
+    // }
   }
   
 };
