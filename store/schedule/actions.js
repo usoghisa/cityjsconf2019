@@ -14,3 +14,4 @@ export default {
         await commit('set', components);
    },
 }
+

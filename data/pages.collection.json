@@ -44,7 +44,7 @@
             }
         ],
         "tags": "",
-        "image": "",
+        "image": [],
         "displayAtHome": "",
         "orderOnTopMenu": 0,
         "isRedirect": "No",
@@ -54,16 +54,17 @@
         "color": "transparent",
         "components": "",
         "year": 2020,
-        "_modified": 1575213910,
+        "_modified": 1576231933,
         "_created": 1575213910,
-        "_id": "5de3db56653133e56f0003c5"
+        "_id": "5de3db56653133e56f0003c5",
+        "_mby": "5ba3ca7b6531330bbd0003ca"
     },
     {
         "title": "Speakers",
         "subtitle": "",
         "url": "speakers",
         "type": "Standard",
-        "description": "<p>&nbsp;<\/p>\n<p>You can apply using this <a href=\"https:\/\/www.papercall.io\/cityjs2020\">link<\/a><\/p>\n<p>&nbsp;<\/p>\n<p>We would like to thank everyone for submitting your proposals we have been really excited by your response to our call for papers.&nbsp;<\/p>\n<p>&nbsp;<\/p>\n<p>Below you can see some of the speakers selected. We will be revealing some more speakers soon.<\/p>",
+        "description": "<p>&nbsp;<\/p>\n<p>You can apply using this <a href=\"https:\/\/tinyurl.com\/cityjs2020-cfp\">link<\/a><\/p>\n<p>&nbsp;<\/p>\n<p>We would like to thank everyone for submitting your proposals we have been really excited by your response to our call for papers.&nbsp;<\/p>\n<p>&nbsp;<\/p>\n<p>Below you can see some of the speakers selected. We will be revealing some more speakers soon.<\/p>",
         "shortDescription": "",
         "widgets": [
             {
@@ -95,7 +96,7 @@
         "color": "transparent",
         "components": "",
         "year": 2019,
-        "_modified": 1575214175,
+        "_modified": 1576231381,
         "_created": 1575213910,
         "_id": "5de3db56653133e56f0001f7",
         "_mby": "5ba3ca7b6531330bbd0003ca"
@@ -293,7 +294,7 @@
         "subtitle": "",
         "url": "workshops",
         "type": "Standard",
-        "description": "<p>We will announce the workshops for our conference soon.<\/p>\n<p>&nbsp;<\/p>",
+        "description": "<h3>Advanced React Workshop<\/h3>\n<p class=\"p-rich_text_section\"><br \/>In this advanced workshop, you will learn how to implement advanced features and improve performance in React apps leveraging functional programming in JavaScript<\/p>\n<p class=\"p-rich_text_section\">&nbsp;<\/p>\n<p class=\"p-rich_text_section\"><strong>Learning outcomes<\/strong><\/p>\n<p class=\"p-rich_text_section\">- Effectively start &ldquo;thinking in hooks&rdquo; to fully comprehend how the new composition model works<\/p>\n<p class=\"p-rich_text_section\">- Leverage functional programming in modern React<\/p>\n<p class=\"p-rich_text_section\">- Learn how to apply the new React patterns and how to identify the right use cases for each one.<\/p>\n<p class=\"p-rich_text_section\">&nbsp;<\/p>\n<h3>Building Real-World GraphQL API<\/h3>\n<p class=\"p-rich_text_section\"><br \/>In this zero to hero GraphQL workshop, you will learn how to effectively migrate REST APIs to GraphQL avoiding common pitfalls<\/p>\n<p class=\"p-rich_text_section\">&nbsp;<\/p>\n<p class=\"p-rich_text_section\"><strong>Learning outcomes<\/strong><\/p>\n<p class=\"p-rich_text_section\">- Learn how to migrate a REST API to GraphQL<\/p>\n<p class=\"p-rich_text_section\">- Understand how to design a GraphQL schema solving real-world use cases<\/p>\n<p class=\"p-rich_text_section\">- Error handling &amp; security design<\/p>\n<p class=\"p-rich_text_section\">&nbsp;<\/p>\n<p class=\"p-rich_text_section\">&nbsp;<\/p>\n<h2><strong>Coach<\/strong><\/h2>\n<h3><strong>&nbsp;Alex Lobera<\/strong><\/h3>\n<p>Alex is a&nbsp; Full-stack JavaScript Developer very passionate about&nbsp;teaching React to professional developers since May 2016. Alex holds a&nbsp;<strong>computer science degree<\/strong>&nbsp;and he is also a&nbsp;<strong>certified teacher<\/strong>&nbsp;in the Spanish language. He is organizer of the&nbsp;<a href=\"https:\/\/www.meetup.com\/JavaScript-london\/\" target=\"_blank\" rel=\"noopener\">JavaScript London Meetup<\/a>&nbsp;and other popular meetups in the EU.<\/p>\n<div class=\"Box__StyledBox-sc-15eb79u-0 FZPeL Card__StyledCard-sc-1h5y10m-0 eUrMtZ\">&nbsp;<\/div>",
         "shortDescription": "",
         "widgets": [
             {
@@ -303,19 +304,24 @@
             }
         ],
         "tags": "",
-        "image": "",
+        "image": {
+            "path": "images\/workshops.jpeg"
+        },
         "displayAtHome": "",
         "orderOnTopMenu": 2,
         "isRedirect": "No",
         "topMenu": "Yes",
-        "bannerimage": [],
-        "hide": "Yes",
+        "bannerimage": {
+            "path": "images\/workshops.jpeg"
+        },
+        "hide": "No",
         "color": "",
         "components": "",
         "year": "",
-        "_modified": 1575213910,
+        "_modified": 1576239454,
         "_created": 1575213910,
-        "_id": "5de3db56653133e56f00032f"
+        "_id": "5de3db56653133e56f00032f",
+        "_mby": "5ba3ca7b6531330bbd0003ca"
     },
     {
         "title": "Past Events",

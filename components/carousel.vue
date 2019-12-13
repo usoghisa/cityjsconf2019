@@ -18,7 +18,7 @@
                 <br />Regent Street Cinema
             </h1>
             <a href="/buytickets" class="is-info button info is-primary">Get your tickets</a>
-             <a href="https://www.papercall.io/cityjs2020" class="is-info button info is-primary">Submit your proposal</a>
+             <a href="https://tinyurl.com/cityjs2020-cfp" class="is-info button info is-primary">Submit your proposal</a>
           </div>
         </div>
       </div>
