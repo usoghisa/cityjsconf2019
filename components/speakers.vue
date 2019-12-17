@@ -9,6 +9,7 @@
         >
         </app-h2>
         <div class="columns  is-mobile is-multiline is-centered"> 
+            
            <div 
                 class="column is-three-quarters-mobile is-two-thirds-tablet
                  is-half-desktop is-one-third-widescreen is-one-quarter-fullhd"
@@ -16,6 +17,7 @@
                 v-bind:key="item._id"
            >
                     <div class="is-one  ">
+                        <h2 class="uuu">start------ card</h2>
                          <div class="card-image">
                             <a 
                                 v-on:click="select(item)"
@@ -48,6 +50,7 @@
                                 </div>
                             </div>
                         </div>
+                        <h2>end card</h2>
                     </div>
            </div>
            <div 
@@ -152,6 +155,7 @@ export default {
 </script>
 
 <style lang="sass" scoped>
+    @import '~/assets/css/uuu.css';
     @import '~/assets/css/mq.sass';
     
     a.titlebtn
