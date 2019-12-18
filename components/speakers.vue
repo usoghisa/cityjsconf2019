@@ -36,10 +36,11 @@
                                         <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample5.jpg" alt="Image">
                                     </figure>
                                 </div>
-                                <div class="media-content">
-                                    <p class="title is-4 no-padding">Atsui</p>
+                                <div class="media-content ">
+                                    <p class="title is-4 ">Atsui</p>
                                     <!-- <p class="title is-6"><a href="http://twitter.com/#">@twitterid</a></p> -->
-                                    <p class="subtitle is-6">Moderator</p>
+                                    <br />
+                                    <p class="title is-6">Moderator</p>
                                     <p class="title is-6"><a href="http://twitter.com/#">@twitterid</a></p>
                                 </div>
                             </div>

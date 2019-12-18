@@ -5,52 +5,55 @@
     border: 1px solid red;
   }
  
-  body { 
-	background-color: white;
-	font-family: 'Ubuntu', sans-serif;}
-a {
-    color: #07a990;}
+body { 
+    background-color: white;
+    font-family: 'Ubuntu', sans-serif;}
 
-
-.has-text-primary  {
-    color: #00b89c ;
+.card.large {
+    box-shadow: none;
+	/* border-bottom-right-radius: 50px;
+	box-shadow: 0 0.5em 1em -0.125em rgba(50, 50, 50, 0.5), 0 0 0 1px rgba(62, 62, 51, 0.08); */
 }
-.fa {
-    color: #00b89c;
-    padding: .8rem 1.2rem .3rem 0rem;	}		
+
+.content-main{
+        padding: .6em; }
 
 .media {
 	position: relative;
     margin-top: -100px;
 	margin-bottom: -100px;
-	background-color: white;}
+    background-color: white;} 
+     
+.media-content a{
+    color: #00b89c;}
 
+.media-content {
+    padding-top: .3rem;}
 
-.card.large {
-	border-bottom-right-radius: 50px;
-	box-shadow: 0 0.5em 1em -0.125em rgba(50, 50, 50, 0.5), 0 0 0 1px rgba(62, 62, 51, 0.08);
-}
+.media-content p {
+    padding: 0px;
+    margin: 0px;}
 
-.content-main{
-		padding: .6em; }
+.media-left img {
+    border-bottom-right-radius: 50%;
+    margin-right: .3rem;}
 		
 .card .media:not(:last-child) {
     margin-bottom: -.1rem;}
-	
-.media-left img {
-  border-bottom-right-radius: 50%;}
-  
-.card-footer{
-	position: absolute;
-    bottom: .8rem;
-	width: 85%;}
-	
+
+
+.fa {
+    color: #00b89c;
+    padding: .7rem 1.4rem .3rem 0rem;	}
+    .fa-twitter
+    {
+        padding-right: 0rem;
+/*             border:1px solid red; ------------------ todo last child */  
+    }
 .content, .outer-border {
 	padding: 0rem 0rem;
-	height: 12rem;} 
-
-    
-    
+    height: 12rem;} 
+      
 .outer-border { 
 	border: 0px solid red; 
 	position: relative; 
@@ -60,7 +63,19 @@ a {
 	position: absolute; 
 	left: 0; 
 	overflow-x: hidden; 
-	overflow-y: scroll;} 
+    overflow-y: scroll;} 
 	
-.inner-border::-webkit-scrollbar { 
-	display: none;}
+.inner-border::-webkit-scrollbar { display: none;}
+.inner-border { overflow: -moz-scrollbars-none;  }
+.inner-border { -ms-overflow-style: none; } 
+.inner-border { -ms-overflow-style: none; }     
+
+    .media-content::-webkit-scrollbar {display: none;}
+    .media-content { overflow: -moz-scrollbars-none;  }
+    .media-content { -ms-overflow-style: none; }  
+    .media-content { overflow: none; } 
+
+.card-footer{
+    position: absolute;
+    bottom: .8rem;
+    width: 85%;}
