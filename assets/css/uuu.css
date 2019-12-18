@@ -1,1 +1,66 @@
-.uuu {color: red;}
+.uuu {
+    color: red;
+}
+* {
+    border: 1px solid red;
+  }
+ 
+  body { 
+	background-color: white;
+	font-family: 'Ubuntu', sans-serif;}
+a {
+    color: #07a990;}
+
+
+.has-text-primary  {
+    color: #00b89c ;
+}
+.fa {
+    color: #00b89c;
+    padding: .8rem 1.2rem .3rem 0rem;	}		
+
+.media {
+	position: relative;
+    margin-top: -100px;
+	margin-bottom: -100px;
+	background-color: white;}
+
+
+.card.large {
+	border-bottom-right-radius: 50px;
+	box-shadow: 0 0.5em 1em -0.125em rgba(50, 50, 50, 0.5), 0 0 0 1px rgba(62, 62, 51, 0.08);
+}
+
+.content-main{
+		padding: .6em; }
+		
+.card .media:not(:last-child) {
+    margin-bottom: -.1rem;}
+	
+.media-left img {
+  border-bottom-right-radius: 50%;}
+  
+.card-footer{
+	position: absolute;
+    bottom: .8rem;
+	width: 85%;}
+	
+.content, .outer-border {
+	padding: 0rem 0rem;
+	height: 12rem;} 
+
+    
+    
+.outer-border { 
+	border: 0px solid red; 
+	position: relative; 
+	overflow: hidden;} 
+	
+.inner-border { 
+	position: absolute; 
+	left: 0; 
+	overflow-x: hidden; 
+	overflow-y: scroll;} 
+	
+.inner-border::-webkit-scrollbar { 
+	display: none;}
