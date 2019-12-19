@@ -1,9 +1,9 @@
 .uuu {
     color: red;
 }
-* {
+/* * {
     border: 1px solid red;
-  }
+  } */
  
 body { 
     background-color: white;
@@ -14,7 +14,11 @@ body {
 	/* border-bottom-right-radius: 50px;
 	box-shadow: 0 0.5em 1em -0.125em rgba(50, 50, 50, 0.5), 0 0 0 1px rgba(62, 62, 51, 0.08); */
 }
-
+.card-image {position: relative;}
+/* .ug-img{
+    position: absolute;
+    clip: rect(0px,400px,300px,0px);
+} */
 .content-main{
         padding: .6em; }
 

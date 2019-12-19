@@ -25,39 +25,77 @@
                 >
                     <div class="card large round">
                         <div class="card-image ">
-                            <figure class="image">
+                            
+                                <figure class="image ">
+                                    <img 
+                                        v-if="typeof 
+                                            item.image!== 'undefined'"  
+                                            width="100%" :alt="item.name" 
+                                            :src="`/siteimages/${item.thumbnail.path}`"
+                                            class="speaker "
+                                    />
+                                </figure>
+
+
+
+
+
+
+<!--                        <figure class="image">
                                 <img src="https://source.unsplash.com/Jy6luiLBsrk" alt="Image">
-                            </figure>
+                            </figure> -->
                         </div>
                         <div class="card-content ">
                             <div class="media">
                                 <div class="media-left">
-                                    <figure class="image is-96x96">
+                                <figure class="image is-96x96">
+                                    <img 
+                                        v-if="typeof 
+                                            item.image!== 'undefined'"  
+                                            width="96" :alt="item.name" 
+                                            :src="`/siteimages/${item.thumbnail.path}`"
+                                            class="speaker"
+                                    />
+                                </figure>
+<!--                            <figure class="back-logo">
+                                    <img 
+                                        v-if="typeof 
+                                            item.image!== 'undefined'"  
+                                            :alt="item.name" 
+                                            :src="`/siteimages/${item.thumbnail.path}`"
+                                            class="speaker"
+                                    />
+                                </figure> -->
+
+
+
+<!--                                <figure class="image is-96x96">
                                         <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample5.jpg" alt="Image">
-                                    </figure>
+                                    </figure> -->
                                 </div>
                                 <div class="media-content ">
-                                    <p class="title is-4 ">Atsui</p>
-                                    <!-- <p class="title is-6"><a href="http://twitter.com/#">@twitterid</a></p> -->
-                                    <br />
+                                    <!-- 
                                     <p class="title is-6">Moderator</p>
-                                    <p class="title is-6"><a href="http://twitter.com/#">@twitterid</a></p>
+                                    <p class="title is-6"><a href="http://twitter.com/#">@twitterid</a></p>-->
+
+                                    <p class="title is-6">Moderator</p>
+                                    <p class="title is-6"><a href="http://twitter.com/#">@twitter-id</a></p>                               
                                 </div>
                             </div>
+
+                                    <p class="title is-6 ">{{item.name}}</p>
+
                                 <div class="soc has-text-primary">
-                                    <a href="#"><i class="fa fa-github-alt fa-2x" aria-hidden="true"></i></a>
+                                    <a href="#"><i class="fa fa-github-alt fa-2x is-6" aria-hidden="true"></i></a>
                                     <a href="#"><i class="fa fa-youtube fa-2x" aria-hidden="true"></i></a>
                                     <a href="#"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
                                     <a href="#"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
                                 </div>
 							<div class="outer-border"> 
 								<div class="inner-border"> 							
-									<div class="content">                                   
-										 1Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, 
-										 Lorem ipsum dolor sit amet,
-										 Lorem ipsum dolor sit amet,valueLorem ipsum dolor sit amet,
-										 Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,
-										 Lorem ipsum dolor sit amet,consectetur adipisicing elit. Dolorum consequatur numquam aliquam tenetur ad amet inventore hic beatae, quas accusantium perferendis sapiente explicabo, corporis totam! Labore reprehenderit beatae magnam animi!
+									<div class="content">
+                                        <p>{{item.company}}</p>
+                                        <p v-html="item.bio" />                                   
 									</div>
 								</div>				
 							</div>					
