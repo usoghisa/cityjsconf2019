@@ -9,16 +9,6 @@
         >
         </app-h2>
         <div class="columns  is-multiline "> 
-         
-<!--  <h2 class="uuu">start------ card</h2>          
-                <div class="columns  is-mobile is-multiline is-centered"> 
-                <div 
-                class="column is-three-quarters-mobile is-two-thirds-tablet
-                 is-half-desktop is-one-third-widescreen is-one-quarter-fullhd"
-                v-for="item in filteredSpeakers"
-                v-bind:key="item._id"
-           > -->
-
                 <div class="column is-half-tablet is-one-third-desktop is-one-quarter-widescreen"
                 v-for="item in filteredSpeakers"
                 v-bind:key="item._id"
@@ -35,15 +25,6 @@
                                             class="speaker "
                                     />
                                 </figure>
-
-
-
-
-
-
-<!--                        <figure class="image">
-                                <img src="https://source.unsplash.com/Jy6luiLBsrk" alt="Image">
-                            </figure> -->
                         </div>
                         <div class="card-content ">
                             <div class="media">
@@ -57,35 +38,14 @@
                                             class="speaker"
                                     />
                                 </figure>
-<!--                            <figure class="back-logo">
-                                    <img 
-                                        v-if="typeof 
-                                            item.image!== 'undefined'"  
-                                            :alt="item.name" 
-                                            :src="`/siteimages/${item.thumbnail.path}`"
-                                            class="speaker"
-                                    />
-                                </figure> -->
-
-
-
-<!--                                <figure class="image is-96x96">
-                                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample5.jpg" alt="Image">
-                                    </figure> -->
                                 </div>
                                 <div class="media-content ">
-                                    <!-- 
-                                    <p class="title is-6">Moderator</p>
-                                    <p class="title is-6"><a href="http://twitter.com/#">@twitterid</a></p>-->
-
                                     <p class="title is-6">Moderator</p>
                                     <p class="title is-6"><a href="http://twitter.com/#">@twitter-id</a></p>                               
                                 </div>
                             </div>
-
-                                    <p class="title is-6 ">{{item.name}}</p>
-
                                 <div class="soc has-text-primary">
+                                    <p class="title is-6 is-marginless">{{item.name}}</p>
                                     <a href="#"><i class="fa fa-github-alt fa-2x is-6" aria-hidden="true"></i></a>
                                     <a href="#"><i class="fa fa-youtube fa-2x" aria-hidden="true"></i></a>
                                     <a href="#"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
@@ -94,107 +54,14 @@
 							<div class="outer-border"> 
 								<div class="inner-border"> 							
 									<div class="content">
-                                        <p>{{item.company}}</p>
+                                        <p class="title is-size-6">{{item.company}}</p>
                                         <p v-html="item.bio" />                                   
 									</div>
 								</div>				
 							</div>					
-<!-- 							<footer class="card-footer is-fluid">
-								<div class="container has-text-centered"></div>
-							</footer> -->
                         </div>
                     </div>
                 </div>
-
-<!--                     <div class="is-one  ">
-                         <div class="card-image">
-                            <a 
-                                v-on:click="select(item)"
-                            >
-                                <figure class="image is-92x92">
-                                    <img 
-                                        v-if="typeof 
-                                        item.image!== 'undefined'"  
-                                        :alt="item.name" 
-                                        :src="`/siteimages/${item.thumbnail.path}`"
-                                        class="speaker"
-                                    />
-                                </figure>
-                            </a>
-                        </div>
-                        <div class="card-content">
-                            <div class="media">
-                                <div class="media-content has-text-centered">
-                                     <a 
-                                        class="titlebtn"
-                                        v-on:click="select(item)"
-                                    >
-                                        <h3 class="small-title">
-                                            {{item.title}}                                                                  
-                                        </h3>
-                                    </a>
-                                    <p class="subtitle is-6">{{item.name}}  <a class="icon" :href="`//twitter.com/${item.twitter}`"><i class="fa fa-twitter"></i></a>   
-                                       <br/>  {{item.company}}
-                                     </p>  
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
-
-
-
-
-
-
-
-
-                    
-
-
-
-                
-<!--           </div>
-            <div 
-                :class="['column spekers-card-container modal-background', {'closed':open === false}]" 
-                v-if="this.chosen"
-            >
-                <div class="card speaker-card">
-                    <div class="card-content">
-                        <div class="media">
-                        <div class="media-left">
-                            <figure class="image is-48x48">
-                                <img 
-                                    v-if="typeof 
-                                    chosen.image!== 'undefined'"  
-                                    :alt="chosen.name" 
-                                    :src="`/siteimages/${chosen.thumbnail.path}`"
-                                    class="speaker"
-                                />
-                            </figure>
-                            <a 
-                                :class="['button  close closebtn', {'closed':open === false}]"
-                                v-on:click="close()"
-                            >
-                                <span class="icon is-small">
-                                    X
-                                </span>
-                            </a>
-                        </div>
-                        <div class="media-content">
-                            <p class="title is-4">{{chosen.name}}</p>
-                            <p class="subtitle is-6">
-                                <a :href="`//twitter.com/${chosen.twitter}`">
-                                    @{{chosen.twitter}}
-                                </a><br/>
-                                {{chosen.company}}
-                            </p>
-                        </div>
-                        </div>
-                        <div v-html="chosen.talk" />
-                    </div>
-                </div>
-           </div> <h2>end ------ card</h2> -->
-
         </div>
     </div>
     </section>
@@ -257,9 +124,68 @@ export default {
 </script>
 
 <style lang="sass" scoped>
-    @import '~/assets/css/uuu.css';
+    @import '~/assets/css/hide-scrol.css';
+    @import '~/assets/css/color-var.scss';
     @import '~/assets/css/mq.sass';
+
+    .card.large
+        background: $bg-white;
+        box-shadow: none;
     
+    .card-image
+        position: relative;
+    
+    .content p 
+        margin: 0em; padding:0em;
+    
+    .content-main
+        padding: .6em; 
+    .media 
+        position: relative;
+        margin-top: -100px;
+        margin-bottom: -100px;
+        background: $bg-white;
+
+    .media-content a
+        color: $green-link;
+    
+    .media-content
+        padding-top: .3rem;
+   
+    .media-content p 
+        padding: 0px;
+        margin: 0px;
+
+    .media-left img 
+        border-bottom-right-radius: 50%;
+        margin-right: .3rem;
+            
+    .card .media:not(:last-child) 
+        margin-bottom: -.1rem;
+    
+    .fa 
+        color: $green-link;
+        padding: .7rem 1.4rem .3rem 0rem;	
+    
+    .fa-twitter
+        padding-right: 0rem;
+    // border:1px solid red; ------------------ todo last child */  
+    
+    .content, .outer-border 
+        padding: 0rem 0rem;
+        height: 12rem;
+        
+    .outer-border  
+        border: 0px solid red; 
+        position: relative; 
+        overflow: hidden;
+
+    .card-footer
+        position: absolute;
+        bottom: .8rem;
+        width: 85%; 
+        
+    // ---------------------------------
     a.titlebtn
         color: $black;
         h3 

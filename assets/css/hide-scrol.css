@@ -1,0 +1,23 @@
+.uuu {
+    color: red;
+}
+/* * {
+    border: 1px solid red;
+  } */
+ 	
+.inner-border { 
+	position: absolute; 
+	left: 0; 
+	overflow-x: hidden; 
+    overflow-y: scroll;} 
+	
+.inner-border::-webkit-scrollbar { display: none;}
+.inner-border { overflow: -moz-scrollbars-none;  }
+.inner-border { -ms-overflow-style: none; } 
+.inner-border { -ms-overflow-style: none; }     
+
+    .media-content::-webkit-scrollbar {display: none;}
+    .media-content { overflow: -moz-scrollbars-none;  }
+    .media-content { -ms-overflow-style: none; }  
+    .media-content { overflow: none; } 
+
